@@ -1,0 +1,6 @@
+@Hourly.TimeTrackingService_HostAddress = http://localhost:5116
+
+GET {{Hourly.TimeTrackingService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

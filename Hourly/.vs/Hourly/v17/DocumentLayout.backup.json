@@ -1,0 +1,1276 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFC88B4F-5F20-4CE3-8441-B8E195818E0B}|Hourly.Gateway\\Hourly.Gateway.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.gateway\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AFC88B4F-5F20-4CE3-8441-B8E195818E0B}|Hourly.Gateway\\Hourly.Gateway.csproj|solutionrelative:hourly.gateway\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\infrastructure\\persistence\\applicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\infrastructure\\persistence\\applicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\infrastructure\\persistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\infrastructure\\persistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\infrastructure\\persistence\\entityconfigurations\\usercontractconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\infrastructure\\persistence\\entityconfigurations\\usercontractconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\api\\controllers\\usercontractcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\api\\controllers\\usercontractcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\api\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\api\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\reset-database.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\reset-database.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\infrastructure\\repositories\\usercontractrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\infrastructure\\repositories\\usercontractrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\infrastructure\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\infrastructure\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\infrastructure\\repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\infrastructure\\repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\domain\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\domain\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F1206F7-04F6-4ACF-B8FB-CFDD55455C2D}|Hourly.Shared\\Hourly.Shared.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.shared\\enums\\contracttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F1206F7-04F6-4ACF-B8FB-CFDD55455C2D}|Hourly.Shared\\Hourly.Shared.csproj|solutionrelative:hourly.shared\\enums\\contracttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F1206F7-04F6-4ACF-B8FB-CFDD55455C2D}|Hourly.Shared\\Hourly.Shared.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.shared\\exceptions\\domainvalidationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F1206F7-04F6-4ACF-B8FB-CFDD55455C2D}|Hourly.Shared\\Hourly.Shared.csproj|solutionrelative:hourly.shared\\exceptions\\domainvalidationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F1206F7-04F6-4ACF-B8FB-CFDD55455C2D}|Hourly.Shared\\Hourly.Shared.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.shared\\exceptions\\entitynotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F1206F7-04F6-4ACF-B8FB-CFDD55455C2D}|Hourly.Shared\\Hourly.Shared.csproj|solutionrelative:hourly.shared\\exceptions\\entitynotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F1206F7-04F6-4ACF-B8FB-CFDD55455C2D}|Hourly.Shared\\Hourly.Shared.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.shared\\exceptions\\validationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F1206F7-04F6-4ACF-B8FB-CFDD55455C2D}|Hourly.Shared\\Hourly.Shared.csproj|solutionrelative:hourly.shared\\exceptions\\validationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\corssettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\corssettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\hourly.userservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\hourly.userservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\abstractions\\events\\worksessioncreatedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\abstractions\\events\\worksessioncreatedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\abstractions\\repositories\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\abstractions\\repositories\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\abstractions\\events\\worksessionupdatedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\abstractions\\events\\worksessionupdatedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\abstractions\\events\\gitcommitcreatedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\abstractions\\events\\gitcommitcreatedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\abstractions\\events\\gitcommitupdatedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\abstractions\\events\\gitcommitupdatedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\application\\mappers\\usermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\application\\mappers\\usermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\api\\contracts\\responses\\userresponses\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\api\\contracts\\responses\\userresponses\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\application\\mappers\\worksessionmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\application\\mappers\\worksessionmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\api\\contracts\\responses\\worksessionresponses\\worksessionsummaryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\api\\contracts\\responses\\worksessionresponses\\worksessionsummaryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\api\\contracts\\responses\\worksessionresponses\\worksessionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\api\\contracts\\responses\\worksessionresponses\\worksessionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\api\\contracts\\requests\\usercontractrequests\\updateusercontractrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\api\\contracts\\requests\\usercontractrequests\\updateusercontractrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\api\\contracts\\requests\\usercontractrequests\\createusercontractrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\api\\contracts\\requests\\usercontractrequests\\createusercontractrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\application\\mappers\\gitcommitmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\application\\mappers\\gitcommitmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\application\\mappers\\usercontractmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\application\\mappers\\usercontractmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\api\\contracts\\responses\\gitcommitresponses\\gitcommitresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\api\\contracts\\responses\\gitcommitresponses\\gitcommitresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\api\\contracts\\responses\\gitcommitresponses\\gitcommitsummaryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\api\\contracts\\responses\\gitcommitresponses\\gitcommitsummaryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\api\\contracts\\responses\\departmentresponses\\departmentsummaryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\api\\contracts\\responses\\departmentresponses\\departmentsummaryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\api\\contracts\\responses\\usercontractresponses\\usercontractresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\api\\contracts\\responses\\usercontractresponses\\usercontractresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\api\\contracts\\responses\\departmentresponses\\departmentresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\api\\contracts\\responses\\departmentresponses\\departmentresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\application\\mappers\\rolemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\application\\mappers\\rolemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\application\\mappers\\departmentmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\application\\mappers\\departmentmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\api\\contracts\\responses\\roleresponses\\rolesummaryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\api\\contracts\\responses\\roleresponses\\rolesummaryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\api\\contracts\\responses\\roleresponses\\roleresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\api\\contracts\\responses\\roleresponses\\roleresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\api\\contracts\\responses\\usercontractresponses\\usercontractsummaryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\api\\contracts\\responses\\usercontractresponses\\usercontractsummaryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\api\\contracts\\responses\\userresponses\\usersummaryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\api\\contracts\\responses\\userresponses\\usersummaryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\api\\contracts\\requests\\departmentrequests\\createdepartmentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\api\\contracts\\requests\\departmentrequests\\createdepartmentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\api\\contracts\\requests\\departmentrequests\\updatedepartmentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\api\\contracts\\requests\\departmentrequests\\updatedepartmentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\api\\contracts\\requests\\userrequests\\updateuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\api\\contracts\\requests\\userrequests\\updateuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\api\\contracts\\requests\\userrequests\\createuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\api\\contracts\\requests\\userrequests\\createuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\domain\\entities\\usercontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\domain\\entities\\usercontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\application\\services\\usercontractservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\application\\services\\usercontractservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\application\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\application\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\application\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\application\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\abstractions\\services\\idepartmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\abstractions\\services\\idepartmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\abstractions\\services\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\abstractions\\services\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\abstractions\\services\\iusercontractservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\abstractions\\services\\iusercontractservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\abstractions\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\abstractions\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\domain\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\domain\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\infrastructure\\persistence\\converters\\datetimeconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\infrastructure\\persistence\\converters\\datetimeconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\infrastructure\\persistence\\converters\\enumconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\infrastructure\\persistence\\converters\\enumconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\infrastructure\\persistence\\entityconfigurations\\departmentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\infrastructure\\persistence\\entityconfigurations\\departmentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\infrastructure\\persistence\\entityconfigurations\\gitcommitreadmodelconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\infrastructure\\persistence\\entityconfigurations\\gitcommitreadmodelconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\infrastructure\\persistence\\entityconfigurations\\roleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\infrastructure\\persistence\\entityconfigurations\\roleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\infrastructure\\persistence\\entityconfigurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\infrastructure\\persistence\\entityconfigurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\infrastructure\\persistence\\entityconfigurations\\worksessionreadmodelconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\infrastructure\\persistence\\entityconfigurations\\worksessionreadmodelconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\infrastructure\\persistence\\readmodels\\gitcommitreadmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\infrastructure\\persistence\\readmodels\\gitcommitreadmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\infrastructure\\persistence\\readmodels\\worksessionreadmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\infrastructure\\persistence\\readmodels\\worksessionreadmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\abstractions\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\abstractions\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\abstractions\\repositories\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\abstractions\\repositories\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.userservice\\abstractions\\repositories\\iusercontractrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}|Hourly.UserService\\Hourly.UserService.csproj|solutionrelative:hourly.userservice\\abstractions\\repositories\\iusercontractrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A331C82-043F-4D98-B550-FEA1610CA61C}|Hourly.TimeTrackingService\\Hourly.TimeTrackingService.csproj|c:\\users\\vincentbok\\source\\git repos\\hourly-microservice-design\\hourly\\hourly.timetrackingservice\\hourly.timetrackingservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9A331C82-043F-4D98-B550-FEA1610CA61C}|Hourly.TimeTrackingService\\Hourly.TimeTrackingService.csproj|solutionrelative:hourly.timetrackingservice\\hourly.timetrackingservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 166,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.Gateway\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Hourly.Gateway\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.Gateway\\appsettings.Development.json",
+              "RelativeToolTip": "Hourly.Gateway\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-12T22:29:44.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Reset-Database.ps1",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Reset-Database.ps1",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Reset-Database.ps1",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Reset-Database.ps1",
+              "RelativeToolTip": "Hourly.UserService\\Reset-Database.ps1",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-12T22:19:35.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Hourly.UserService\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\appsettings.Development.json",
+              "RelativeToolTip": "Hourly.UserService\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-12T22:17:09.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CorsSettings.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\CorsSettings.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\CorsSettings.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\CorsSettings.cs",
+              "RelativeToolTip": "Hourly.UserService\\CorsSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T22:13:43.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\appsettings.json",
+              "RelativeDocumentMoniker": "Hourly.UserService\\appsettings.json",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\appsettings.json",
+              "RelativeToolTip": "Hourly.UserService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-12T22:12:30.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RoleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Repositories\\RoleRepository.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Infrastructure\\Repositories\\RoleRepository.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Repositories\\RoleRepository.cs",
+              "RelativeToolTip": "Hourly.UserService\\Infrastructure\\Repositories\\RoleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T22:03:17.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Program.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Program.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Program.cs",
+              "RelativeToolTip": "Hourly.UserService\\Program.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAkwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T22:01:46.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "WorkSessionUpdatedEvent.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Abstractions\\Events\\WorkSessionUpdatedEvent.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Abstractions\\Events\\WorkSessionUpdatedEvent.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Abstractions\\Events\\WorkSessionUpdatedEvent.cs",
+              "RelativeToolTip": "Hourly.UserService\\Abstractions\\Events\\WorkSessionUpdatedEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T22:00:21.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "WorkSessionCreatedEvent.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Abstractions\\Events\\WorkSessionCreatedEvent.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Abstractions\\Events\\WorkSessionCreatedEvent.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Abstractions\\Events\\WorkSessionCreatedEvent.cs",
+              "RelativeToolTip": "Hourly.UserService\\Abstractions\\Events\\WorkSessionCreatedEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T22:00:05.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "GitCommitCreatedEvent.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Abstractions\\Events\\GitCommitCreatedEvent.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Abstractions\\Events\\GitCommitCreatedEvent.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Abstractions\\Events\\GitCommitCreatedEvent.cs",
+              "RelativeToolTip": "Hourly.UserService\\Abstractions\\Events\\GitCommitCreatedEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:59:43.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GitCommitUpdatedEvent.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Abstractions\\Events\\GitCommitUpdatedEvent.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Abstractions\\Events\\GitCommitUpdatedEvent.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Abstractions\\Events\\GitCommitUpdatedEvent.cs",
+              "RelativeToolTip": "Hourly.UserService\\Abstractions\\Events\\GitCommitUpdatedEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:58:47.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "GitCommitMapper.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Application\\Mappers\\GitCommitMapper.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Application\\Mappers\\GitCommitMapper.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Application\\Mappers\\GitCommitMapper.cs",
+              "RelativeToolTip": "Hourly.UserService\\Application\\Mappers\\GitCommitMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:48:51.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "WorkSessionMapper.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Application\\Mappers\\WorkSessionMapper.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Application\\Mappers\\WorkSessionMapper.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Application\\Mappers\\WorkSessionMapper.cs",
+              "RelativeToolTip": "Hourly.UserService\\Application\\Mappers\\WorkSessionMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:48:46.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "WorkSessionSummaryResponse.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Responses\\WorkSessionResponses\\WorkSessionSummaryResponse.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Api\\Contracts\\Responses\\WorkSessionResponses\\WorkSessionSummaryResponse.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Responses\\WorkSessionResponses\\WorkSessionSummaryResponse.cs",
+              "RelativeToolTip": "Hourly.UserService\\Api\\Contracts\\Responses\\WorkSessionResponses\\WorkSessionSummaryResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:45:26.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "GitCommitSummaryResponse.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Responses\\GitCommitResponses\\GitCommitSummaryResponse.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Api\\Contracts\\Responses\\GitCommitResponses\\GitCommitSummaryResponse.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Responses\\GitCommitResponses\\GitCommitSummaryResponse.cs",
+              "RelativeToolTip": "Hourly.UserService\\Api\\Contracts\\Responses\\GitCommitResponses\\GitCommitSummaryResponse.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:42:15.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "GitCommitResponse.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Responses\\GitCommitResponses\\GitCommitResponse.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Api\\Contracts\\Responses\\GitCommitResponses\\GitCommitResponse.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Responses\\GitCommitResponses\\GitCommitResponse.cs",
+              "RelativeToolTip": "Hourly.UserService\\Api\\Contracts\\Responses\\GitCommitResponses\\GitCommitResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:41:50.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "WorkSessionResponse.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Responses\\WorkSessionResponses\\WorkSessionResponse.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Api\\Contracts\\Responses\\WorkSessionResponses\\WorkSessionResponse.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Responses\\WorkSessionResponses\\WorkSessionResponse.cs",
+              "RelativeToolTip": "Hourly.UserService\\Api\\Contracts\\Responses\\WorkSessionResponses\\WorkSessionResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:41:28.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "UserSummaryResponse.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Responses\\UserResponses\\UserSummaryResponse.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Api\\Contracts\\Responses\\UserResponses\\UserSummaryResponse.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Responses\\UserResponses\\UserSummaryResponse.cs",
+              "RelativeToolTip": "Hourly.UserService\\Api\\Contracts\\Responses\\UserResponses\\UserSummaryResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:32:49.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UserResponse.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Responses\\UserResponses\\UserResponse.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Api\\Contracts\\Responses\\UserResponses\\UserResponse.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Responses\\UserResponses\\UserResponse.cs",
+              "RelativeToolTip": "Hourly.UserService\\Api\\Contracts\\Responses\\UserResponses\\UserResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBIAAAB2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:32:45.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "UserContractSummaryResponse.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Responses\\UserContractResponses\\UserContractSummaryResponse.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Api\\Contracts\\Responses\\UserContractResponses\\UserContractSummaryResponse.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Responses\\UserContractResponses\\UserContractSummaryResponse.cs",
+              "RelativeToolTip": "Hourly.UserService\\Api\\Contracts\\Responses\\UserContractResponses\\UserContractSummaryResponse.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAcwAAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:32:42.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "UserContractResponse.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Responses\\UserContractResponses\\UserContractResponse.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Api\\Contracts\\Responses\\UserContractResponses\\UserContractResponse.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Responses\\UserContractResponses\\UserContractResponse.cs",
+              "RelativeToolTip": "Hourly.UserService\\Api\\Contracts\\Responses\\UserContractResponses\\UserContractResponse.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:32:38.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "RoleSummaryResponse.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Responses\\RoleResponses\\RoleSummaryResponse.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Api\\Contracts\\Responses\\RoleResponses\\RoleSummaryResponse.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Responses\\RoleResponses\\RoleSummaryResponse.cs",
+              "RelativeToolTip": "Hourly.UserService\\Api\\Contracts\\Responses\\RoleResponses\\RoleSummaryResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:32:33.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "RoleResponse.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Responses\\RoleResponses\\RoleResponse.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Api\\Contracts\\Responses\\RoleResponses\\RoleResponse.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Responses\\RoleResponses\\RoleResponse.cs",
+              "RelativeToolTip": "Hourly.UserService\\Api\\Contracts\\Responses\\RoleResponses\\RoleResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:32:31.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "DepartmentSummaryResponse.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Responses\\DepartmentResponses\\DepartmentSummaryResponse.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Api\\Contracts\\Responses\\DepartmentResponses\\DepartmentSummaryResponse.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Responses\\DepartmentResponses\\DepartmentSummaryResponse.cs",
+              "RelativeToolTip": "Hourly.UserService\\Api\\Contracts\\Responses\\DepartmentResponses\\DepartmentSummaryResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:32:26.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "DepartmentResponse.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Responses\\DepartmentResponses\\DepartmentResponse.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Api\\Contracts\\Responses\\DepartmentResponses\\DepartmentResponse.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Responses\\DepartmentResponses\\DepartmentResponse.cs",
+              "RelativeToolTip": "Hourly.UserService\\Api\\Contracts\\Responses\\DepartmentResponses\\DepartmentResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:31:55.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "UpdateUserRequest.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Requests\\UserRequests\\UpdateUserRequest.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Api\\Contracts\\Requests\\UserRequests\\UpdateUserRequest.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Requests\\UserRequests\\UpdateUserRequest.cs",
+              "RelativeToolTip": "Hourly.UserService\\Api\\Contracts\\Requests\\UserRequests\\UpdateUserRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:31:19.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "CreateUserRequest.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Requests\\UserRequests\\CreateUserRequest.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Api\\Contracts\\Requests\\UserRequests\\CreateUserRequest.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Requests\\UserRequests\\CreateUserRequest.cs",
+              "RelativeToolTip": "Hourly.UserService\\Api\\Contracts\\Requests\\UserRequests\\CreateUserRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:31:14.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "UpdateUserContractRequest.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Requests\\UserContractRequests\\UpdateUserContractRequest.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Api\\Contracts\\Requests\\UserContractRequests\\UpdateUserContractRequest.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Requests\\UserContractRequests\\UpdateUserContractRequest.cs",
+              "RelativeToolTip": "Hourly.UserService\\Api\\Contracts\\Requests\\UserContractRequests\\UpdateUserContractRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:31:05.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CreateUserContractRequest.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Requests\\UserContractRequests\\CreateUserContractRequest.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Api\\Contracts\\Requests\\UserContractRequests\\CreateUserContractRequest.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Requests\\UserContractRequests\\CreateUserContractRequest.cs",
+              "RelativeToolTip": "Hourly.UserService\\Api\\Contracts\\Requests\\UserContractRequests\\CreateUserContractRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:30:40.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "UpdateDepartmentRequest.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Requests\\DepartmentRequests\\UpdateDepartmentRequest.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Api\\Contracts\\Requests\\DepartmentRequests\\UpdateDepartmentRequest.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Requests\\DepartmentRequests\\UpdateDepartmentRequest.cs",
+              "RelativeToolTip": "Hourly.UserService\\Api\\Contracts\\Requests\\DepartmentRequests\\UpdateDepartmentRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:30:36.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "CreateDepartmentRequest.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Requests\\DepartmentRequests\\CreateDepartmentRequest.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Api\\Contracts\\Requests\\DepartmentRequests\\CreateDepartmentRequest.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Contracts\\Requests\\DepartmentRequests\\CreateDepartmentRequest.cs",
+              "RelativeToolTip": "Hourly.UserService\\Api\\Contracts\\Requests\\DepartmentRequests\\CreateDepartmentRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:29:50.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "DepartmentMapper.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Application\\Mappers\\DepartmentMapper.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Application\\Mappers\\DepartmentMapper.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Application\\Mappers\\DepartmentMapper.cs",
+              "RelativeToolTip": "Hourly.UserService\\Application\\Mappers\\DepartmentMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:12:11.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "RoleMapper.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Application\\Mappers\\RoleMapper.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Application\\Mappers\\RoleMapper.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Application\\Mappers\\RoleMapper.cs",
+              "RelativeToolTip": "Hourly.UserService\\Application\\Mappers\\RoleMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:12:06.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UserContractMapper.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Application\\Mappers\\UserContractMapper.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Application\\Mappers\\UserContractMapper.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Application\\Mappers\\UserContractMapper.cs",
+              "RelativeToolTip": "Hourly.UserService\\Application\\Mappers\\UserContractMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:12:03.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UserMapper.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Application\\Mappers\\UserMapper.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Application\\Mappers\\UserMapper.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Application\\Mappers\\UserMapper.cs",
+              "RelativeToolTip": "Hourly.UserService\\Application\\Mappers\\UserMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:11:40.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Api\\Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "Hourly.UserService\\Api\\Controllers\\DepartmentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:10:37.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserContractController.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Controllers\\UserContractController.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Api\\Controllers\\UserContractController.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Controllers\\UserContractController.cs",
+              "RelativeToolTip": "Hourly.UserService\\Api\\Controllers\\UserContractController.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAhwGkAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:10:34.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Api\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Api\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Hourly.UserService\\Api\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:10:12.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "RoleService.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Application\\Services\\RoleService.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Application\\Services\\RoleService.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Application\\Services\\RoleService.cs",
+              "RelativeToolTip": "Hourly.UserService\\Application\\Services\\RoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:08:17.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "DepartmentService.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Application\\Services\\DepartmentService.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Application\\Services\\DepartmentService.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Application\\Services\\DepartmentService.cs",
+              "RelativeToolTip": "Hourly.UserService\\Application\\Services\\DepartmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:08:16.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "IDepartmentService.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Abstractions\\Services\\IDepartmentService.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Abstractions\\Services\\IDepartmentService.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Abstractions\\Services\\IDepartmentService.cs",
+              "RelativeToolTip": "Hourly.UserService\\Abstractions\\Services\\IDepartmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:07:40.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "IRoleService.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Abstractions\\Services\\IRoleService.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Abstractions\\Services\\IRoleService.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Abstractions\\Services\\IRoleService.cs",
+              "RelativeToolTip": "Hourly.UserService\\Abstractions\\Services\\IRoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:07:30.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "IUserContractService.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Abstractions\\Services\\IUserContractService.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Abstractions\\Services\\IUserContractService.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Abstractions\\Services\\IUserContractService.cs",
+              "RelativeToolTip": "Hourly.UserService\\Abstractions\\Services\\IUserContractService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:07:24.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Abstractions\\Services\\IUserService.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Abstractions\\Services\\IUserService.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Abstractions\\Services\\IUserService.cs",
+              "RelativeToolTip": "Hourly.UserService\\Abstractions\\Services\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:06:49.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Application\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Application\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Application\\Services\\UserService.cs",
+              "RelativeToolTip": "Hourly.UserService\\Application\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:06:04.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "UserContractService.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Application\\Services\\UserContractService.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Application\\Services\\UserContractService.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Application\\Services\\UserContractService.cs",
+              "RelativeToolTip": "Hourly.UserService\\Application\\Services\\UserContractService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:05:50.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserContractRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Repositories\\UserContractRepository.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Infrastructure\\Repositories\\UserContractRepository.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Repositories\\UserContractRepository.cs",
+              "RelativeToolTip": "Hourly.UserService\\Infrastructure\\Repositories\\UserContractRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:56:17.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Hourly.UserService\\Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAIwCAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:56:05.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Abstractions\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Abstractions\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Abstractions\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "Hourly.UserService\\Abstractions\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:55:01.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "IUserContractRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Abstractions\\Repositories\\IUserContractRepository.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Abstractions\\Repositories\\IUserContractRepository.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Abstractions\\Repositories\\IUserContractRepository.cs",
+              "RelativeToolTip": "Hourly.UserService\\Abstractions\\Repositories\\IUserContractRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:54:58.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "IRoleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Abstractions\\Repositories\\IRoleRepository.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Abstractions\\Repositories\\IRoleRepository.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Abstractions\\Repositories\\IRoleRepository.cs",
+              "RelativeToolTip": "Hourly.UserService\\Abstractions\\Repositories\\IRoleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:54:54.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IDepartmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Abstractions\\Repositories\\IDepartmentRepository.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Abstractions\\Repositories\\IDepartmentRepository.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Abstractions\\Repositories\\IDepartmentRepository.cs",
+              "RelativeToolTip": "Hourly.UserService\\Abstractions\\Repositories\\IDepartmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:53:51.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Domain\\Entities\\Role.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Domain\\Entities\\Role.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Domain\\Entities\\Role.cs",
+              "RelativeToolTip": "Hourly.UserService\\Domain\\Entities\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:49:58.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Domain\\Entities\\Department.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Domain\\Entities\\Department.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Domain\\Entities\\Department.cs",
+              "RelativeToolTip": "Hourly.UserService\\Domain\\Entities\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:49:46.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DepartmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Repositories\\DepartmentRepository.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Infrastructure\\Repositories\\DepartmentRepository.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Repositories\\DepartmentRepository.cs",
+              "RelativeToolTip": "Hourly.UserService\\Infrastructure\\Repositories\\DepartmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:45:12.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Persistence\\ApplicationDbContextFactory.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Infrastructure\\Persistence\\ApplicationDbContextFactory.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Persistence\\ApplicationDbContextFactory.cs",
+              "RelativeToolTip": "Hourly.UserService\\Infrastructure\\Persistence\\ApplicationDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:46:34.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Persistence\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Infrastructure\\Persistence\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Persistence\\AppDbContext.cs",
+              "RelativeToolTip": "Hourly.UserService\\Infrastructure\\Persistence\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:46:03.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "WorkSessionReadModelConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Persistence\\EntityConfigurations\\WorkSessionReadModelConfiguration.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Infrastructure\\Persistence\\EntityConfigurations\\WorkSessionReadModelConfiguration.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Persistence\\EntityConfigurations\\WorkSessionReadModelConfiguration.cs",
+              "RelativeToolTip": "Hourly.UserService\\Infrastructure\\Persistence\\EntityConfigurations\\WorkSessionReadModelConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:40:15.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "UserContract.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Domain\\Entities\\UserContract.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Domain\\Entities\\UserContract.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Domain\\Entities\\UserContract.cs",
+              "RelativeToolTip": "Hourly.UserService\\Domain\\Entities\\UserContract.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:38:19.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "WorkSessionReadModel.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Persistence\\ReadModels\\WorkSessionReadModel.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Infrastructure\\Persistence\\ReadModels\\WorkSessionReadModel.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Persistence\\ReadModels\\WorkSessionReadModel.cs",
+              "RelativeToolTip": "Hourly.UserService\\Infrastructure\\Persistence\\ReadModels\\WorkSessionReadModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:37:30.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "GitCommitReadModelConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Persistence\\EntityConfigurations\\GitCommitReadModelConfiguration.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Infrastructure\\Persistence\\EntityConfigurations\\GitCommitReadModelConfiguration.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Persistence\\EntityConfigurations\\GitCommitReadModelConfiguration.cs",
+              "RelativeToolTip": "Hourly.UserService\\Infrastructure\\Persistence\\EntityConfigurations\\GitCommitReadModelConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:33:26.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserContractConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Persistence\\EntityConfigurations\\UserContractConfiguration.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Infrastructure\\Persistence\\EntityConfigurations\\UserContractConfiguration.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Persistence\\EntityConfigurations\\UserContractConfiguration.cs",
+              "RelativeToolTip": "Hourly.UserService\\Infrastructure\\Persistence\\EntityConfigurations\\UserContractConfiguration.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAASwGUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:29:38.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "RoleConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Persistence\\EntityConfigurations\\RoleConfiguration.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Infrastructure\\Persistence\\EntityConfigurations\\RoleConfiguration.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Persistence\\EntityConfigurations\\RoleConfiguration.cs",
+              "RelativeToolTip": "Hourly.UserService\\Infrastructure\\Persistence\\EntityConfigurations\\RoleConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:28:46.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "DepartmentConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Persistence\\EntityConfigurations\\DepartmentConfiguration.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Infrastructure\\Persistence\\EntityConfigurations\\DepartmentConfiguration.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Persistence\\EntityConfigurations\\DepartmentConfiguration.cs",
+              "RelativeToolTip": "Hourly.UserService\\Infrastructure\\Persistence\\EntityConfigurations\\DepartmentConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:29:18.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ContractType.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.Shared\\Enums\\ContractType.cs",
+              "RelativeDocumentMoniker": "Hourly.Shared\\Enums\\ContractType.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.Shared\\Enums\\ContractType.cs",
+              "RelativeToolTip": "Hourly.Shared\\Enums\\ContractType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:27:35.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ValidationException.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.Shared\\Exceptions\\ValidationException.cs",
+              "RelativeDocumentMoniker": "Hourly.Shared\\Exceptions\\ValidationException.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.Shared\\Exceptions\\ValidationException.cs",
+              "RelativeToolTip": "Hourly.Shared\\Exceptions\\ValidationException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:26:30.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EntityNotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.Shared\\Exceptions\\EntityNotFoundException.cs",
+              "RelativeDocumentMoniker": "Hourly.Shared\\Exceptions\\EntityNotFoundException.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.Shared\\Exceptions\\EntityNotFoundException.cs",
+              "RelativeToolTip": "Hourly.Shared\\Exceptions\\EntityNotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:26:27.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DomainValidationException.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.Shared\\Exceptions\\DomainValidationException.cs",
+              "RelativeDocumentMoniker": "Hourly.Shared\\Exceptions\\DomainValidationException.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.Shared\\Exceptions\\DomainValidationException.cs",
+              "RelativeToolTip": "Hourly.Shared\\Exceptions\\DomainValidationException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:26:18.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Domain\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Domain\\Entities\\User.cs",
+              "RelativeToolTip": "Hourly.UserService\\Domain\\Entities\\User.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:25:06.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "DateTimeConverter.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Persistence\\Converters\\DateTimeConverter.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Infrastructure\\Persistence\\Converters\\DateTimeConverter.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Persistence\\Converters\\DateTimeConverter.cs",
+              "RelativeToolTip": "Hourly.UserService\\Infrastructure\\Persistence\\Converters\\DateTimeConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:08:20.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "EnumConverters.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Persistence\\Converters\\EnumConverters.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Infrastructure\\Persistence\\Converters\\EnumConverters.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Persistence\\Converters\\EnumConverters.cs",
+              "RelativeToolTip": "Hourly.UserService\\Infrastructure\\Persistence\\Converters\\EnumConverters.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:07:54.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "GitCommitReadModel.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Persistence\\ReadModels\\GitCommitReadModel.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Infrastructure\\Persistence\\ReadModels\\GitCommitReadModel.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Persistence\\ReadModels\\GitCommitReadModel.cs",
+              "RelativeToolTip": "Hourly.UserService\\Infrastructure\\Persistence\\ReadModels\\GitCommitReadModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:02:30.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "UserConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Persistence\\EntityConfigurations\\UserConfiguration.cs",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Infrastructure\\Persistence\\EntityConfigurations\\UserConfiguration.cs",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Infrastructure\\Persistence\\EntityConfigurations\\UserConfiguration.cs",
+              "RelativeToolTip": "Hourly.UserService\\Infrastructure\\Persistence\\EntityConfigurations\\UserConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T20:00:57.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Hourly.UserService.csproj",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Hourly.UserService.csproj",
+              "RelativeDocumentMoniker": "Hourly.UserService\\Hourly.UserService.csproj",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.UserService\\Hourly.UserService.csproj",
+              "RelativeToolTip": "Hourly.UserService\\Hourly.UserService.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-12T19:50:42.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "Hourly.TimeTrackingService.csproj",
+              "DocumentMoniker": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.TimeTrackingService\\Hourly.TimeTrackingService.csproj",
+              "RelativeDocumentMoniker": "Hourly.TimeTrackingService\\Hourly.TimeTrackingService.csproj",
+              "ToolTip": "C:\\Users\\VincentBok\\source\\git repos\\Hourly-Microservice-Design\\Hourly\\Hourly.TimeTrackingService\\Hourly.TimeTrackingService.csproj",
+              "RelativeToolTip": "Hourly.TimeTrackingService\\Hourly.TimeTrackingService.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-12T19:50:40.429Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

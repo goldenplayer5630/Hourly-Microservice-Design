@@ -1,0 +1,11 @@
+C:\Users\VincentBok\source\git repos\Hourly-Microservice-Design\Hourly\Hourly.Shared\bin\Debug\net8.0\Hourly.Shared.deps.json
+C:\Users\VincentBok\source\git repos\Hourly-Microservice-Design\Hourly\Hourly.Shared\bin\Debug\net8.0\Hourly.Shared.dll
+C:\Users\VincentBok\source\git repos\Hourly-Microservice-Design\Hourly\Hourly.Shared\bin\Debug\net8.0\Hourly.Shared.pdb
+C:\Users\VincentBok\source\git repos\Hourly-Microservice-Design\Hourly\Hourly.Shared\obj\Debug\net8.0\Hourly.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VincentBok\source\git repos\Hourly-Microservice-Design\Hourly\Hourly.Shared\obj\Debug\net8.0\Hourly.Shared.AssemblyInfoInputs.cache
+C:\Users\VincentBok\source\git repos\Hourly-Microservice-Design\Hourly\Hourly.Shared\obj\Debug\net8.0\Hourly.Shared.AssemblyInfo.cs
+C:\Users\VincentBok\source\git repos\Hourly-Microservice-Design\Hourly\Hourly.Shared\obj\Debug\net8.0\Hourly.Shared.csproj.CoreCompileInputs.cache
+C:\Users\VincentBok\source\git repos\Hourly-Microservice-Design\Hourly\Hourly.Shared\obj\Debug\net8.0\Hourly.Shared.dll
+C:\Users\VincentBok\source\git repos\Hourly-Microservice-Design\Hourly\Hourly.Shared\obj\Debug\net8.0\refint\Hourly.Shared.dll
+C:\Users\VincentBok\source\git repos\Hourly-Microservice-Design\Hourly\Hourly.Shared\obj\Debug\net8.0\Hourly.Shared.pdb
+C:\Users\VincentBok\source\git repos\Hourly-Microservice-Design\Hourly\Hourly.Shared\obj\Debug\net8.0\ref\Hourly.Shared.dll

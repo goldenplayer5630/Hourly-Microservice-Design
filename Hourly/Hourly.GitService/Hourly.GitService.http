@@ -1,0 +1,6 @@
+@Hourly.GitService_HostAddress = http://localhost:5155
+
+GET {{Hourly.GitService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
