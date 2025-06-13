@@ -1,5 +1,4 @@
 ﻿using Hourly.UserService.Api.Contracts.Responses.RoleResponses;
-using Hourly.UserService.Application.Mappers;
 using Hourly.UserService.Domain.Entities;
 
 namespace Hourly.UserService.Application.Mappers

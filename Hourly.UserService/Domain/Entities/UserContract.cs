@@ -1,8 +1,8 @@
 ﻿using Hourly.Shared.Enums;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using Hourly.Shared.Exceptions;
 using Hourly.UserService.Infrastructure.Persistence.ReadModels;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Hourly.UserService.Domain.Entities
 {
@@ -24,7 +24,7 @@ namespace Hourly.UserService.Domain.Entities
         [Required]
         public double MaxWeeklyHours { get; set; }
 
-        public double MinimumHoursPerMonth 
+        public double MinimumHoursPerMonth
         {
             get
             {

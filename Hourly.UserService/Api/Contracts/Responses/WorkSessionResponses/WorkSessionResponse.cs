@@ -1,6 +1,4 @@
-﻿using Hourly.Domain.Contracts.Responses.GitCommitResponses;
-using Hourly.UserService.Api.Contracts.Responses.UserContractResponses;
-using System.ComponentModel.DataAnnotations;
+﻿using Hourly.UserService.Api.Contracts.Responses.UserContractResponses;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Hourly.Domain.Contracts.Responses.WorkSessionResponses

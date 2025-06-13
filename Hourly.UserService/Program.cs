@@ -1,12 +1,10 @@
-using Hourly.Data.Repositories;
 using Hourly.Application.Services;
-using Microsoft.EntityFrameworkCore;
+using Hourly.Data.Repositories;
+using Hourly.UserService;
 using Hourly.UserService.Abstractions.Repositories;
 using Hourly.UserService.Abstractions.Services;
 using Hourly.UserService.Infrastructure.Persistence;
-using Microsoft.AspNetCore.Cors.Infrastructure;
-using Hourly.UserService;
-using Hourly.UserService.Api.Controllers;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 

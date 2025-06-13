@@ -1,8 +1,7 @@
-﻿using Hourly.UserService.Infrastructure.Persistence.Converters;
-using Hourly.UserService.Domain.Entities;
+﻿using Hourly.UserService.Domain.Entities;
+using Hourly.UserService.Infrastructure.Persistence.Converters;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Hourly.UserService.Infrastructure.Persistence.ReadModels;
 
 namespace Hourly.Data.Persistence.EntityConfigurations
 {

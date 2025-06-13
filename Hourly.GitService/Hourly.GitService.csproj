@@ -27,18 +27,22 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Abstractions\Events\" />
     <Folder Include="Abstractions\Repositories\" />
     <Folder Include="Abstractions\Services\" />
+    <Folder Include="Api\Contracts\Requests\" />
+    <Folder Include="Api\Contracts\Responses\" />
+    <Folder Include="Api\Controllers\" />
+    <Folder Include="Application\Events\" />
+    <Folder Include="Application\Mappers\" />
+    <Folder Include="Application\Services\" />
+    <Folder Include="Domain\Entities\" />
+    <Folder Include="Infrastructure\Messaging\Consumers\" />
     <Folder Include="Infrastructure\Migrations\" />
-    <Folder Include="Infrastructure\Persistence\EntityConfigurations\" />
     <Folder Include="Infrastructure\Persistence\Converters\" />
+    <Folder Include="Infrastructure\Persistence\EntityConfigurations\" />
     <Folder Include="Infrastructure\Persistence\ReadModels\" />
     <Folder Include="Infrastructure\Repositories\" />
-    <Folder Include="Domain\Entities\" />
-    <Folder Include="Domain\Mappers\" />
-    <Folder Include="Domain\" />
-    <Folder Include="Application\Services\" />
-    <Folder Include="Application\" />
   </ItemGroup>
 
 </Project>

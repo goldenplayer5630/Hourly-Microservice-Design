@@ -1,9 +1,8 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Hourly.UserService.Migrations
+namespace Hourly.UserService.Infrastructure.Migrations
 {
     /// <inheritdoc />
     public partial class initCreate : Migration

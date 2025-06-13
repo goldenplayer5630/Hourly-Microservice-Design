@@ -5,8 +5,6 @@ VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hourly.Gateway", "Hourly.Gateway\Hourly.Gateway.csproj", "{AFC88B4F-5F20-4CE3-8441-B8E195818E0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hourly.UserService", "Hourly.UserService\Hourly.UserService.csproj", "{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hourly.TimeTrackingService", "Hourly.TimeTrackingService\Hourly.TimeTrackingService.csproj", "{9A331C82-043F-4D98-B550-FEA1610CA61C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hourly.GitService", "Hourly.GitService\Hourly.GitService.csproj", "{978F4136-18B5-43AA-9D00-30C45D297B5F}"
@@ -19,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hourly.TimeTrackingService.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hourly.GitService.Tests", "Hourly.GitService.Tests\Hourly.GitService.Tests.csproj", "{DFA19F0B-4C0C-4E54-8258-A6C1D99F83BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hourly.UserService", "Hourly.UserService\Hourly.UserService.csproj", "{5604DF09-9077-65B1-72EE-199B05A0937A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +29,6 @@ Global
 		{AFC88B4F-5F20-4CE3-8441-B8E195818E0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFC88B4F-5F20-4CE3-8441-B8E195818E0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFC88B4F-5F20-4CE3-8441-B8E195818E0B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9B727D66-5AAD-47EC-8BA9-971E2DB59A03}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9A331C82-043F-4D98-B550-FEA1610CA61C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9A331C82-043F-4D98-B550-FEA1610CA61C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A331C82-043F-4D98-B550-FEA1610CA61C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,6 +53,10 @@ Global
 		{DFA19F0B-4C0C-4E54-8258-A6C1D99F83BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFA19F0B-4C0C-4E54-8258-A6C1D99F83BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFA19F0B-4C0C-4E54-8258-A6C1D99F83BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5604DF09-9077-65B1-72EE-199B05A0937A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5604DF09-9077-65B1-72EE-199B05A0937A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5604DF09-9077-65B1-72EE-199B05A0937A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5604DF09-9077-65B1-72EE-199B05A0937A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

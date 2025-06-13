@@ -1,6 +1,5 @@
 ﻿using Hourly.Shared.Exceptions;
 using Hourly.UserService.Infrastructure.Persistence.ReadModels;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
