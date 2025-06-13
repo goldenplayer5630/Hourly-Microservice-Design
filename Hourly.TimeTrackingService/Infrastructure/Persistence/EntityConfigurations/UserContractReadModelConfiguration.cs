@@ -25,17 +25,13 @@ namespace Hourly.TimeTrackingService.Infrastructure.Persistence.EntityConfigurat
 
             // Foreign key to UserReadModel
             builder.HasOne(x => x.User)
-                .WithMany()
-                .HasForeignKey(x => x.UserId)
-                .HasConstraintName("fk_user_contract_user")
-                .OnDelete(DeleteBehavior.Restrict);
+                .WithMany(x => x.Contracts)
+                .HasForeignKey(x => x.UserId);
 
             // One-to-many: UserContract → WorkSessions
             builder.HasMany(x => x.WorkSessions)
                 .WithOne(x => x.UserContract)
-                .HasForeignKey(x => x.UserContractId)
-                .HasConstraintName("fk_work_session_user_contract")
-                .OnDelete(DeleteBehavior.Cascade);
+                .HasForeignKey(x => x.UserContractId);
         }
     }
 }

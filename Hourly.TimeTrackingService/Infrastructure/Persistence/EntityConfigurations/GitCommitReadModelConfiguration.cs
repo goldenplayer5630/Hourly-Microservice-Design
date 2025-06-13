@@ -29,17 +29,16 @@ namespace Hourly.TimeTrackingService.Infrastructure.Persistence.EntityConfigurat
 
             builder.HasOne(x => x.Author)
                 .WithMany()
-                .HasForeignKey(x => x.AuthorId)
-                .HasConstraintName("fk_git_commit_author")
-                .OnDelete(DeleteBehavior.Restrict); // Prevent cascade delete of user
+                .HasForeignKey(x => x.AuthorId);
 
             // Repository relation
-            builder.Property(x => x.RepositoryId).HasColumnName("repository_id").IsRequired();
-            builder.HasOne(x => x.Repository)
-                .WithMany()
-                .HasForeignKey(x => x.RepositoryId)
-                .HasConstraintName("fk_git_commit_repository")
-                .OnDelete(DeleteBehavior.Cascade); // Cascade delete of repository
+            builder.Property(x => x.GitRepositoryId)
+                .HasColumnName("git_repository_id")
+                .IsRequired();
+
+            builder.HasOne(x => x.GitRepository)
+                .WithMany(x => x.GitCommits)
+                .HasForeignKey(x => x.GitRepositoryId);
 
             // WorkSession many-to-many via join table
             builder

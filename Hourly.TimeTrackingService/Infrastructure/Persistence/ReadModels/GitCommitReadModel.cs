@@ -18,9 +18,10 @@ namespace Hourly.TimeTrackingService.Infrastructure.Persistence.ReadModels
         public DateTime AuthoredDate { get; set; }
         public ICollection<WorkSession> WorkSessions { get; set; } = new List<WorkSession>();
         [Required]
-        public Guid RepositoryId { get; set; }
+        public Guid GitRepositoryId { get; set; }
         [Required]
-        public GitRepositoryReadModel Repository { get; set; } = null!;
+        [ForeignKey("GitRepositoryId")]
+        public GitRepositoryReadModel GitRepository { get; set; } = null!;
         [Required]
         public string ExtCommitId { get; set; }
 

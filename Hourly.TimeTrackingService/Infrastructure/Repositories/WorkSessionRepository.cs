@@ -19,7 +19,7 @@ namespace Hourly.TimeTrackingService.Infrastructure.Repositories
         {
             return await _context.WorkSessions
                 .Include(ws => ws.GitCommits)
-                    .ThenInclude(gc => gc.Repository)
+                    .ThenInclude(gc => gc.GitRepository)
                 .Include(ws => ws.GitCommits)
                     .ThenInclude(gc => gc.Author)
                 .Include(ws => ws.UserContract)

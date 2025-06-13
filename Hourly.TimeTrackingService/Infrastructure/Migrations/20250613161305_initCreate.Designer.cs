@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Hourly.TimeTrackingService.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250613141700_initCreate")]
+    [Migration("20250613161305_initCreate")]
     partial class initCreate
     {
         /// <inheritdoc />
@@ -118,12 +118,9 @@ namespace Hourly.TimeTrackingService.Infrastructure.Migrations
                         .HasColumnType("text")
                         .HasColumnName("ext_commit_short_id");
 
-                    b.Property<Guid>("RepositoryId")
+                    b.Property<Guid>("GitRepositoryId")
                         .HasColumnType("uuid")
-                        .HasColumnName("repository_id");
-
-                    b.Property<Guid>("RepositoryId1")
-                        .HasColumnType("uuid");
+                        .HasColumnName("git_repository_id");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -141,9 +138,7 @@ namespace Hourly.TimeTrackingService.Infrastructure.Migrations
 
                     b.HasIndex("AuthorId");
 
-                    b.HasIndex("RepositoryId");
-
-                    b.HasIndex("RepositoryId1");
+                    b.HasIndex("GitRepositoryId");
 
                     b.ToTable("git_commit_read_model", (string)null);
                 });
@@ -240,8 +235,7 @@ namespace Hourly.TimeTrackingService.Infrastructure.Migrations
                         .WithMany("WorkSessions")
                         .HasForeignKey("UserContractId")
                         .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_work_session_user_contract");
+                        .IsRequired();
 
                     b.Navigation("UserContract");
                 });
@@ -253,24 +247,18 @@ namespace Hourly.TimeTrackingService.Infrastructure.Migrations
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
-                        .HasConstraintName("fk_git_commit_user");
+                        .HasConstraintName("fk_git_commit_author");
 
-                    b.HasOne("Hourly.TimeTrackingService.Infrastructure.Persistence.ReadModels.GitRepositoryReadModel", null)
-                        .WithMany()
-                        .HasForeignKey("RepositoryId")
+                    b.HasOne("Hourly.TimeTrackingService.Infrastructure.Persistence.ReadModels.GitRepositoryReadModel", "GitRepository")
+                        .WithMany("GitCommits")
+                        .HasForeignKey("GitRepositoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("fk_git_commit_repository");
 
-                    b.HasOne("Hourly.TimeTrackingService.Infrastructure.Persistence.ReadModels.GitRepositoryReadModel", "Repository")
-                        .WithMany("GitCommits")
-                        .HasForeignKey("RepositoryId1")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Author");
 
-                    b.Navigation("Repository");
+                    b.Navigation("GitRepository");
                 });
 
             modelBuilder.Entity("Hourly.TimeTrackingService.Infrastructure.Persistence.ReadModels.UserContractReadModel", b =>
@@ -279,8 +267,7 @@ namespace Hourly.TimeTrackingService.Infrastructure.Migrations
                         .WithMany("Contracts")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_user_contract_user");
+                        .IsRequired();
 
                     b.Navigation("User");
                 });

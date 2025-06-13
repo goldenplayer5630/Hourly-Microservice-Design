@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -59,12 +60,12 @@ namespace Hourly.UserService.Infrastructure.Migrations
                 {
                     table.PrimaryKey("PK_user", x => x.id);
                     table.ForeignKey(
-                        name: "fk_user_department",
+                        name: "FK_user_department_department_id",
                         column: x => x.department_id,
                         principalTable: "department",
                         principalColumn: "id");
                     table.ForeignKey(
-                        name: "fk_user_role",
+                        name: "FK_user_role_role_id",
                         column: x => x.role_id,
                         principalTable: "role",
                         principalColumn: "id",
@@ -76,19 +77,13 @@ namespace Hourly.UserService.Infrastructure.Migrations
                 columns: table => new
                 {
                     id = table.Column<Guid>(type: "uuid", nullable: false),
-                    author_id = table.Column<Guid>(type: "uuid", nullable: false),
-                    UserId = table.Column<Guid>(type: "uuid", nullable: true)
+                    author_id = table.Column<Guid>(type: "uuid", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_git_commit_read_model", x => x.id);
                     table.ForeignKey(
-                        name: "FK_git_commit_read_model_user_UserId",
-                        column: x => x.UserId,
-                        principalTable: "user",
-                        principalColumn: "id");
-                    table.ForeignKey(
-                        name: "fk_git_commit_read_model_author",
+                        name: "FK_git_commit_read_model_user_author_id",
                         column: x => x.author_id,
                         principalTable: "user",
                         principalColumn: "id",
@@ -114,19 +109,13 @@ namespace Hourly.UserService.Infrastructure.Migrations
                     contract_file_path = table.Column<string>(type: "character varying(500)", maxLength: 500, nullable: true),
                     description = table.Column<string>(type: "character varying(1000)", maxLength: 1000, nullable: true),
                     created_at = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    updated_at = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
-                    UserId1 = table.Column<Guid>(type: "uuid", nullable: true)
+                    updated_at = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_user_contract", x => x.id);
                     table.ForeignKey(
-                        name: "FK_user_contract_user_UserId1",
-                        column: x => x.UserId1,
-                        principalTable: "user",
-                        principalColumn: "id");
-                    table.ForeignKey(
-                        name: "fk_user_contract_user",
+                        name: "FK_user_contract_user_user_id",
                         column: x => x.user_id,
                         principalTable: "user",
                         principalColumn: "id",
@@ -144,7 +133,7 @@ namespace Hourly.UserService.Infrastructure.Migrations
                 {
                     table.PrimaryKey("PK_work_session_read_model", x => x.id);
                     table.ForeignKey(
-                        name: "fk_work_session_read_model_user_contract",
+                        name: "FK_work_session_read_model_user_contract_user_contract_id",
                         column: x => x.user_contract_id,
                         principalTable: "user_contract",
                         principalColumn: "id",
@@ -155,11 +144,6 @@ namespace Hourly.UserService.Infrastructure.Migrations
                 name: "IX_git_commit_read_model_author_id",
                 table: "git_commit_read_model",
                 column: "author_id");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_git_commit_read_model_UserId",
-                table: "git_commit_read_model",
-                column: "UserId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_user_department_id",
@@ -175,11 +159,6 @@ namespace Hourly.UserService.Infrastructure.Migrations
                 name: "IX_user_contract_user_id",
                 table: "user_contract",
                 column: "user_id");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_user_contract_UserId1",
-                table: "user_contract",
-                column: "UserId1");
 
             migrationBuilder.CreateIndex(
                 name: "IX_work_session_read_model_user_contract_id",

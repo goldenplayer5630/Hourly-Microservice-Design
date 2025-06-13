@@ -12,7 +12,6 @@ namespace Hourly.UserService.Infrastructure.Persistence.ReadModels
         [Required]
         public Guid AuthorId { get; set; }
         [Required]
-        [ForeignKey("AuthorId")]
         public User Author { get; set; } = null!;
     }
 }

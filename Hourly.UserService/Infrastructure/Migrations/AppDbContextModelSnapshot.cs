@@ -206,14 +206,9 @@ namespace Hourly.UserService.Infrastructure.Migrations
                         .HasColumnType("uuid")
                         .HasColumnName("user_id");
 
-                    b.Property<Guid?>("UserId1")
-                        .HasColumnType("uuid");
-
                     b.HasKey("Id");
 
                     b.HasIndex("UserId");
-
-                    b.HasIndex("UserId1");
 
                     b.ToTable("user_contract", (string)null);
                 });
@@ -229,14 +224,9 @@ namespace Hourly.UserService.Infrastructure.Migrations
                         .HasColumnType("uuid")
                         .HasColumnName("author_id");
 
-                    b.Property<Guid?>("UserId")
-                        .HasColumnType("uuid");
-
                     b.HasKey("Id");
 
                     b.HasIndex("AuthorId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("git_commit_read_model", (string)null);
                 });
@@ -263,15 +253,13 @@ namespace Hourly.UserService.Infrastructure.Migrations
                 {
                     b.HasOne("Hourly.UserService.Domain.Entities.Department", "Department")
                         .WithMany("Users")
-                        .HasForeignKey("DepartmentId")
-                        .HasConstraintName("fk_user_department");
+                        .HasForeignKey("DepartmentId");
 
                     b.HasOne("Hourly.UserService.Domain.Entities.Role", "Role")
                         .WithMany("Users")
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_user_role");
+                        .IsRequired();
 
                     b.Navigation("Department");
 
@@ -281,15 +269,10 @@ namespace Hourly.UserService.Infrastructure.Migrations
             modelBuilder.Entity("Hourly.UserService.Domain.Entities.UserContract", b =>
                 {
                     b.HasOne("Hourly.UserService.Domain.Entities.User", "User")
-                        .WithMany()
+                        .WithMany("Contracts")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_user_contract_user");
-
-                    b.HasOne("Hourly.UserService.Domain.Entities.User", null)
-                        .WithMany("Contracts")
-                        .HasForeignKey("UserId1");
+                        .IsRequired();
 
                     b.Navigation("User");
                 });
@@ -297,15 +280,10 @@ namespace Hourly.UserService.Infrastructure.Migrations
             modelBuilder.Entity("Hourly.UserService.Infrastructure.Persistence.ReadModels.GitCommitReadModel", b =>
                 {
                     b.HasOne("Hourly.UserService.Domain.Entities.User", "Author")
-                        .WithMany()
+                        .WithMany("GitCommits")
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_git_commit_read_model_author");
-
-                    b.HasOne("Hourly.UserService.Domain.Entities.User", null)
-                        .WithMany("GitCommits")
-                        .HasForeignKey("UserId");
+                        .IsRequired();
 
                     b.Navigation("Author");
                 });
@@ -316,8 +294,7 @@ namespace Hourly.UserService.Infrastructure.Migrations
                         .WithMany("WorkSessions")
                         .HasForeignKey("UserContractId")
                         .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_work_session_read_model_user_contract");
+                        .IsRequired();
 
                     b.Navigation("UserContract");
                 });

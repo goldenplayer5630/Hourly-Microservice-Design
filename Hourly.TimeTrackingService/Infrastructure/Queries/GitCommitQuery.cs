@@ -30,7 +30,7 @@ namespace Hourly.TimeTrackingService.Infrastructure.Queries
         public async Task<GitCommitReadModel?> GetById(Guid commitId)
         {
             return await _context.GitCommits
-                .Include(c => c.Repository)
+                .Include(c => c.GitRepository)
                 .Include(c => c.Author)
                 .FirstOrDefaultAsync(c => c.Id == commitId);
         }

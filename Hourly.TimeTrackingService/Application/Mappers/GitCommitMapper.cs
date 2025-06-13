@@ -11,8 +11,8 @@ namespace Hourly.TimeTrackingService.Application.Mappers
             return new GitCommitResponse
             {
                 Id = entity.Id,
-                RepositoryId = entity.RepositoryId,
-                Repository = entity.Repository.ToSummaryResponse(),
+                RepositoryId = entity.GitRepositoryId,
+                Repository = entity.GitRepository.ToSummaryResponse(),
                 ExtCommitId = entity.ExtCommitId,
                 ExtCommitShortId = entity.ExtCommitShortId,
                 Title = entity.Title,
@@ -29,7 +29,7 @@ namespace Hourly.TimeTrackingService.Application.Mappers
             return new GitCommitSummaryResponse
             {
                 Id = entity.Id,
-                RepositoryId = entity.RepositoryId,
+                RepositoryId = entity.GitRepositoryId,
                 ExtCommitId = entity.ExtCommitId,
                 ExtCommitShortId = entity.ExtCommitShortId,
                 Title = entity.Title,

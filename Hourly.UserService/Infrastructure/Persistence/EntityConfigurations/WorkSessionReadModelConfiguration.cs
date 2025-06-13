@@ -20,8 +20,7 @@ namespace Hourly.UserService.Infrastructure.Persistence.EntityConfigurations
 
             builder.HasOne(x => x.UserContract)
                 .WithMany(uc => uc.WorkSessions)
-                .HasForeignKey(x => x.UserContractId)
-                .HasConstraintName("fk_work_session_read_model_user_contract");
+                .HasForeignKey(x => x.UserContractId);
         }
     }
 }

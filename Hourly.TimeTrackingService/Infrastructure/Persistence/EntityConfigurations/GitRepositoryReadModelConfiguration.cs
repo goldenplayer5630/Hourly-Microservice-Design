@@ -26,13 +26,11 @@ namespace Hourly.TimeTrackingService.Infrastructure.Persistence.EntityConfigurat
                 .HasColumnName("web_url")
                 .IsRequired();
 
-            // One-to-many: GitRepository -> GitCommits
-            builder
-                .HasMany<GitCommitReadModel>()
-                .WithOne()
-                .HasForeignKey("RepositoryId")
-                .HasConstraintName("fk_git_commit_repository")
-                .OnDelete(DeleteBehavior.Cascade);
+            builder.HasMany(x => x.GitCommits)
+                .WithOne(x => x.GitRepository)
+                .HasForeignKey(x => x.GitRepositoryId)
+                .HasConstraintName("fk_git_commit_repository");
+
         }
     }
 }

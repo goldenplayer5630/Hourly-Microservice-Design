@@ -18,10 +18,6 @@ namespace Hourly.Data.Persistence.EntityConfigurations
                 .IsRequired()
                 .HasColumnName("name");
 
-            builder.HasMany(x => x.Users)
-                .WithOne(u => u.Department)
-                .HasForeignKey(u => u.DepartmentId);
-
             builder.Property(x => x.CreatedAt)
                 .IsRequired()
                 .HasColumnName("created_at")

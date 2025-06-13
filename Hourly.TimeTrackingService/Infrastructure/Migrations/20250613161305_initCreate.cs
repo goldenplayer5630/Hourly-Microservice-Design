@@ -45,8 +45,7 @@ namespace Hourly.TimeTrackingService.Infrastructure.Migrations
                     id = table.Column<Guid>(type: "uuid", nullable: false),
                     author_id = table.Column<Guid>(type: "uuid", nullable: false),
                     authored_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    repository_id = table.Column<Guid>(type: "uuid", nullable: false),
-                    RepositoryId1 = table.Column<Guid>(type: "uuid", nullable: false),
+                    git_repository_id = table.Column<Guid>(type: "uuid", nullable: false),
                     ext_commit_id = table.Column<string>(type: "text", nullable: false),
                     ext_commit_short_id = table.Column<string>(type: "text", nullable: false),
                     title = table.Column<string>(type: "character varying(255)", maxLength: 255, nullable: false),
@@ -56,21 +55,15 @@ namespace Hourly.TimeTrackingService.Infrastructure.Migrations
                 {
                     table.PrimaryKey("PK_git_commit_read_model", x => x.id);
                     table.ForeignKey(
-                        name: "FK_git_commit_read_model_git_repository_read_model_RepositoryI~",
-                        column: x => x.RepositoryId1,
-                        principalTable: "git_repository_read_model",
+                        name: "fk_git_commit_author",
+                        column: x => x.author_id,
+                        principalTable: "user_read_model",
                         principalColumn: "id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "fk_git_commit_repository",
-                        column: x => x.repository_id,
+                        column: x => x.git_repository_id,
                         principalTable: "git_repository_read_model",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "fk_git_commit_user",
-                        column: x => x.author_id,
-                        principalTable: "user_read_model",
                         principalColumn: "id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -87,7 +80,7 @@ namespace Hourly.TimeTrackingService.Infrastructure.Migrations
                 {
                     table.PrimaryKey("PK_user_contract_read_model", x => x.id);
                     table.ForeignKey(
-                        name: "fk_user_contract_user",
+                        name: "FK_user_contract_read_model_user_read_model_user_id",
                         column: x => x.user_id,
                         principalTable: "user_read_model",
                         principalColumn: "id",
@@ -117,7 +110,7 @@ namespace Hourly.TimeTrackingService.Infrastructure.Migrations
                 {
                     table.PrimaryKey("PK_work_session", x => x.id);
                     table.ForeignKey(
-                        name: "fk_work_session_user_contract",
+                        name: "FK_work_session_user_contract_read_model_user_contract_id",
                         column: x => x.user_contract_id,
                         principalTable: "user_contract_read_model",
                         principalColumn: "id",
@@ -154,14 +147,9 @@ namespace Hourly.TimeTrackingService.Infrastructure.Migrations
                 column: "author_id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_git_commit_read_model_repository_id",
+                name: "IX_git_commit_read_model_git_repository_id",
                 table: "git_commit_read_model",
-                column: "repository_id");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_git_commit_read_model_RepositoryId1",
-                table: "git_commit_read_model",
-                column: "RepositoryId1");
+                column: "git_repository_id");
 
             migrationBuilder.CreateIndex(
                 name: "IX_git_commit_work_sessions_work_session_id",

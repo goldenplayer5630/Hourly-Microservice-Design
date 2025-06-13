@@ -22,11 +22,6 @@ namespace Hourly.Data.Persistence.EntityConfigurations
                 .IsRequired()
                 .HasColumnName("permissions");
 
-            builder.HasMany(r => r.Users)
-                .WithOne(u => u.Role)
-                .HasForeignKey(u => u.RoleId)
-                .OnDelete(DeleteBehavior.Cascade);
-
             builder.Property(x => x.CreatedAt)
                 .IsRequired()
                 .HasColumnName("created_at")

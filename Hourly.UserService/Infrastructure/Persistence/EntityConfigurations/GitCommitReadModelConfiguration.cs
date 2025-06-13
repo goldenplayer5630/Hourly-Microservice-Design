@@ -17,9 +17,8 @@ namespace Hourly.UserService.Infrastructure.Persistence.EntityConfigurations
             builder.Property(x => x.AuthorId).HasColumnName("author_id");
 
             builder.HasOne(x => x.Author)
-                .WithMany(u => u.GitCommits)
-                .HasForeignKey(x => x.AuthorId)
-                .HasConstraintName("fk_git_commit_read_model_author");
+                .WithMany(a => a.GitCommits)
+                .HasForeignKey(x => x.AuthorId);
         }
     }
 }

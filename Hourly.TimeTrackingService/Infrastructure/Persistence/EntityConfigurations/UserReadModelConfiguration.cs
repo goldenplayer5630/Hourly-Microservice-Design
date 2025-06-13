@@ -24,19 +24,10 @@ namespace Hourly.TimeTrackingService.Infrastructure.Persistence.EntityConfigurat
                 .HasColumnName("tvt_hour_balance")
                 .IsRequired();
 
-            // One-to-many: User → GitCommits
             builder.HasMany(x => x.GitCommits)
                 .WithOne(x => x.Author)
                 .HasForeignKey(x => x.AuthorId)
-                .HasConstraintName("fk_git_commit_user")
-                .OnDelete(DeleteBehavior.Cascade);
-
-            // One-to-many: User → Contracts
-            builder.HasMany(x => x.Contracts)
-                .WithOne(x => x.User)
-                .HasForeignKey(x => x.UserId)
-                .HasConstraintName("fk_user_contract_user")
-                .OnDelete(DeleteBehavior.Cascade);
+                .HasConstraintName("fk_git_commit_author");
         }
     }
 }
