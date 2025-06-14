@@ -9,6 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Application\Publishers\Handlers\**" />
+    <Content Remove="Application\Publishers\Handlers\**" />
+    <EmbeddedResource Remove="Application\Publishers\Handlers\**" />
+    <None Remove="Application\Publishers\Handlers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit" Version="8.4.1" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="8.4.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.6">
       <PrivateAssets>all</PrivateAssets>
@@ -27,8 +36,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\Events\Handlers\" />
-    <Folder Include="Infrastructure\Messaging\Consumers\" />
     <Folder Include="Infrastructure\Migrations\" />
   </ItemGroup>
 

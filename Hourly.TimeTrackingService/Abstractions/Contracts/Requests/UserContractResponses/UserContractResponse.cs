@@ -1,8 +1,8 @@
-﻿using Hourly.TimeTrackingService.Api.Contracts.Requests.UserResponses;
-using Hourly.TimeTrackingService.Api.Contracts.Requests.WorkSessionResponses;
+﻿using Hourly.TimeTrackingService.Abstractions.Contracts.Responses.UserResponses;
+using Hourly.TimeTrackingService.Abstractions.Contracts.Responses.WorkSessionResponses;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Hourly.TimeTrackingService.Api.Contracts.Requests.UserContractResponses
+namespace Hourly.TimeTrackingService.Abstractions.Contracts.Requests.UserContractResponses
 {
     public class UserContractResponse : UserContractSummaryResponse
     {

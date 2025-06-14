@@ -1,5 +1,5 @@
-﻿using Hourly.GitService.Abstractions.Services;
-using Hourly.GitService.Api.Contracts.Requests.GitCommitRequests;
+﻿using Hourly.GitService.Abstractions.Contracts.Requests.GitCommitRequests;
+using Hourly.GitService.Abstractions.Services;
 using Hourly.GitService.Application.Mappers;
 using Hourly.Shared.Exceptions;
 using Microsoft.AspNetCore.Mvc;

@@ -1,11 +1,14 @@
 using Hourly.Application.Services;
 using Hourly.Data.Repositories;
 using Hourly.UserService;
+using Hourly.UserService.Abstractions.Publishers;
 using Hourly.UserService.Abstractions.Repositories;
 using Hourly.UserService.Abstractions.Services;
+using Hourly.UserService.Application.Publishers;
 using Hourly.UserService.Infrastructure.Persistence;
 using MassTransit;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -59,6 +62,7 @@ builder.Services.AddCors(options =>
 builder.Services.AddMassTransit(x =>
 {
     x.SetKebabCaseEndpointNameFormatter();
+    x.AddConsumers(Assembly.GetExecutingAssembly());
 
     x.UsingRabbitMq((context, cfg) =>
     {
@@ -71,6 +75,9 @@ builder.Services.AddMassTransit(x =>
         cfg.ConfigureEndpoints(context);
     });
 });
+
+// Add publishers
+builder.Services.AddScoped<IUserEventPublisher, UserEventPublisher>();
 
 // Register repositories
 builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();

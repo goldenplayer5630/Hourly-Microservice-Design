@@ -1,8 +1,8 @@
-﻿using Hourly.GitService.Api.Contracts.Requests.GitRepositoryResponses;
+﻿using Hourly.GitService.Abstractions.Contracts.Responses.GitRepositoryResponses;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Hourly.GitService.Api.Contracts.Responses.GitCommitResponses
+namespace Hourly.GitService.Abstractions.Contracts.Responses.GitCommitResponses
 {
     public class GitCommitResponse : GitCommitSummaryResponse
     {

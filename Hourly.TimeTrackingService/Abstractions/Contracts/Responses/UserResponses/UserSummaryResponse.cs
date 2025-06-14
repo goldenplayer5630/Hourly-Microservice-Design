@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Hourly.TimeTrackingService.Api.Contracts.Requests.UserResponses
+namespace Hourly.TimeTrackingService.Abstractions.Contracts.Responses.UserResponses
 {
     public class UserSummaryResponse
     {

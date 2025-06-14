@@ -1,5 +1,5 @@
-﻿using Hourly.GitService.Api.Contracts.Requests.GitCommitRequests;
-using Hourly.GitService.Api.Contracts.Responses.GitCommitResponses;
+﻿using Hourly.GitService.Abstractions.Contracts.Requests.GitCommitRequests;
+using Hourly.GitService.Abstractions.Contracts.Responses.GitCommitResponses;
 using Hourly.GitService.Domain.Entities;
 
 namespace Hourly.GitService.Application.Mappers

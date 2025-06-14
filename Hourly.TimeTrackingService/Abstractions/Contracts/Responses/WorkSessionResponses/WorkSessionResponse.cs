@@ -1,9 +1,9 @@
-﻿using Hourly.TimeTrackingService.Api.Contracts.Requests.GitCommitResponses;
-using Hourly.TimeTrackingService.Api.Contracts.Requests.UserContractResponses;
+﻿using Hourly.TimeTrackingService.Abstractions.Contracts.Requests.UserContractResponses;
+using Hourly.TimeTrackingService.Abstractions.Contracts.Responses.GitCommitResponses;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Hourly.TimeTrackingService.Api.Contracts.Requests.WorkSessionResponses
+namespace Hourly.TimeTrackingService.Abstractions.Contracts.Responses.WorkSessionResponses
 {
     public class WorkSessionResponse : WorkSessionSummaryResponse
     {

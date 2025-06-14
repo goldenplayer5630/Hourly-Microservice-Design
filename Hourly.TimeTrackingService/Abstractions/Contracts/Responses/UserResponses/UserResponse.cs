@@ -1,7 +1,7 @@
-﻿using Hourly.TimeTrackingService.Api.Contracts.Requests.GitCommitResponses;
-using Hourly.TimeTrackingService.Api.Contracts.Requests.UserContractResponses;
+﻿using Hourly.TimeTrackingService.Abstractions.Contracts.Requests.UserContractResponses;
+using Hourly.TimeTrackingService.Abstractions.Contracts.Responses.GitCommitResponses;
 
-namespace Hourly.TimeTrackingService.Api.Contracts.Requests.UserResponses
+namespace Hourly.TimeTrackingService.Abstractions.Contracts.Responses.UserResponses
 {
     public class UserResponse : UserSummaryResponse
     {

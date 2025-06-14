@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Hourly.GitService.Api.Contracts.Requests.GitCommitRequests
+namespace Hourly.GitService.Abstractions.Contracts.Requests.GitCommitRequests
 {
     public class CreateGitCommitRequest
     {

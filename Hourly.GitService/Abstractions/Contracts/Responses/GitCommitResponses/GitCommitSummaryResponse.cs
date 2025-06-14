@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Hourly.GitService.Api.Contracts.Responses.GitCommitResponses
+namespace Hourly.GitService.Abstractions.Contracts.Responses.GitCommitResponses
 {
     public class GitCommitSummaryResponse
     {

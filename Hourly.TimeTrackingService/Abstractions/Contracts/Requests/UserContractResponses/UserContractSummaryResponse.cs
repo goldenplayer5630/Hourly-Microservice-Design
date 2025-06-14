@@ -1,7 +1,7 @@
 ﻿using Hourly.Shared.Enums;
 using System.ComponentModel.DataAnnotations;
 
-namespace Hourly.TimeTrackingService.Api.Contracts.Requests.UserContractResponses
+namespace Hourly.TimeTrackingService.Abstractions.Contracts.Requests.UserContractResponses
 {
     public class UserContractSummaryResponse
     {

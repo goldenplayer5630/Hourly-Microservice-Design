@@ -1,6 +1,6 @@
-﻿using Hourly.TimeTrackingService.Api.Contracts.Requests.GitCommitResponses;
+﻿using Hourly.TimeTrackingService.Abstractions.Contracts.Responses.GitCommitResponses;
 
-namespace Hourly.TimeTrackingService.Api.Contracts.Requests.GitRepositoryResponses
+namespace Hourly.TimeTrackingService.Abstractions.Contracts.Responses.GitRepositoryResponses
 {
     public class GitRepositoryResponse : GitRepositorySummaryResponse
     {

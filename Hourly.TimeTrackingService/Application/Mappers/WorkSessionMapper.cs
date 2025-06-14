@@ -1,5 +1,5 @@
-﻿using Hourly.TimeTrackingService.Api.Contracts.Requests.WorkSessionRequests;
-using Hourly.TimeTrackingService.Api.Contracts.Requests.WorkSessionResponses;
+﻿using Hourly.TimeTrackingService.Abstractions.Contracts.Requests.WorkSessionRequests;
+using Hourly.TimeTrackingService.Abstractions.Contracts.Responses.WorkSessionResponses;
 using Hourly.TimeTrackingService.Application.Mappers;
 using Hourly.TimeTrackingService.Domain.Entities;
 

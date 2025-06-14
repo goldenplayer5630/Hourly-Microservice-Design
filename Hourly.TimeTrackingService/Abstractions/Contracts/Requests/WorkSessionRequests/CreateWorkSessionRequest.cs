@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Hourly.TimeTrackingService.Api.Contracts.Requests.WorkSessionRequests
+namespace Hourly.TimeTrackingService.Abstractions.Contracts.Requests.WorkSessionRequests
 {
     public class CreateWorkSessionRequest
     {

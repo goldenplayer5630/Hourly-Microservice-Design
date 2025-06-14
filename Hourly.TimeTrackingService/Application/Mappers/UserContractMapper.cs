@@ -1,5 +1,5 @@
 ﻿using Hourly.Domain.Mappers;
-using Hourly.TimeTrackingService.Api.Contracts.Requests.UserContractResponses;
+using Hourly.TimeTrackingService.Abstractions.Contracts.Requests.UserContractResponses;
 using Hourly.TimeTrackingService.Infrastructure.Persistence.ReadModels;
 
 namespace Hourly.TimeTrackingService.Application.Mappers

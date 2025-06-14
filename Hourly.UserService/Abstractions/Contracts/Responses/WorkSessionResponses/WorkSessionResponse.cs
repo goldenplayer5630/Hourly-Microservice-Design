@@ -1,7 +1,7 @@
-﻿using Hourly.UserService.Api.Contracts.Responses.UserContractResponses;
+﻿using Hourly.UserService.Abstractions.Contracts.Responses.UserContractResponses;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Hourly.Domain.Contracts.Responses.WorkSessionResponses
+namespace Hourly.UserService.Abstractions.Contracts.Responses.WorkSessionResponses
 {
     public class WorkSessionResponse : WorkSessionSummaryResponse
     {

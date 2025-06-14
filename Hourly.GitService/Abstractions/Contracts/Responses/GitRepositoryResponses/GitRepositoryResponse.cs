@@ -1,6 +1,6 @@
-﻿using Hourly.GitService.Api.Contracts.Responses.GitCommitResponses;
+﻿using Hourly.GitService.Abstractions.Contracts.Responses.GitCommitResponses;
 
-namespace Hourly.GitService.Api.Contracts.Requests.GitRepositoryResponses
+namespace Hourly.GitService.Abstractions.Contracts.Responses.GitRepositoryResponses
 {
     public class GitRepositoryResponse : GitRepositorySummaryResponse
     {
