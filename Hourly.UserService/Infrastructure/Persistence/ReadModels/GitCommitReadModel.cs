@@ -1,6 +1,5 @@
 ﻿using Hourly.UserService.Domain.Entities;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Hourly.UserService.Infrastructure.Persistence.ReadModels
 {

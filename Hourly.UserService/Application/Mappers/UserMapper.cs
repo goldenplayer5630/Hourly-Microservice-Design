@@ -1,5 +1,5 @@
-﻿using Hourly.UserService.Api.Contracts.Requests.UserRequests;
-using Hourly.UserService.Api.Contracts.Responses.UserResponses;
+﻿using Hourly.UserService.Abstractions.Contracts.Requests.UserRequests;
+using Hourly.UserService.Abstractions.Contracts.Responses.UserResponses;
 using Hourly.UserService.Domain.Entities;
 
 namespace Hourly.UserService.Application.Mappers

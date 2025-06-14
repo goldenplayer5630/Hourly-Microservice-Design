@@ -1,7 +1,6 @@
-﻿using Hourly.Shared.Enums;
-using Hourly.TimeTrackingService.Domain.Entities;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using Hourly.TimeTrackingService.Domain.Entities;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Hourly.TimeTrackingService.Infrastructure.Persistence.ReadModels
 {

@@ -1,4 +1,4 @@
-﻿using Hourly.Domain.Contracts.Responses.GitCommitResponses;
+﻿using Hourly.UserService.Abstractions.Contracts.Responses.GitCommitResponses;
 using Hourly.UserService.Infrastructure.Persistence.ReadModels;
 
 namespace Hourly.UserService.Application.Mappers

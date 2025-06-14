@@ -1,6 +1,6 @@
 ﻿using Hourly.Shared.Exceptions;
+using Hourly.UserService.Abstractions.Contracts.Requests.DepartmentRequests;
 using Hourly.UserService.Abstractions.Services;
-using Hourly.UserService.Api.Contracts.Requests.DepartmentRequests;
 using Hourly.UserService.Application.Mappers;
 using Microsoft.AspNetCore.Mvc;
 

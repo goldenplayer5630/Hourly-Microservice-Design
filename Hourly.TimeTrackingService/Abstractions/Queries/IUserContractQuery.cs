@@ -4,7 +4,7 @@ namespace Hourly.TimeTrackingService.Abstractions.Queries
 {
     public interface IUserContractQuery
     {
-        Task<UserContractReadModel?> GetByIdAsync(Guid contractId);
-        Task<bool> ExistsAsync(Guid contractId);
+        Task<UserContractReadModel?> GetById(Guid contractId);
+        Task<bool> Exists(Guid contractId);
     }
 }

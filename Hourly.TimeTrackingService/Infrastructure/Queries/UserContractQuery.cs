@@ -14,14 +14,14 @@ namespace Hourly.TimeTrackingService.Infrastructure.Queries
             _context = context;
         }
 
-        public async Task<UserContractReadModel?> GetByIdAsync(Guid contractId)
+        public async Task<UserContractReadModel?> GetById(Guid contractId)
         {
             return await _context.UserContracts
                 .Include(uc => uc.User)
                 .FirstOrDefaultAsync(uc => uc.Id == contractId);
         }
 
-        public async Task<bool> ExistsAsync(Guid contractId)
+        public async Task<bool> Exists(Guid contractId)
         {
             return await _context.UserContracts.AnyAsync(uc => uc.Id == contractId);
         }

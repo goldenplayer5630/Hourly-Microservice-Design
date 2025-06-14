@@ -2,7 +2,6 @@
 using Hourly.TimeTrackingService.Infrastructure.Persistence.ReadModels;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System.ComponentModel.DataAnnotations;
 
 namespace Hourly.TimeTrackingService.Infrastructure.Persistence.EntityConfigurations
 {

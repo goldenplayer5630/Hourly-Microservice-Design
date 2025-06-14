@@ -14,12 +14,12 @@ namespace Hourly.TimeTrackingService.Infrastructure.Queries
             _context = context;
         }
 
-        public async Task<bool> ExistsAsync(Guid commitId)
+        public async Task<bool> Exists(Guid commitId)
         {
             return await _context.GitCommits.AnyAsync(c => c.Id == commitId);
         }
 
-        public async Task<List<GitCommitReadModel>> GetByIdsAsync(IEnumerable<Guid> commitIds)
+        public async Task<List<GitCommitReadModel>> GetByIds(IEnumerable<Guid> commitIds)
         {
             var ids = commitIds.Distinct().ToList();
             return await _context.GitCommits

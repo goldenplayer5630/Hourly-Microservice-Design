@@ -4,8 +4,8 @@ namespace Hourly.TimeTrackingService.Abstractions.Queries
 {
     public interface IGitCommitQuery
     {
-        Task<bool> ExistsAsync(Guid commitId);
-        Task<List<GitCommitReadModel>> GetByIdsAsync(IEnumerable<Guid> commitIds);
+        Task<bool> Exists(Guid commitId);
+        Task<List<GitCommitReadModel>> GetByIds(IEnumerable<Guid> commitIds);
         Task<GitCommitReadModel?> GetById(Guid commitId);
     }
 }

@@ -4,6 +4,7 @@ using Hourly.UserService;
 using Hourly.UserService.Abstractions.Repositories;
 using Hourly.UserService.Abstractions.Services;
 using Hourly.UserService.Infrastructure.Persistence;
+using MassTransit;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,6 +20,9 @@ var reactCorsOptions = builder.Configuration
 var gatewayCorsOptions = builder.Configuration
     .GetSection("Gateway-CORS")
     .Get<CorsSettings>();
+
+var massTransitOptions = builder.Configuration
+    .GetSection("RabbitMQ");
 
 builder.Services.AddCors(options =>
 {
@@ -48,6 +52,23 @@ builder.Services.AddCors(options =>
             policy.AllowCredentials();
         else
             policy.DisallowCredentials();
+    });
+});
+
+// Add Mass Transit config
+builder.Services.AddMassTransit(x =>
+{
+    x.SetKebabCaseEndpointNameFormatter();
+
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host("rabbitmq", "/", h =>
+        {
+            h.Username(massTransitOptions["username"]);
+            h.Password(massTransitOptions["password"]);
+        });
+
+        cfg.ConfigureEndpoints(context);
     });
 });
 

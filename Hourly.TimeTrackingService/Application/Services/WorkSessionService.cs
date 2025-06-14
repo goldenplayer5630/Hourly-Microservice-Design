@@ -3,7 +3,6 @@ using Hourly.TimeTrackingService.Abstractions.Queries;
 using Hourly.TimeTrackingService.Abstractions.Repositories;
 using Hourly.TimeTrackingService.Abstractions.Services;
 using Hourly.TimeTrackingService.Domain.Entities;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace Hourly.TimeTrackingService.Application.Services
 {
@@ -42,14 +41,14 @@ namespace Hourly.TimeTrackingService.Application.Services
             workSession.CreatedAt = DateTime.UtcNow;
             workSession.Validate();
 
-            var userContract = await _userContractQuery.GetByIdAsync(workSession.UserContractId)
+            var userContract = await _userContractQuery.GetById(workSession.UserContractId)
                 ?? throw new EntityNotFoundException("UserContract not found!");
 
             if (workSession.WBSO && !gitCommitIds.Any())
                 throw new DomainValidationException("At least one GitCommit is required for WBSO sessions.");
 
 
-            var commits = await _gitCommitQuery.GetByIdsAsync(gitCommitIds);
+            var commits = await _gitCommitQuery.GetByIds(gitCommitIds);
             if (commits.Count != gitCommitIds.Count())
             {
                 var missing = gitCommitIds.Except(commits.Select(c => c.Id));
@@ -66,7 +65,7 @@ namespace Hourly.TimeTrackingService.Application.Services
             var existing = await _repository.GetById(updated.Id)
                 ?? throw new EntityNotFoundException("WorkSession not found!");
 
-            var userContract = await _userContractQuery.GetByIdAsync(updated.UserContractId)
+            var userContract = await _userContractQuery.GetById(updated.UserContractId)
                 ?? throw new EntityNotFoundException("UserContract not found!");
 
             existing.Update(updated);
@@ -79,7 +78,7 @@ namespace Hourly.TimeTrackingService.Application.Services
             // Replace commit links
             existing.GitCommits.Clear();
 
-            var commits = await _gitCommitQuery.GetByIdsAsync(gitCommitIds);
+            var commits = await _gitCommitQuery.GetByIds(gitCommitIds);
             if (commits.Count != gitCommitIds.Count())
             {
                 var missing = gitCommitIds.Except(commits.Select(c => c.Id));
