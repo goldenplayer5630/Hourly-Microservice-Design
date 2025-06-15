@@ -1,7 +1,7 @@
 ﻿using Hourly.Shared.Exceptions;
-using Hourly.UserService.Abstractions.Repositories;
-using Hourly.UserService.Abstractions.Services;
+using Hourly.UserService.Application.Services;
 using Hourly.UserService.Domain.Entities;
+using Hourly.UserService.Infrastructure.Repositories;
 
 namespace Hourly.Application.Services
 {

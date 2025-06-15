@@ -1,5 +1,4 @@
 ﻿using Hourly.Shared.Exceptions;
-using Hourly.TimeTrackingService.Abstractions.Repositories;
 using Hourly.TimeTrackingService.Domain.Entities;
 using Hourly.TimeTrackingService.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;

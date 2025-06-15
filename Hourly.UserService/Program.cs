@@ -1,7 +1,6 @@
 using Hourly.Application.Services;
 using Hourly.Data.Repositories;
 using Hourly.UserService;
-using Hourly.UserService.Abstractions.Publishers;
 using Hourly.UserService.Abstractions.Repositories;
 using Hourly.UserService.Abstractions.Services;
 using Hourly.UserService.Application.Publishers;

@@ -1,5 +1,4 @@
-﻿using Hourly.GitService.Abstractions.Queries;
-using Hourly.GitService.Infrastructure.Persistence.ReadModels;
+﻿using Hourly.GitService.Infrastructure.Persistence.ReadModels;
 using Microsoft.EntityFrameworkCore;
 
 namespace Hourly.GitService.Infrastructure.Queries

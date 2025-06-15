@@ -3,6 +3,7 @@ using Hourly.TimeTrackingService.Abstractions.Queries;
 using Hourly.TimeTrackingService.Abstractions.Repositories;
 using Hourly.TimeTrackingService.Abstractions.Services;
 using Hourly.TimeTrackingService.Domain.Entities;
+using Hourly.TimeTrackingService.Infrastructure.Queries;
 
 namespace Hourly.TimeTrackingService.Application.Services
 {

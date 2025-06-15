@@ -1,4 +1,4 @@
-﻿using Hourly.TimeTrackingService.Abstractions.Contracts.Responses.UserResponses;
+﻿using Hourly.TimeTrackingService.Contracts.Responses.UserResponses;
 using Hourly.TimeTrackingService.Infrastructure.Persistence.ReadModels;
 
 namespace Hourly.TimeTrackingService.Application.Mappers

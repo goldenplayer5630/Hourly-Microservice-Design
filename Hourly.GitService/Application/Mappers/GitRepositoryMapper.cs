@@ -1,5 +1,5 @@
-﻿using Hourly.GitService.Abstractions.Contracts.Requests.GitRepositoryRequests;
-using Hourly.GitService.Abstractions.Contracts.Responses.GitRepositoryResponses;
+﻿using Hourly.GitService.Contracts.Requests.GitRepositoryRequests;
+using Hourly.GitService.Contracts.Responses.GitRepositoryResponses;
 using Hourly.GitService.Domain.Entities;
 
 

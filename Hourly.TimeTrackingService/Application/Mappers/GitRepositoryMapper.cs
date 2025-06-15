@@ -1,4 +1,4 @@
-﻿using Hourly.TimeTrackingService.Abstractions.Contracts.Responses.GitRepositoryResponses;
+﻿using Hourly.TimeTrackingService.Contracts.Responses.GitRepositoryResponses;
 using Hourly.TimeTrackingService.Infrastructure.Persistence.ReadModels;
 
 namespace Hourly.TimeTrackingService.Application.Mappers

@@ -24,10 +24,8 @@ namespace Hourly.TimeTrackingService.Infrastructure.Persistence.ReadModels
         public GitRepositoryReadModel GitRepository { get; set; } = null!;
         [Required]
         public string ExtCommitId { get; set; }
-
         [Required]
         public string ExtCommitShortId { get; set; }
-
         [Required]
         public string Title { get; set; }
         [Required]

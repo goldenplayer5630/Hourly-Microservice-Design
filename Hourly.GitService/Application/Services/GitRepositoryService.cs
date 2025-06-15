@@ -1,5 +1,4 @@
 ﻿using Hourly.GitService.Abstractions.Repositories;
-using Hourly.GitService.Abstractions.Services;
 using Hourly.GitService.Domain.Entities;
 using Hourly.Shared.Exceptions;
 

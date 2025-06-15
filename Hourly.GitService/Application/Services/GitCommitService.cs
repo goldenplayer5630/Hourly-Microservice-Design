@@ -1,7 +1,7 @@
-﻿using Hourly.GitService.Abstractions.Queries;
-using Hourly.GitService.Abstractions.Repositories;
+﻿using Hourly.GitService.Abstractions.Repositories;
 using Hourly.GitService.Abstractions.Services;
 using Hourly.GitService.Domain.Entities;
+using Hourly.GitService.Infrastructure.Queries;
 using Hourly.Shared.Exceptions;
 
 namespace Hourly.GitService.Application.Services

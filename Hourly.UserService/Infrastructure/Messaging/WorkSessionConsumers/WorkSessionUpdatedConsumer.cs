@@ -1,6 +1,27 @@
-﻿namespace Hourly.UserService.Infrastructure.Messaging.WorkSessionConsumers
+﻿using Hourly.UserService.Abstractions.Events;
+using Hourly.UserService.Infrastructure.Persistence;
+using MassTransit;
+
+namespace Hourly.UserService.Infrastructure.Messaging.WorkSessionConsumers
 {
-    public class WorkSessionUpdatedConsumer
+    public class WorkSessionUpdatedConsumer : IConsumer<WorkSessionUpdatedEvent>
     {
+        private readonly AppDbContext _db;
+        public WorkSessionUpdatedConsumer(AppDbContext db)
+        {
+            _db = db;
+        }
+        public async Task Consume(ConsumeContext<WorkSessionUpdatedEvent> context)
+        {
+            var msg = context.Message;
+            var ws = await _db.WorkSessions.FindAsync(msg.Id);
+
+            if (ws is null)
+                return;
+
+            ws.UserContractId = msg.UserContractId;
+            _db.WorkSessions.Update(ws);
+            await _db.SaveChangesAsync();
+        }
     }
 }

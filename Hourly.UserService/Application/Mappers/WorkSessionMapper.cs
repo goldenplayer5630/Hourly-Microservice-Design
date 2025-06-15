@@ -1,4 +1,4 @@
-﻿using Hourly.UserService.Abstractions.Contracts.Responses.WorkSessionResponses;
+﻿using Hourly.UserService.Contracts.Responses.WorkSessionResponses;
 using Hourly.UserService.Infrastructure.Persistence.ReadModels;
 
 namespace Hourly.UserService.Application.Mappers

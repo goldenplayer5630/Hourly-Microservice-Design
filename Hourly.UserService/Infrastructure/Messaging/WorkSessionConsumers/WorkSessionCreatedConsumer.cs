@@ -19,13 +19,13 @@ namespace Hourly.UserService.Infrastructure.Messaging.WorkSessionConsumers
         {
             var msg = context.Message;
 
-            if (await _db.WorkSessions.FindAsync(msg.id) is not null)
+            if (await _db.WorkSessions.FindAsync(msg.Id) is not null)
                 return;
 
             var ws = new WorkSessionReadModel()
             {
-                Id = msg.id,
-                UserContractId = msg.userContractId,
+                Id = msg.Id,
+                UserContractId = msg.UserContractId,
             };
 
             _db.WorkSessions.Add(ws);

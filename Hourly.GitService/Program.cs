@@ -1,5 +1,4 @@
 using Hourly.GitService;
-using Hourly.GitService.Abstractions.Queries;
 using Hourly.GitService.Abstractions.Repositories;
 using Hourly.GitService.Abstractions.Services;
 using Hourly.GitService.Application.Services;

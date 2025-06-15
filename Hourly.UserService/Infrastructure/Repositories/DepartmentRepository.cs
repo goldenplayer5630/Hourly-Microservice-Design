@@ -1,7 +1,7 @@
 ﻿using Hourly.Shared.Exceptions;
-using Hourly.UserService.Abstractions.Repositories;
 using Hourly.UserService.Domain.Entities;
 using Hourly.UserService.Infrastructure.Persistence;
+using Hourly.UserService.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace Hourly.Data.Repositories
