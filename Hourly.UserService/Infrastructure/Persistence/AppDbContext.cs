@@ -11,7 +11,6 @@ namespace Hourly.UserService.Infrastructure.Persistence
         {
         }
         public DbSet<User> Users { get; set; }
-        public DbSet<Role> Roles { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<UserContract> UserContracts { get; set; }
         public DbSet<GitCommitReadModel> GitCommits { get; set; }

@@ -1,6 +1,6 @@
 ﻿using Hourly.GitService.Domain.Entities;
 
-namespace Hourly.GitService.Abstractions.Repositories
+namespace Hourly.GitService.Infrastructure.Repositories
 {
     public interface IGitRepositoryRepository
     {

@@ -1,4 +1,5 @@
 ﻿using Hourly.Shared.Exceptions;
+using Hourly.UserService.Application.Publishers;
 using Hourly.UserService.Application.Services;
 using Hourly.UserService.Domain.Entities;
 using Hourly.UserService.Infrastructure.Repositories;
@@ -9,13 +10,13 @@ namespace Hourly.Application.Services
     {
         private readonly IUserRepository _repository;
         private readonly IDepartmentRepository _departmentRepository;
-        private readonly IRoleRepository _roleRepository;
+        private readonly IUserEventPublisher _userEventPublisher;
 
-        public UserService(IUserRepository repository, IDepartmentRepository departmentRepository, IRoleRepository roleRepository)
+        public UserService(IUserRepository repository, IDepartmentRepository departmentRepository, IUserEventPublisher userEventPublisher)
         {
             _repository = repository;
             _departmentRepository = departmentRepository;
-            _roleRepository = roleRepository;
+            _userEventPublisher = userEventPublisher;
         }
 
         public async Task<User> GetById(Guid userId)
@@ -34,12 +35,9 @@ namespace Hourly.Application.Services
             user.Id = Guid.NewGuid();
             user.CreatedAt = DateTime.UtcNow;
 
-            var role = await _roleRepository.GetById(user.RoleId)
-                ?? throw new EntityNotFoundException("Role not found!");
-
-            user.AssignToRole(role);
-
-            return await _repository.Create(user);
+            var result = await _repository.Create(user);
+            await _userEventPublisher.PublishUserCreated(result);
+            return result;
         }
 
         public async Task<User> AddDepartment(Guid userId, Guid departmentId)
@@ -52,7 +50,7 @@ namespace Hourly.Application.Services
 
             user.AssignToDepartment(department);
 
-            await _repository.SaveChanges();
+            await _repository.Update(user);
 
             return user;
         }
@@ -64,19 +62,28 @@ namespace Hourly.Application.Services
 
             user.RemoveFromDepartment();
 
-            await _repository.SaveChanges();
+            await _repository.Update(user);
 
             return user;
         }
 
         public async Task<User> Update(User user)
         {
-            return await _repository.Update(user);
+            var existing = await _repository.GetById(user.Id)
+                ?? throw new EntityNotFoundException("User not found!");
+
+            existing.Update(user);
+
+            var result = await _repository.Update(existing);
+            await _userEventPublisher.PublishUserUpdated(result);
+            return result;
         }
 
         public async Task Delete(Guid userId)
         {
             await _repository.Delete(userId);
+
+            await _userEventPublisher.PublishUserDeleted(userId);
         }
     }
 }

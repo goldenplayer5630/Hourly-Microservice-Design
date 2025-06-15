@@ -6,6 +6,6 @@ namespace Hourly.UserService.Contracts.Responses.GitCommitResponses
     public class GitCommitResponse : GitCommitSummaryResponse
     {
         [ForeignKey("AuthorId")]
-        public UserSummaryResponse Author { get; set; } = new UserSummaryResponse();
+        public UserSummaryResponse? Author { get; set; } = new UserSummaryResponse();
     }
 }

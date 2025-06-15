@@ -11,7 +11,7 @@ namespace Hourly.UserService.Application.Mappers
             {
                 Id = entity.Id,
                 AuthorId = entity.AuthorId,
-                Author = entity.Author.ToSummaryResponse(),
+                Author = entity.Author?.ToSummaryResponse(),
             };
         }
 

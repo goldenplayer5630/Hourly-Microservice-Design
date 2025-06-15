@@ -9,7 +9,7 @@ namespace Hourly.TimeTrackingService.Contracts.Responses.GitCommitResponses
     public class GitCommitResponse : GitCommitSummaryResponse
     {
         [ForeignKey("AuthorId")]
-        public UserSummaryResponse Author { get; set; }
+        public UserSummaryResponse? Author { get; set; }
 
         [Required]
         [ForeignKey("RepositoryId")]

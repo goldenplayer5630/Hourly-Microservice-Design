@@ -1,4 +1,4 @@
-﻿using Hourly.UserService.Abstractions.Events;
+﻿using Hourly.Shared.Events;
 using Hourly.UserService.Infrastructure.Persistence;
 using MassTransit;
 

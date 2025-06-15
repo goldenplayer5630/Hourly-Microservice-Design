@@ -1,9 +1,8 @@
 ﻿using Hourly.Shared.Exceptions;
-using Hourly.TimeTrackingService.Abstractions.Queries;
-using Hourly.TimeTrackingService.Abstractions.Repositories;
-using Hourly.TimeTrackingService.Abstractions.Services;
+using Hourly.TimeTrackingService.Application.Publishers;
 using Hourly.TimeTrackingService.Domain.Entities;
 using Hourly.TimeTrackingService.Infrastructure.Queries;
+using Hourly.TimeTrackingService.Infrastructure.Repositories;
 
 namespace Hourly.TimeTrackingService.Application.Services
 {
@@ -12,12 +11,14 @@ namespace Hourly.TimeTrackingService.Application.Services
         private readonly IWorkSessionRepository _repository;
         private readonly IGitCommitQuery _gitCommitQuery;
         private readonly IUserContractQuery _userContractQuery;
+        private readonly IWorkSessionEventPublisher _workSessionEventPublisher;
 
-        public WorkSessionService(IWorkSessionRepository repository, IUserContractQuery userContractQuery, IGitCommitQuery gitCommitQuery)
+        public WorkSessionService(IWorkSessionRepository repository, IUserContractQuery userContractQuery, IGitCommitQuery gitCommitQuery, IWorkSessionEventPublisher workSessionEventPublisher)
         {
             _repository = repository;
             _userContractQuery = userContractQuery;
             _gitCommitQuery = gitCommitQuery;
+            _workSessionEventPublisher = workSessionEventPublisher;
         }
 
         public async Task<WorkSession> GetById(Guid workSessionId)
@@ -58,7 +59,11 @@ namespace Hourly.TimeTrackingService.Application.Services
 
             workSession.AssignToUserContract(userContract);
 
-            return await _repository.Create(workSession);
+            var result = await _repository.Create(workSession);
+
+            await _workSessionEventPublisher.PublishWorkSessionCreated(result);
+
+            return result;
         }
 
         public async Task<WorkSession> Update(WorkSession updated, IEnumerable<Guid> gitCommitIds)
@@ -86,7 +91,11 @@ namespace Hourly.TimeTrackingService.Application.Services
                 throw new EntityNotFoundException($"Missing GitCommits: {string.Join(", ", missing)}");
             }
 
-            return await _repository.Update(existing);
+            var result = await _repository.Update(existing);
+
+            await _workSessionEventPublisher.PublishWorkSessionUpdated(result);
+
+            return result;
         }
 
         public async Task<WorkSession> UpdateLock(Guid workSessionId, bool locked)
@@ -151,6 +160,8 @@ namespace Hourly.TimeTrackingService.Application.Services
             existing.Validate();
 
             await _repository.Delete(workSessionId);
+
+            await _workSessionEventPublisher.PublishWorkSessionDeleted(existing.Id);
         }
     }
 }

@@ -1,7 +1,9 @@
 ﻿using Hourly.Shared.Exceptions;
+using Hourly.UserService.Application.Publishers;
 using Hourly.UserService.Application.Services;
 using Hourly.UserService.Domain.Entities;
 using Hourly.UserService.Infrastructure.Repositories;
+using MassTransit;
 
 namespace Hourly.Application.Services
 {
@@ -9,11 +11,13 @@ namespace Hourly.Application.Services
     {
         private readonly IUserContractRepository _repository;
         private readonly IUserRepository _userRepository;
+        private readonly IUserContractEventPublisher _userContractEventPublisher;
 
-        public UserContractService(IUserContractRepository repository, IUserRepository userRepository)
+        public UserContractService(IUserContractRepository repository, IUserRepository userRepository, IUserContractEventPublisher userContractEventPublisher)
         {
             _repository = repository;
             _userRepository = userRepository;
+            _userContractEventPublisher = userContractEventPublisher;
         }
 
         public async Task<UserContract> GetById(Guid userContractId)
@@ -51,7 +55,11 @@ namespace Hourly.Application.Services
 
             userContract.AssignToUser(user);
 
-            return await _repository.Create(userContract);
+            var result = await _repository.Create(userContract);
+
+            await _userContractEventPublisher.PublishUserContractCreated(result);
+
+            return result;
         }
 
         public async Task<UserContract> Update(UserContract userContract)
@@ -76,12 +84,18 @@ namespace Hourly.Application.Services
 
             existing.AssignToUser(user);
 
-            return await _repository.Update(existing);
+            var result = await _repository.Update(existing);
+
+            await _userContractEventPublisher.PublishUserContractUpdated(result);
+
+            return result;
         }
 
         public async Task Delete(Guid userContractId)
         {
             await _repository.Delete(userContractId);
+
+            await _userContractEventPublisher.PublishUserContractDeleted(userContractId);
         }
     }
 }

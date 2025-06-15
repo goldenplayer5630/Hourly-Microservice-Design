@@ -1,6 +1,6 @@
 ﻿using Hourly.UserService.Domain.Entities;
 
-namespace Hourly.UserService.Abstractions.Services
+namespace Hourly.UserService.Application.Services
 {
     public interface IUserService
     {

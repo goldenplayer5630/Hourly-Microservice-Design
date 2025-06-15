@@ -39,16 +39,11 @@ namespace Hourly.UserService.Infrastructure.Persistence.EntityConfigurations
                 .IsRequired()
                 .HasColumnName("tvt_hour_balance");
 
-            builder.Property(x => x.RoleId)
-                .HasColumnName("role_id");
+            builder.Property(x => x.Role)
+                .HasColumnName("role");
 
             builder.Property(x => x.DepartmentId)
                 .HasColumnName("department_id");
-
-            builder.HasOne(x => x.Role)
-                .WithMany(r => r.Users)
-                .IsRequired()
-                .HasForeignKey(x => x.RoleId);
 
             builder.HasOne(x => x.Department)
                 .WithMany(d => d.Users)

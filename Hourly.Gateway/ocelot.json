@@ -1,0 +1,81 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/user/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/api/user/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PATCH", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/usercontract/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/api/usercontract/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PATCH", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/department/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/api/department/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PATCH", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/worksession/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/api/worksession/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PATCH", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/gitcommit/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5003
+        }
+      ],
+      "UpstreamPathTemplate": "/api/gitcommit/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PATCH", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/gitrepository/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5003
+        }
+      ],
+      "UpstreamPathTemplate": "/api/gitrepository/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PATCH", "PUT", "DELETE" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:9000",
+    "RouteIsCaseSensitive": false
+  }
+}
+

@@ -1,6 +1,6 @@
 ﻿using Hourly.TimeTrackingService.Infrastructure.Persistence.ReadModels;
 
-namespace Hourly.TimeTrackingService.Abstractions.Queries
+namespace Hourly.TimeTrackingService.Infrastructure.Queries
 {
     public interface IGitCommitQuery
     {

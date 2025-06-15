@@ -22,7 +22,7 @@ namespace Hourly.GitService.Contracts.Responses.GitCommitResponses
         public string? Comment { get; set; }
 
         [Required]
-        public Guid AuthorId { get; set; }
+        public Guid? AuthorId { get; set; }
 
         public DateTime AuthoredDate { get; set; }
 

@@ -1,5 +1,6 @@
-﻿using Hourly.UserService.Abstractions.Events;
+﻿using Hourly.Shared.Events;
 using Hourly.UserService.Infrastructure.Persistence;
+using Hourly.UserService.Infrastructure.Persistence.ReadModels;
 using MassTransit;
 
 namespace Hourly.UserService.Infrastructure.Messaging.WorkSessionConsumers
@@ -17,10 +18,19 @@ namespace Hourly.UserService.Infrastructure.Messaging.WorkSessionConsumers
             var ws = await _db.WorkSessions.FindAsync(msg.Id);
 
             if (ws is null)
-                return;
+            {
+                ws = new WorkSessionReadModel
+                {
+                    Id = msg.Id,
+                    UserContractId = msg.UserContractId
+                };
+                _db.WorkSessions.Add(ws);
+            } else
+            {
+                ws.UserContractId = msg.UserContractId;
+                _db.WorkSessions.Update(ws);
+            }
 
-            ws.UserContractId = msg.UserContractId;
-            _db.WorkSessions.Update(ws);
             await _db.SaveChangesAsync();
         }
     }

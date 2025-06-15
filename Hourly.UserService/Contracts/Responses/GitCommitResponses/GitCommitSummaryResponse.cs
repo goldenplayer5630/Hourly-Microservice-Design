@@ -8,6 +8,6 @@ namespace Hourly.UserService.Contracts.Responses.GitCommitResponses
         public Guid Id { get; set; }
 
         [Required]
-        public Guid AuthorId { get; set; }
+        public Guid? AuthorId { get; set; }
     }
 }

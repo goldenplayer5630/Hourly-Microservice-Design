@@ -1,7 +1,7 @@
-﻿using Hourly.GitService.Abstractions.Repositories;
-using Hourly.GitService.Abstractions.Services;
+﻿using Hourly.GitService.Application.Publishers;
 using Hourly.GitService.Domain.Entities;
 using Hourly.GitService.Infrastructure.Queries;
+using Hourly.GitService.Infrastructure.Repositories;
 using Hourly.Shared.Exceptions;
 
 namespace Hourly.GitService.Application.Services
@@ -11,12 +11,14 @@ namespace Hourly.GitService.Application.Services
         private readonly IGitCommitRepository _repository;
         private readonly IGitRepositoryRepository _gitRepositoryRepository;
         private readonly IUserQuery _userQuery;
+        private readonly IGitCommitEventPublisher _gitCommitEventPublisher;
 
-        public GitCommitService(IGitCommitRepository repository, IGitRepositoryRepository gitRepositoryRepository, IUserQuery userQuery)
+        public GitCommitService(IGitCommitRepository repository, IGitRepositoryRepository gitRepositoryRepository, IUserQuery userQuery, IGitCommitEventPublisher gitCommitEventPublisher)
         {
             _repository = repository;
             _gitRepositoryRepository = gitRepositoryRepository;
             _userQuery = userQuery;
+            _gitCommitEventPublisher = gitCommitEventPublisher;
         }
 
         public async Task<GitCommit> GetById(Guid gitCommitId)
@@ -40,14 +42,14 @@ namespace Hourly.GitService.Application.Services
             gitCommit.Id = Guid.NewGuid();
             gitCommit.CreatedAt = DateTime.UtcNow;
 
-            var gitRepository = await _gitRepositoryRepository.GetById(gitCommit.GitRepositoryId)
+            _ = await _gitRepositoryRepository.GetById(gitCommit.GitRepositoryId)
                 ?? throw new EntityNotFoundException("GitRepository not found!");
 
-            var author = await _userQuery.GetById(gitCommit.AuthorId)
-                ?? throw new EntityNotFoundException("User not found!");
-
-            gitCommit.AssignToRepository(gitRepository);
-            gitCommit.AssignToAuthor(author);
+            if (gitCommit.AuthorId is not null && gitCommit.AuthorId.HasValue)
+            {
+                _ = await _userQuery.GetById(gitCommit.AuthorId.Value)
+                    ?? throw new EntityNotFoundException("User not found!");
+            }
 
             return await _repository.Create(gitCommit);
         }
@@ -55,6 +57,8 @@ namespace Hourly.GitService.Application.Services
         public async Task Delete(Guid gitCommitId)
         {
             await _repository.Delete(gitCommitId);
+
+            await _gitCommitEventPublisher.PublishGitCommitDeleted(gitCommitId);
         }
     }
 }

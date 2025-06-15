@@ -1,6 +1,6 @@
 ﻿using Hourly.Domain.Mappers;
 using Hourly.Shared.Exceptions;
-using Hourly.TimeTrackingService.Abstractions.Services;
+using Hourly.TimeTrackingService.Application.Services;
 using Hourly.TimeTrackingService.Contracts.Requests.WorkSessionRequests;
 using Microsoft.AspNetCore.Mvc;
 

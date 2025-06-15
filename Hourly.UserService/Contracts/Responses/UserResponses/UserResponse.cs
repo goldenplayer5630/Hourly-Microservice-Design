@@ -8,9 +8,6 @@ namespace Hourly.UserService.Contracts.Responses.UserResponses
 {
     public class UserResponse : UserSummaryResponse
     {
-        [ForeignKey("RoleId")]
-        public RoleSummaryResponse? Role { get; set; }
-
         [ForeignKey("DepartmentId")]
         public DepartmentSummaryResponse? Department { get; set; }
 

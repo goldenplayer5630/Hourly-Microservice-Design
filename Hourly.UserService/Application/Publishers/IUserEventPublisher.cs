@@ -1,6 +1,6 @@
 ﻿using Hourly.UserService.Domain.Entities;
 
-namespace Hourly.UserService.Abstractions.Publishers
+namespace Hourly.UserService.Application.Publishers
 {
     public interface IUserEventPublisher
     {

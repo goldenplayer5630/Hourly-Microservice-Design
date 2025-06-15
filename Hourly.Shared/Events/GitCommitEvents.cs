@@ -1,5 +1,5 @@
-﻿namespace Hourly.UserService.Abstractions.Events
+﻿namespace Hourly.Shared.Events
 {
-    public record GitCommitCreatedEvent(Guid Id, Guid AuthorId);
+    public record GitCommitCreatedEvent(Guid Id, Guid? AuthorId);
     public record GitCommitDeletedEvent(Guid Id);
 }

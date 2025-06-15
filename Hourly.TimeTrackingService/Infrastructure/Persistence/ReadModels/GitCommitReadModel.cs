@@ -10,10 +10,10 @@ namespace Hourly.TimeTrackingService.Infrastructure.Persistence.ReadModels
         public Guid Id { get; set; }
 
         [Required]
-        public Guid AuthorId { get; set; }
+        public Guid? AuthorId { get; set; }
         [Required]
         [ForeignKey("AuthorId")]
-        public UserReadModel Author { get; set; } = null!;
+        public UserReadModel? Author { get; set; }
         [Required]
         public DateTime AuthoredDate { get; set; }
         public ICollection<WorkSession> WorkSessions { get; set; } = new List<WorkSession>();

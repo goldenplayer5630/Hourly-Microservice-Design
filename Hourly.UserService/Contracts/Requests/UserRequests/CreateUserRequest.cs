@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Hourly.Shared.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace Hourly.UserService.Contracts.Requests.UserRequests
 {
@@ -11,7 +12,7 @@ namespace Hourly.UserService.Contracts.Requests.UserRequests
         public string Email { get; set; }
 
         [Required]
-        public Guid RoleId { get; set; }
+        public UserRole Role { get; set; }
 
         public string? GitEmail { get; set; }
 

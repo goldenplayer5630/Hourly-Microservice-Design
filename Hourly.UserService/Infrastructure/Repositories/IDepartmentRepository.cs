@@ -1,6 +1,6 @@
 ﻿using Hourly.UserService.Domain.Entities;
 
-namespace Hourly.UserService.Abstractions.Repositories
+namespace Hourly.UserService.Infrastructure.Repositories
 {
     public interface IDepartmentRepository
     {

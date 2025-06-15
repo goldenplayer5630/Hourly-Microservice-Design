@@ -1,5 +1,4 @@
-﻿using Hourly.UserService.Abstractions.Events;
-using Hourly.UserService.Abstractions.Publishers;
+﻿using Hourly.Shared.Events;
 using Hourly.UserService.Domain.Entities;
 using MassTransit;
 

@@ -13,8 +13,7 @@ namespace Hourly.UserService.Application.Mappers
                 Id = entity.Id,
                 Name = entity.Name,
                 Email = entity.Email,
-                RoleId = entity.RoleId,
-                Role = entity.Role.ToSummaryResponse(),
+                Role = entity.Role,
                 DepartmentId = entity.DepartmentId,
                 Department = entity.Department?.ToSummaryResponse(),
                 GitEmail = entity.GitEmail,
@@ -35,8 +34,7 @@ namespace Hourly.UserService.Application.Mappers
                 Id = entity.Id,
                 Name = entity.Name,
                 Email = entity.Email,
-                RoleId = entity.RoleId,
-                Role = entity.Role.ToSummaryResponse(),
+                Role = entity.Role,
                 DepartmentId = entity.DepartmentId,
                 GitEmail = entity.GitEmail,
                 GitUsername = entity.GitUsername,
@@ -55,7 +53,7 @@ namespace Hourly.UserService.Application.Mappers
                 GitUsername = request.GitUsername,
                 GitAccessToken = request.GitAccessToken,
                 TVTHourBalance = request.TVTHourBalance,
-                RoleId = request.RoleId,
+                Role = request.Role,
             };
         }
 
@@ -70,7 +68,7 @@ namespace Hourly.UserService.Application.Mappers
                 GitUsername = request.GitUsername,
                 GitAccessToken = request.GitAccessToken,
                 TVTHourBalance = request.TVTHourBalance,
-                RoleId = request.RoleId,
+                Role = request.Role,
             };
         }
     }

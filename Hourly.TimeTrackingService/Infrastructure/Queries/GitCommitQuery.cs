@@ -1,5 +1,4 @@
-﻿using Hourly.TimeTrackingService.Abstractions.Queries;
-using Hourly.TimeTrackingService.Infrastructure.Persistence;
+﻿using Hourly.TimeTrackingService.Infrastructure.Persistence;
 using Hourly.TimeTrackingService.Infrastructure.Persistence.ReadModels;
 using Microsoft.EntityFrameworkCore;
 

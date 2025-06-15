@@ -45,6 +45,7 @@ namespace Hourly.GitService.Application.Mappers
         {
             return new GitCommit
             {
+                GitRepositoryId = response.RepositoryId,
                 ExtCommitId = response.ExtCommitId,
                 ExtCommitShortId = response.ExtCommitShortId,
                 Title = response.Title,

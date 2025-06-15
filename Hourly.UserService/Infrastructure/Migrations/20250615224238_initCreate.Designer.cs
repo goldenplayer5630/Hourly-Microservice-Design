@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Hourly.UserService.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250613160117_initCreate")]
+    [Migration("20250615224238_initCreate")]
     partial class initCreate
     {
         /// <inheritdoc />
@@ -48,36 +48,6 @@ namespace Hourly.UserService.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("department", (string)null);
-                });
-
-            modelBuilder.Entity("Hourly.UserService.Domain.Entities.Role", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasColumnName("id");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("created_at");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("name");
-
-                    b.Property<string>("Permissions")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("permissions");
-
-                    b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("updated_at");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("role", (string)null);
                 });
 
             modelBuilder.Entity("Hourly.UserService.Domain.Entities.User", b =>
@@ -117,9 +87,9 @@ namespace Hourly.UserService.Infrastructure.Migrations
                         .HasColumnType("text")
                         .HasColumnName("name");
 
-                    b.Property<Guid>("RoleId")
-                        .HasColumnType("uuid")
-                        .HasColumnName("role_id");
+                    b.Property<int>("Role")
+                        .HasColumnType("integer")
+                        .HasColumnName("role");
 
                     b.Property<float>("TVTHourBalance")
                         .HasColumnType("real")
@@ -132,8 +102,6 @@ namespace Hourly.UserService.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("DepartmentId");
-
-                    b.HasIndex("RoleId");
 
                     b.ToTable("user", (string)null);
                 });
@@ -258,15 +226,7 @@ namespace Hourly.UserService.Infrastructure.Migrations
                         .WithMany("Users")
                         .HasForeignKey("DepartmentId");
 
-                    b.HasOne("Hourly.UserService.Domain.Entities.Role", "Role")
-                        .WithMany("Users")
-                        .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Department");
-
-                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("Hourly.UserService.Domain.Entities.UserContract", b =>
@@ -303,11 +263,6 @@ namespace Hourly.UserService.Infrastructure.Migrations
                 });
 
             modelBuilder.Entity("Hourly.UserService.Domain.Entities.Department", b =>
-                {
-                    b.Navigation("Users");
-                });
-
-            modelBuilder.Entity("Hourly.UserService.Domain.Entities.Role", b =>
                 {
                     b.Navigation("Users");
                 });
