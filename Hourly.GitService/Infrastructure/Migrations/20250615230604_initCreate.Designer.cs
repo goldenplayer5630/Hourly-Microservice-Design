@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Hourly.GitService.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250615222804_initCreate")]
+    [Migration("20250615230604_initCreate")]
     partial class initCreate
     {
         /// <inheritdoc />

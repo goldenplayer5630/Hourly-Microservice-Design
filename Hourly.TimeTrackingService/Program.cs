@@ -1,6 +1,8 @@
 using Hourly.TimeTrackingService;
 using Hourly.TimeTrackingService.Application.Publishers;
 using Hourly.TimeTrackingService.Application.Services;
+using Hourly.TimeTrackingService.Infrastructure.Messaging.Consumers.GitCommitConsumers;
+using Hourly.TimeTrackingService.Infrastructure.Messaging.Consumers.UserConsumers;
 using Hourly.TimeTrackingService.Infrastructure.Persistence;
 using Hourly.TimeTrackingService.Infrastructure.Queries;
 using Hourly.TimeTrackingService.Infrastructure.Repositories;
@@ -57,8 +59,31 @@ builder.Services.AddMassTransit(x =>
             });
 
         cfg.ConfigureEndpoints(context);
+
+        cfg.ReceiveEndpoint("timetrackingservice-user-created", e =>
+        {
+            e.ConfigureConsumer<UserCreatedConsumer>(context);
+        });
+        cfg.ReceiveEndpoint("timetrackingservice-user-updated", e =>
+        {
+            e.ConfigureConsumer<UserUpdatedConsumer>(context);
+        });
+        cfg.ReceiveEndpoint("timetrackingservice-user-deleted", e =>
+        {
+            e.ConfigureConsumer<UserDeletedConsumer>(context);
+        });
+        cfg.ReceiveEndpoint("timetrackingservice-gitcommit-created", e =>
+        {
+            e.ConfigureConsumer<GitCommitCreatedConsumer>(context);
+        });
+        cfg.ReceiveEndpoint("timetrackingservice-gitcommit-deleted", e =>
+        {
+            e.ConfigureConsumer<GitCommitDeletedConsumer>(context);
+        });
     });
 });
+
+builder.Services.AddMassTransitTextWriterLogger();
 
 // Add publishers
 builder.Services.AddScoped<IWorkSessionEventPublisher, WorkSessionEventPublisher>();

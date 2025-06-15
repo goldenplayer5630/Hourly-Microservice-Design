@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Hourly.TimeTrackingService.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250615215517_initCreate")]
+    [Migration("20250615232406_initCreate")]
     partial class initCreate
     {
         /// <inheritdoc />

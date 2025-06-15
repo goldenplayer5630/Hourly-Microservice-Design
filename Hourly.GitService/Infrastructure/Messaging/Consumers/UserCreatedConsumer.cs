@@ -16,9 +16,10 @@ namespace Hourly.GitService.Infrastructure.Messaging.Consumers
         public async Task Consume(ConsumeContext<UserCreatedEvent> context)
         {
             var msg = context.Message;
-            Console.WriteLine($"UserCreatedConsumer: User {msg.Name} with ID {msg.Id} created.");
+
             if (await _db.Users.FindAsync(msg.Id) is not null)
                 return;
+
             var user = new UserReadModel
             {
                 Id = msg.Id,

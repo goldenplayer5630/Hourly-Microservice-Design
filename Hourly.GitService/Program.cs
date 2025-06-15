@@ -1,6 +1,7 @@
 using Hourly.GitService;
 using Hourly.GitService.Application.Publishers;
 using Hourly.GitService.Application.Services;
+using Hourly.GitService.Infrastructure.Messaging.Consumers;
 using Hourly.GitService.Infrastructure.Queries;
 using Hourly.GitService.Infrastructure.Repositories;
 using MassTransit;
@@ -56,10 +57,26 @@ builder.Services.AddMassTransit(x =>
             });
 
         cfg.ConfigureEndpoints(context);
+
+        cfg.ReceiveEndpoint("gitservice-user-created", e =>
+        {
+            e.ConfigureConsumer<UserCreatedConsumer>(context);
+        });
+        cfg.ReceiveEndpoint("gitservice-user-updated", e =>
+        {
+            e.ConfigureConsumer<UserUpdatedConsumer>(context);
+        });
+        cfg.ReceiveEndpoint("gitservice-user-deleted", e =>
+        {
+            e.ConfigureConsumer<UserDeletedConsumer>(context);
+        });
     });
 });
 
+builder.Services.AddMassTransitTextWriterLogger();
+
 // Register publishers
+builder.Services.AddScoped<IGitRepositoryEventPublisher, GitRepositoryEventPublisher>();
 builder.Services.AddScoped<IGitCommitEventPublisher, GitCommitEventPublisher>();
 
 // Register repositories

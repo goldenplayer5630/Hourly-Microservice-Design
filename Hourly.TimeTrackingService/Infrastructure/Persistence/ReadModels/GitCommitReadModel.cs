@@ -11,7 +11,6 @@ namespace Hourly.TimeTrackingService.Infrastructure.Persistence.ReadModels
 
         [Required]
         public Guid? AuthorId { get; set; }
-        [Required]
         [ForeignKey("AuthorId")]
         public UserReadModel? Author { get; set; }
         [Required]

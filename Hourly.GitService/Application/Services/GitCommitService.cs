@@ -51,7 +51,11 @@ namespace Hourly.GitService.Application.Services
                     ?? throw new EntityNotFoundException("User not found!");
             }
 
-            return await _repository.Create(gitCommit);
+            var result = await _repository.Create(gitCommit);
+
+            await _gitCommitEventPublisher.PublishGitCommitCreated(result);
+
+            return result;
         }
 
         public async Task Delete(Guid gitCommitId)

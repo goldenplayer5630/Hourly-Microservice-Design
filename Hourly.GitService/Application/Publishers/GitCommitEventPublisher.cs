@@ -14,7 +14,7 @@ namespace Hourly.GitService.Application.Publishers
 
         public async Task PublishGitCommitCreated(GitCommit gitCommit)
         {
-            await _publish.Publish(new GitCommitCreatedEvent(gitCommit.Id, gitCommit.AuthorId));
+            await _publish.Publish(new GitCommitCreatedEvent(gitCommit.Id, gitCommit.AuthorId, gitCommit.AuthoredDate, gitCommit.GitRepositoryId, gitCommit.ExtCommitId, gitCommit.ExtCommitShortId, gitCommit.Title, gitCommit.WebUrl));
         }
 
         public async Task PublishGitCommitDeleted(Guid gitCommitId)
@@ -23,3 +23,4 @@ namespace Hourly.GitService.Application.Publishers
         }
     }
 }
+

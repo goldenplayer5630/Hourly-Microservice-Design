@@ -2,6 +2,9 @@
 using Hourly.TimeTrackingService.Infrastructure.Persistence.ReadModels;
 using Hourly.Shared.Events;
 using MassTransit;
+using Hourly.TimeTrackingService.Domain.Entities;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace Hourly.TimeTrackingService.Infrastructure.Messaging.Consumers.GitCommitConsumers
 {
@@ -21,6 +24,12 @@ namespace Hourly.TimeTrackingService.Infrastructure.Messaging.Consumers.GitCommi
             {
                 Id = msg.Id,
                 AuthorId = msg.AuthorId,
+                ExtCommitId = msg.ExtCommitId,
+                ExtCommitShortId = msg.ExtCommitShortId,
+                Title = msg.Title,
+                AuthoredDate = msg.AuthoredDate,
+                WebUrl = msg.WebUrl,
+                GitRepositoryId = msg.GitRepositoryId
             };
             _db.GitCommits.Add(commit);
             await _db.SaveChangesAsync();
