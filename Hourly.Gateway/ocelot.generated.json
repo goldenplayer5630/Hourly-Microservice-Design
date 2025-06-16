@@ -1,0 +1,557 @@
+{
+  "routes": [
+    {
+      "addClaimsToRequest": {},
+      "addHeadersToRequest": {},
+      "addQueriesToRequest": {},
+      "authenticationOptions": {
+        "allowedScopes": [],
+        "authenticationProviderKey": null,
+        "authenticationProviderKeys": []
+      },
+      "changeDownstreamPathTemplate": {},
+      "dangerousAcceptAnyServerCertificateValidator": false,
+      "delegatingHandlers": [],
+      "downstreamHeaderTransform": {},
+      "downstreamHostAndPorts": [
+        {
+          "host": "localhost",
+          "port": 5001
+        }
+      ],
+      "downstreamHttpMethod": null,
+      "downstreamHttpVersion": null,
+      "downstreamHttpVersionPolicy": null,
+      "downstreamPathTemplate": "/api/user/{everything}",
+      "downstreamScheme": "https",
+      "fileCacheOptions": {
+        "ttlSeconds": null,
+        "region": null,
+        "header": null,
+        "enableContentHashing": null
+      },
+      "httpHandlerOptions": {
+        "allowAutoRedirect": false,
+        "maxConnectionsPerServer": 2147483647,
+        "pooledConnectionLifetimeSeconds": null,
+        "useCookieContainer": false,
+        "useProxy": false,
+        "useTracing": false
+      },
+      "key": null,
+      "loadBalancerOptions": {
+        "expiry": 2147483647,
+        "key": "",
+        "type": ""
+      },
+      "metadata": {},
+      "priority": 1,
+      "qoSOptions": {
+        "durationOfBreak": 1,
+        "exceptionsAllowedBeforeBreaking": 0,
+        "timeoutValue": 0
+      },
+      "rateLimitOptions": {
+        "clientWhitelist": [],
+        "enableRateLimiting": false,
+        "limit": 0,
+        "period": null,
+        "periodTimespan": 0
+      },
+      "requestIdKey": null,
+      "routeClaimsRequirement": {},
+      "routeIsCaseSensitive": false,
+      "securityOptions": {
+        "ipAllowedList": [],
+        "ipBlockedList": [],
+        "excludeAllowedFromBlocked": false
+      },
+      "serviceName": null,
+      "serviceNamespace": null,
+      "timeout": 0,
+      "upstreamHeaderTemplates": {},
+      "upstreamHeaderTransform": {},
+      "upstreamHost": null,
+      "upstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PATCH",
+        "PUT",
+        "DELETE"
+      ],
+      "upstreamPathTemplate": "/api/user/{everything}"
+    },
+    {
+      "addClaimsToRequest": {},
+      "addHeadersToRequest": {},
+      "addQueriesToRequest": {},
+      "authenticationOptions": {
+        "allowedScopes": [],
+        "authenticationProviderKey": null,
+        "authenticationProviderKeys": []
+      },
+      "changeDownstreamPathTemplate": {},
+      "dangerousAcceptAnyServerCertificateValidator": false,
+      "delegatingHandlers": [],
+      "downstreamHeaderTransform": {},
+      "downstreamHostAndPorts": [
+        {
+          "host": "localhost",
+          "port": 5001
+        }
+      ],
+      "downstreamHttpMethod": null,
+      "downstreamHttpVersion": null,
+      "downstreamHttpVersionPolicy": null,
+      "downstreamPathTemplate": "/api/usercontract/{everything}",
+      "downstreamScheme": "https",
+      "fileCacheOptions": {
+        "ttlSeconds": null,
+        "region": null,
+        "header": null,
+        "enableContentHashing": null
+      },
+      "httpHandlerOptions": {
+        "allowAutoRedirect": false,
+        "maxConnectionsPerServer": 2147483647,
+        "pooledConnectionLifetimeSeconds": null,
+        "useCookieContainer": false,
+        "useProxy": false,
+        "useTracing": false
+      },
+      "key": null,
+      "loadBalancerOptions": {
+        "expiry": 2147483647,
+        "key": "",
+        "type": ""
+      },
+      "metadata": {},
+      "priority": 1,
+      "qoSOptions": {
+        "durationOfBreak": 1,
+        "exceptionsAllowedBeforeBreaking": 0,
+        "timeoutValue": 0
+      },
+      "rateLimitOptions": {
+        "clientWhitelist": [],
+        "enableRateLimiting": false,
+        "limit": 0,
+        "period": null,
+        "periodTimespan": 0
+      },
+      "requestIdKey": null,
+      "routeClaimsRequirement": {},
+      "routeIsCaseSensitive": false,
+      "securityOptions": {
+        "ipAllowedList": [],
+        "ipBlockedList": [],
+        "excludeAllowedFromBlocked": false
+      },
+      "serviceName": null,
+      "serviceNamespace": null,
+      "timeout": 0,
+      "upstreamHeaderTemplates": {},
+      "upstreamHeaderTransform": {},
+      "upstreamHost": null,
+      "upstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PATCH",
+        "PUT",
+        "DELETE"
+      ],
+      "upstreamPathTemplate": "/api/usercontract/{everything}"
+    },
+    {
+      "addClaimsToRequest": {},
+      "addHeadersToRequest": {},
+      "addQueriesToRequest": {},
+      "authenticationOptions": {
+        "allowedScopes": [],
+        "authenticationProviderKey": null,
+        "authenticationProviderKeys": []
+      },
+      "changeDownstreamPathTemplate": {},
+      "dangerousAcceptAnyServerCertificateValidator": false,
+      "delegatingHandlers": [],
+      "downstreamHeaderTransform": {},
+      "downstreamHostAndPorts": [
+        {
+          "host": "localhost",
+          "port": 5001
+        }
+      ],
+      "downstreamHttpMethod": null,
+      "downstreamHttpVersion": null,
+      "downstreamHttpVersionPolicy": null,
+      "downstreamPathTemplate": "/api/department/{everything}",
+      "downstreamScheme": "https",
+      "fileCacheOptions": {
+        "ttlSeconds": null,
+        "region": null,
+        "header": null,
+        "enableContentHashing": null
+      },
+      "httpHandlerOptions": {
+        "allowAutoRedirect": false,
+        "maxConnectionsPerServer": 2147483647,
+        "pooledConnectionLifetimeSeconds": null,
+        "useCookieContainer": false,
+        "useProxy": false,
+        "useTracing": false
+      },
+      "key": null,
+      "loadBalancerOptions": {
+        "expiry": 2147483647,
+        "key": "",
+        "type": ""
+      },
+      "metadata": {},
+      "priority": 1,
+      "qoSOptions": {
+        "durationOfBreak": 1,
+        "exceptionsAllowedBeforeBreaking": 0,
+        "timeoutValue": 0
+      },
+      "rateLimitOptions": {
+        "clientWhitelist": [],
+        "enableRateLimiting": false,
+        "limit": 0,
+        "period": null,
+        "periodTimespan": 0
+      },
+      "requestIdKey": null,
+      "routeClaimsRequirement": {},
+      "routeIsCaseSensitive": false,
+      "securityOptions": {
+        "ipAllowedList": [],
+        "ipBlockedList": [],
+        "excludeAllowedFromBlocked": false
+      },
+      "serviceName": null,
+      "serviceNamespace": null,
+      "timeout": 0,
+      "upstreamHeaderTemplates": {},
+      "upstreamHeaderTransform": {},
+      "upstreamHost": null,
+      "upstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PATCH",
+        "PUT",
+        "DELETE"
+      ],
+      "upstreamPathTemplate": "/api/department/{everything}"
+    },
+    {
+      "addClaimsToRequest": {},
+      "addHeadersToRequest": {},
+      "addQueriesToRequest": {},
+      "authenticationOptions": {
+        "allowedScopes": [],
+        "authenticationProviderKey": null,
+        "authenticationProviderKeys": []
+      },
+      "changeDownstreamPathTemplate": {},
+      "dangerousAcceptAnyServerCertificateValidator": false,
+      "delegatingHandlers": [],
+      "downstreamHeaderTransform": {},
+      "downstreamHostAndPorts": [
+        {
+          "host": "localhost",
+          "port": 5002
+        }
+      ],
+      "downstreamHttpMethod": null,
+      "downstreamHttpVersion": null,
+      "downstreamHttpVersionPolicy": null,
+      "downstreamPathTemplate": "/api/worksession/{everything}",
+      "downstreamScheme": "https",
+      "fileCacheOptions": {
+        "ttlSeconds": null,
+        "region": null,
+        "header": null,
+        "enableContentHashing": null
+      },
+      "httpHandlerOptions": {
+        "allowAutoRedirect": false,
+        "maxConnectionsPerServer": 2147483647,
+        "pooledConnectionLifetimeSeconds": null,
+        "useCookieContainer": false,
+        "useProxy": false,
+        "useTracing": false
+      },
+      "key": null,
+      "loadBalancerOptions": {
+        "expiry": 2147483647,
+        "key": "",
+        "type": ""
+      },
+      "metadata": {},
+      "priority": 1,
+      "qoSOptions": {
+        "durationOfBreak": 1,
+        "exceptionsAllowedBeforeBreaking": 0,
+        "timeoutValue": 0
+      },
+      "rateLimitOptions": {
+        "clientWhitelist": [],
+        "enableRateLimiting": false,
+        "limit": 0,
+        "period": null,
+        "periodTimespan": 0
+      },
+      "requestIdKey": null,
+      "routeClaimsRequirement": {},
+      "routeIsCaseSensitive": false,
+      "securityOptions": {
+        "ipAllowedList": [],
+        "ipBlockedList": [],
+        "excludeAllowedFromBlocked": false
+      },
+      "serviceName": null,
+      "serviceNamespace": null,
+      "timeout": 0,
+      "upstreamHeaderTemplates": {},
+      "upstreamHeaderTransform": {},
+      "upstreamHost": null,
+      "upstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PATCH",
+        "PUT",
+        "DELETE"
+      ],
+      "upstreamPathTemplate": "/api/worksession/{everything}"
+    },
+    {
+      "addClaimsToRequest": {},
+      "addHeadersToRequest": {},
+      "addQueriesToRequest": {},
+      "authenticationOptions": {
+        "allowedScopes": [],
+        "authenticationProviderKey": null,
+        "authenticationProviderKeys": []
+      },
+      "changeDownstreamPathTemplate": {},
+      "dangerousAcceptAnyServerCertificateValidator": false,
+      "delegatingHandlers": [],
+      "downstreamHeaderTransform": {},
+      "downstreamHostAndPorts": [
+        {
+          "host": "localhost",
+          "port": 5003
+        }
+      ],
+      "downstreamHttpMethod": null,
+      "downstreamHttpVersion": null,
+      "downstreamHttpVersionPolicy": null,
+      "downstreamPathTemplate": "/api/gitcommit/{everything}",
+      "downstreamScheme": "https",
+      "fileCacheOptions": {
+        "ttlSeconds": null,
+        "region": null,
+        "header": null,
+        "enableContentHashing": null
+      },
+      "httpHandlerOptions": {
+        "allowAutoRedirect": false,
+        "maxConnectionsPerServer": 2147483647,
+        "pooledConnectionLifetimeSeconds": null,
+        "useCookieContainer": false,
+        "useProxy": false,
+        "useTracing": false
+      },
+      "key": null,
+      "loadBalancerOptions": {
+        "expiry": 2147483647,
+        "key": "",
+        "type": ""
+      },
+      "metadata": {},
+      "priority": 1,
+      "qoSOptions": {
+        "durationOfBreak": 1,
+        "exceptionsAllowedBeforeBreaking": 0,
+        "timeoutValue": 0
+      },
+      "rateLimitOptions": {
+        "clientWhitelist": [],
+        "enableRateLimiting": false,
+        "limit": 0,
+        "period": null,
+        "periodTimespan": 0
+      },
+      "requestIdKey": null,
+      "routeClaimsRequirement": {},
+      "routeIsCaseSensitive": false,
+      "securityOptions": {
+        "ipAllowedList": [],
+        "ipBlockedList": [],
+        "excludeAllowedFromBlocked": false
+      },
+      "serviceName": null,
+      "serviceNamespace": null,
+      "timeout": 0,
+      "upstreamHeaderTemplates": {},
+      "upstreamHeaderTransform": {},
+      "upstreamHost": null,
+      "upstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PATCH",
+        "PUT",
+        "DELETE"
+      ],
+      "upstreamPathTemplate": "/api/gitcommit/{everything}"
+    },
+    {
+      "addClaimsToRequest": {},
+      "addHeadersToRequest": {},
+      "addQueriesToRequest": {},
+      "authenticationOptions": {
+        "allowedScopes": [],
+        "authenticationProviderKey": null,
+        "authenticationProviderKeys": []
+      },
+      "changeDownstreamPathTemplate": {},
+      "dangerousAcceptAnyServerCertificateValidator": false,
+      "delegatingHandlers": [],
+      "downstreamHeaderTransform": {},
+      "downstreamHostAndPorts": [
+        {
+          "host": "localhost",
+          "port": 5003
+        }
+      ],
+      "downstreamHttpMethod": null,
+      "downstreamHttpVersion": null,
+      "downstreamHttpVersionPolicy": null,
+      "downstreamPathTemplate": "/api/gitrepository/{everything}",
+      "downstreamScheme": "https",
+      "fileCacheOptions": {
+        "ttlSeconds": null,
+        "region": null,
+        "header": null,
+        "enableContentHashing": null
+      },
+      "httpHandlerOptions": {
+        "allowAutoRedirect": false,
+        "maxConnectionsPerServer": 2147483647,
+        "pooledConnectionLifetimeSeconds": null,
+        "useCookieContainer": false,
+        "useProxy": false,
+        "useTracing": false
+      },
+      "key": null,
+      "loadBalancerOptions": {
+        "expiry": 2147483647,
+        "key": "",
+        "type": ""
+      },
+      "metadata": {},
+      "priority": 1,
+      "qoSOptions": {
+        "durationOfBreak": 1,
+        "exceptionsAllowedBeforeBreaking": 0,
+        "timeoutValue": 0
+      },
+      "rateLimitOptions": {
+        "clientWhitelist": [],
+        "enableRateLimiting": false,
+        "limit": 0,
+        "period": null,
+        "periodTimespan": 0
+      },
+      "requestIdKey": null,
+      "routeClaimsRequirement": {},
+      "routeIsCaseSensitive": false,
+      "securityOptions": {
+        "ipAllowedList": [],
+        "ipBlockedList": [],
+        "excludeAllowedFromBlocked": false
+      },
+      "serviceName": null,
+      "serviceNamespace": null,
+      "timeout": 0,
+      "upstreamHeaderTemplates": {},
+      "upstreamHeaderTransform": {},
+      "upstreamHost": null,
+      "upstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PATCH",
+        "PUT",
+        "DELETE"
+      ],
+      "upstreamPathTemplate": "/api/gitrepository/{everything}"
+    }
+  ],
+  "dynamicRoutes": [],
+  "aggregates": [],
+  "globalConfiguration": {
+    "baseUrl": "https://localhost:9000",
+    "cacheOptions": {
+      "ttlSeconds": null,
+      "region": null,
+      "header": null,
+      "enableContentHashing": null
+    },
+    "downstreamHttpVersion": null,
+    "downstreamHttpVersionPolicy": null,
+    "downstreamScheme": null,
+    "httpHandlerOptions": {
+      "allowAutoRedirect": false,
+      "maxConnectionsPerServer": 2147483647,
+      "pooledConnectionLifetimeSeconds": null,
+      "useCookieContainer": false,
+      "useProxy": false,
+      "useTracing": false
+    },
+    "loadBalancerOptions": {
+      "expiry": 2147483647,
+      "key": "",
+      "type": ""
+    },
+    "metadataOptions": {
+      "currentCulture": "nl-NL",
+      "numberStyle": "Any",
+      "separators": [
+        ","
+      ],
+      "stringSplitOption": "None",
+      "trimChars": [
+        " "
+      ],
+      "metadata": {}
+    },
+    "qoSOptions": {
+      "durationOfBreak": 1,
+      "exceptionsAllowedBeforeBreaking": 0,
+      "timeoutValue": 0
+    },
+    "rateLimitOptions": {
+      "clientIdHeader": "ClientId",
+      "disableRateLimitHeaders": false,
+      "httpStatusCode": 429,
+      "quotaExceededMessage": null,
+      "rateLimitCounterPrefix": "ocelot"
+    },
+    "requestIdKey": null,
+    "securityOptions": {
+      "ipAllowedList": [],
+      "ipBlockedList": [],
+      "excludeAllowedFromBlocked": false
+    },
+    "serviceDiscoveryProvider": {
+      "scheme": null,
+      "host": null,
+      "port": 0,
+      "type": null,
+      "token": null,
+      "configurationKey": null,
+      "pollingInterval": 0,
+      "namespace": null
+    }
+  }
+}
