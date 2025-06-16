@@ -6,26 +6,26 @@ namespace Hourly.UserService.Contracts.Requests.UserContractRequests
     public class CreateUserContractRequest
     {
         [Required]
-        public Guid UserId { get; set; }
+        public Guid UserId { get; init; }
         [Required]
-        public string Name { get; set; }
+        public string Name { get; init; } = string.Empty;
         [Required]
-        public ContractType ContractType { get; set; }
-        public bool IsActive { get; set; }
+        public ContractType ContractType { get; init; }
+        public bool IsActive { get; init; }
 
         [Required]
-        public double MinWeeklyHours { get; set; }
+        public double MinWeeklyHours { get; init; }
         [Required]
-        public double MaxWeeklyHours { get; set; }
+        public double MaxWeeklyHours { get; init; }
 
-        public float? GrossHourlyRate { get; set; }
-        public int? HolidayHoursPercentage { get; set; }
-        public bool MonthlyPaidHolidayHours { get; set; }
+        public float? GrossHourlyRate { get; init; }
+        public int? HolidayHoursPercentage { get; init; }
+        public bool MonthlyPaidHolidayHours { get; init; }
 
         [Required]
-        public DateTime StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
-        public string? ContractFilePath { get; set; }
-        public string? Description { get; set; }
+        public DateTime StartDate { get; init; }
+        public DateTime? EndDate { get; init; }
+        public string? ContractFilePath { get; init; }
+        public string? Description { get; init; }
     }
 }

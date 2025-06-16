@@ -14,7 +14,7 @@ namespace Hourly.UserService.Domain.Entities
         [Required]
         public Guid UserId { get; set; }
         [Required]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
         [Required]
         public ContractType ContractType { get; set; }
         public bool IsActive { get; set; }

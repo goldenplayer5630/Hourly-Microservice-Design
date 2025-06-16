@@ -2,13 +2,13 @@
 
 namespace Hourly.UserService.Contracts.Responses.DepartmentResponses
 {
-    public class DepartmentSummaryResponse
+    public class DepartmentSummaryResponse 
     {
         [Key]
         public Guid Id { get; init; }
 
         [Required]
-        public string Name { get; set; }
+        public string Name { get; init; } = string.Empty;
 
         [Required]
         public DateTime CreatedAt { get; init; }

@@ -10,33 +10,19 @@ namespace Hourly.TimeTrackingService.Domain.Entities
         [Key]
         public Guid Id { get; set; }
 
-        [Required]
         public Guid UserContractId { get; init; }
         [ForeignKey("UserContractId")]
-        public UserContractReadModel UserContract { get; private set; } = null!;
-
-        [Required]
-        public string TaskDescription { get; set; }
-
-        [Required]
+        public UserContractReadModel? UserContract { get; set; }
+        public string TaskDescription { get; set; } = string.Empty;
         public DateTime StartTime { get; set; }
-
-        [Required]
         public DateTime EndTime { get; set; }
-
         public float BreakTime { get; set; }
-
-        [Required]
         public float Factor { get; set; }
-
         public float TVTAccruedHours { get; set; } = 0;
         public float TVTUsedHours { get; set; } = 0;
-
         public bool WBSO { get; set; }
         public bool Locked { get; set; }
         public string? OtherRemarks { get; set; }
-
-        [Required]
         public DateTime CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
 

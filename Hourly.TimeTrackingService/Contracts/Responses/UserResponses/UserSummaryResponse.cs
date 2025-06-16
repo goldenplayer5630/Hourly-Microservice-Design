@@ -8,9 +8,9 @@ namespace Hourly.TimeTrackingService.Contracts.Responses.UserResponses
         public Guid Id { get; set; }
 
         [Required]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         [Required]
-        public float TVTHourBalance { get; set; }
+        public float TVTHourBalance { get; set; } 
     }
 }

@@ -8,18 +8,18 @@ namespace Hourly.GitService.Domain.Entities
         public Guid Id { get; set; }
 
         [Required]
-        public string ExtRepositoryId { get; set; }
+        public string ExtRepositoryId { get; set; } = string.Empty;
 
         [Required]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         [Required]
-        public string Namespace { get; set; }
+        public string Namespace { get; set; } = string.Empty;
 
         [Required]
-        public string WebUrl { get; set; }
+        public string WebUrl { get; set; } = string.Empty;
 
-        public ICollection<GitCommit> GitCommits { get; set; } = new List<GitCommit>();
+        public ICollection<GitCommit> GitCommits { get; init; } = new List<GitCommit>();
 
         [Required]
         public DateTime CreatedAt { get; set; }

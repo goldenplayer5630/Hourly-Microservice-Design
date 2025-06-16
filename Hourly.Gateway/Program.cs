@@ -8,6 +8,11 @@ var corsOptions = builder.Configuration
     .GetSection("CORS")
     .Get<CorsSettings>();
 
+if (corsOptions == null)
+{
+    throw new InvalidOperationException("CORS settings are not configured properly.");
+}
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("CORS", policy =>

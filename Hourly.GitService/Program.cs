@@ -19,7 +19,14 @@ var corsOptions = builder.Configuration
     .Get<CorsSettings>();
 
 var massTransitOptions = builder.Configuration
-    .GetSection("RabbitMQ");
+    .GetSection("RabbitMQ")
+    .Get<RabbitMQSettings>();
+
+if (corsOptions == null)
+    throw new InvalidOperationException("CORS settings are not configured in appsettings.json");
+
+if (massTransitOptions == null)
+    throw new InvalidOperationException("RabbitMQ settings are not configured in appsettings.json");
 
 builder.Services.AddCors(options =>
 {
@@ -46,15 +53,12 @@ builder.Services.AddMassTransit(x =>
 
     x.UsingRabbitMq((context, cfg) =>
     {
-        cfg.Host(
-            massTransitOptions["Host"],
-            ushort.Parse(massTransitOptions["Port"]),
-            "/",
-            h =>
-            {
-                h.Username(massTransitOptions["Username"]);
-                h.Password(massTransitOptions["Password"]);
-            });
+        cfg.Host(new Uri($"rabbitmq://{massTransitOptions.Host}:{massTransitOptions.Port}"), h =>
+        {
+            h.Username(massTransitOptions.UserName);
+            h.Password(massTransitOptions.Password);
+        });
+
 
         cfg.ConfigureEndpoints(context);
 

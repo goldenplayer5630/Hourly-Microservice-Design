@@ -8,7 +8,7 @@ namespace Hourly.GitService.Infrastructure.Persistence.ReadModels
         public Guid Id { get; set; }
 
         [Required]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         public string? GitEmail { get; set; }
 

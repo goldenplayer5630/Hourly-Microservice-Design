@@ -2,6 +2,7 @@
 using Hourly.TimeTrackingService.Contracts.Requests.WorkSessionRequests;
 using Hourly.TimeTrackingService.Contracts.Responses.WorkSessionResponses;
 using Hourly.TimeTrackingService.Domain.Entities;
+using Hourly.TimeTrackingService.Infrastructure.Persistence.ReadModels;
 
 namespace Hourly.Domain.Mappers
 {
@@ -13,7 +14,7 @@ namespace Hourly.Domain.Mappers
             {
                 Id = entity.Id,
                 UserContractId = entity.UserContractId,
-                UserContract = entity.UserContract.ToSummaryResponse(),
+                UserContract = entity.UserContract?.ToSummaryResponse(),
                 TaskDescription = entity.TaskDescription,
                 StartTime = entity.StartTime,
                 EndTime = entity.EndTime,

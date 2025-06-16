@@ -8,13 +8,13 @@ namespace Hourly.TimeTrackingService.Infrastructure.Persistence.ReadModels
         public Guid Id { get; set; }
 
         [Required]
-        public string ExtRepositoryId { get; set; }
+        public string ExtRepositoryId { get; set; } = string.Empty;
 
         [Required]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         [Required]
-        public string WebUrl { get; set; }
+        public string WebUrl { get; set; } = string.Empty;
 
         public IReadOnlyCollection<GitCommitReadModel> GitCommits { get; set; } = new List<GitCommitReadModel>();
     }

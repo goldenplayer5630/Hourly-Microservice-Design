@@ -18,7 +18,6 @@ namespace Hourly.Data.Repositories
         public async Task<User?> GetById(Guid userId)
         {
             return await _context.Users
-                .Include(u => u.Role)
                 .Include(u => u.Department)
                 .Include(u => u.GitCommits)
                 .Include(u => u.Contracts)
@@ -28,7 +27,6 @@ namespace Hourly.Data.Repositories
         public async Task<IEnumerable<User>> GetAll()
         {
             return await _context.Users
-                .Include(u => u.Role)
                 .ToListAsync();
         }
 

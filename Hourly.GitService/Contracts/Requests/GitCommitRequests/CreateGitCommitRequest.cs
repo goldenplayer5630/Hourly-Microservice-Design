@@ -8,22 +8,22 @@ namespace Hourly.GitService.Contracts.Requests.GitCommitRequests
         public Guid RepositoryId { get; init; }
 
         [Required]
-        public string ExtCommitId { get; init; }
+        public string ExtCommitId { get; init; } = string.Empty;
 
         [Required]
-        public string ExtCommitShortId { get; init; }
+        public string ExtCommitShortId { get; init; } = string.Empty;
 
         [Required]
-        public string Title { get; init; }
+        public string Title { get; init; } = string.Empty;
 
         public string? Comment { get; init; }
 
         [Required]
-        public Guid AuthorId { get; set; }
+        public Guid AuthorId { get; init; }
 
-        public DateTime AuthoredDate { get; set; }
+        public DateTime AuthoredDate { get; init; }
 
         [Required]
-        public string WebUrl { get; init; }
+        public string WebUrl { get; init; } = string.Empty;
     }
 }

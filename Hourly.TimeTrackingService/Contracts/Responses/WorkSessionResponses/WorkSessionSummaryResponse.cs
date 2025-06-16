@@ -8,10 +8,10 @@ namespace Hourly.TimeTrackingService.Contracts.Responses.WorkSessionResponses
         public Guid Id { get; set; }
 
         [Required]
-        public Guid UserContractId { get; set; }
+        public Guid? UserContractId { get; set; }
 
         [Required]
-        public string TaskDescription { get; set; }
+        public string TaskDescription { get; set; } = string.Empty;
 
         [Required]
         public DateTime StartTime { get; set; }

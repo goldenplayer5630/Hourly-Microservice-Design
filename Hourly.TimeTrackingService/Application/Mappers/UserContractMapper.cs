@@ -13,7 +13,7 @@ namespace Hourly.TimeTrackingService.Application.Mappers
                 Id = entity.Id,
                 UserId = entity.UserId,
                 Name = entity.Name,
-                User = entity.User.ToSummaryResponse(),
+                User = entity.User?.ToSummaryResponse(),
                 WorkSessions = entity.WorkSessions.Select(ws => ws.ToSummaryResponse()).ToList()
             };
         }

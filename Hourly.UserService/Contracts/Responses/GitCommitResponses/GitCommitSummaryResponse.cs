@@ -5,9 +5,9 @@ namespace Hourly.UserService.Contracts.Responses.GitCommitResponses
     public class GitCommitSummaryResponse
     {
         [Key]
-        public Guid Id { get; set; }
+        public Guid Id { get; init; }
 
         [Required]
-        public Guid? AuthorId { get; set; }
+        public Guid? AuthorId { get; init; }
     }
 }

@@ -6,21 +6,21 @@ namespace Hourly.UserService.Contracts.Requests.UserRequests
     public class UpdateUserRequest
     {
         [Required]
-        public string Name { get; set; }
+        public string Name { get; init; } = string.Empty;
 
         [Required, EmailAddress]
-        public string Email { get; set; }
+        public string Email { get; init; } = string.Empty;
 
         [Required]
-        public UserRole Role { get; set; }
+        public UserRole Role { get; init; }
 
-        public string? GitEmail { get; set; }
+        public string? GitEmail { get; init; }
 
-        public string? GitUsername { get; set; }
+        public string? GitUsername { get; init; }
 
-        public string? GitAccessToken { get; set; }
+        public string? GitAccessToken { get; init; }
 
         [Required]
-        public float TVTHourBalance { get; set; }
+        public float TVTHourBalance { get; init; }
     }
 }

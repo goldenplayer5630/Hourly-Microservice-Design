@@ -7,10 +7,8 @@ namespace Hourly.TimeTrackingService.Infrastructure.Persistence.ReadModels
         [Key]
         public Guid Id { get; set; }
 
-        [Required]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
-        [Required]
         public float TVTHourBalance { get; set; }
 
         public ICollection<GitCommitReadModel> GitCommits { get; set; } = new List<GitCommitReadModel>();

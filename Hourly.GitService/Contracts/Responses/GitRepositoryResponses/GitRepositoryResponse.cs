@@ -4,6 +4,6 @@ namespace Hourly.GitService.Contracts.Responses.GitRepositoryResponses
 {
     public class GitRepositoryResponse : GitRepositorySummaryResponse
     {
-        public ICollection<GitCommitSummaryResponse> GitCommits { get; set; } = new List<GitCommitSummaryResponse>();
+        public ICollection<GitCommitSummaryResponse> GitCommits { get; init; } = new List<GitCommitSummaryResponse>();
     }
 }

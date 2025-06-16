@@ -20,7 +20,6 @@ namespace Hourly.Data.Repositories
             return await _context.UserContracts
                 .Include(r => r.WorkSessions)
                 .Include(r => r.User)
-                .ThenInclude(u => u.Role)
                 .FirstOrDefaultAsync(r => r.Id == userContractId);
         }
 
@@ -28,7 +27,6 @@ namespace Hourly.Data.Repositories
         {
             var query = _context.UserContracts
                 .Include(u => u.User)
-                .ThenInclude(u => u.Role)
                 .AsQueryable();
             if (userId.HasValue)
             {

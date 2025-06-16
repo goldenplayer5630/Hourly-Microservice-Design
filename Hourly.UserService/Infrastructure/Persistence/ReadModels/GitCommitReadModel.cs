@@ -9,8 +9,8 @@ namespace Hourly.UserService.Infrastructure.Persistence.ReadModels
         public Guid Id { get; set; }
 
         [Required]
-        public Guid? AuthorId { get; set; }
+        public Guid AuthorId { get; set; }
         [Required]
-        public User? Author { get; set; }
+        public User? Author { get; init; }
     }
 }

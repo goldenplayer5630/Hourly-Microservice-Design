@@ -45,11 +45,8 @@ namespace Hourly.GitService.Application.Services
             _ = await _gitRepositoryRepository.GetById(gitCommit.GitRepositoryId)
                 ?? throw new EntityNotFoundException("GitRepository not found!");
 
-            if (gitCommit.AuthorId is not null && gitCommit.AuthorId.HasValue)
-            {
-                _ = await _userQuery.GetById(gitCommit.AuthorId.Value)
-                    ?? throw new EntityNotFoundException("User not found!");
-            }
+            _ = await _userQuery.GetById(gitCommit.AuthorId)
+                ?? throw new EntityNotFoundException("User not found!");
 
             var result = await _repository.Create(gitCommit);
 

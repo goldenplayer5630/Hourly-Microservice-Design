@@ -11,7 +11,7 @@ namespace Hourly.UserService.Application.Mappers
             {
                 Id = entity.Id,
                 UserContractId = entity.UserContractId,
-                UserContract = entity.UserContract.ToSummaryResponse()
+                UserContract = entity.UserContract?.ToSummaryResponse()
             };
         }
 

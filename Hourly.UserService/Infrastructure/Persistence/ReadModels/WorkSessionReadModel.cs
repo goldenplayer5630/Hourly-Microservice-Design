@@ -12,6 +12,6 @@ namespace Hourly.UserService.Infrastructure.Persistence.ReadModels
         [Required]
         public Guid UserContractId { get; set; }
         [ForeignKey("UserContractId")]
-        public UserContract UserContract { get; set; } = null!;
+        public UserContract? UserContract { get; init; }
     }
 }

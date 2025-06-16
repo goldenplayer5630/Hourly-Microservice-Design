@@ -15,30 +15,30 @@ namespace Hourly.GitService.Domain.Entities
 
         [Required]
         [ForeignKey("RepositoryId")]
-        public GitRepository GitRepository { get; set; } = null!;   
+        public GitRepository GitRepository { get; set; } = null!;
 
         [Required]
-        public string ExtCommitId { get; set; }
+        public string ExtCommitId { get; set; } = string.Empty;
 
         [Required]
-        public string ExtCommitShortId { get; set; }
+        public string ExtCommitShortId { get; set; } = string.Empty;
 
         [Required]
-        public string Title { get; set; }
+        public string Title { get; set; } = string.Empty;
 
         public string? Comment { get; set; }
 
         [Required]
-        public Guid? AuthorId { get; set; }
+        public Guid AuthorId { get; set; }
 
         [Required]
         [ForeignKey("AuthorId")]
-        public UserReadModel? Author { get; set; } = null!;
+        public UserReadModel? Author { get; init; }
 
         public DateTime AuthoredDate { get; set; }
 
         [Required]
-        public string WebUrl { get; set; }
+        public string WebUrl { get; set; } = string.Empty;
 
         [Required]
         public DateTime CreatedAt { get; set; }

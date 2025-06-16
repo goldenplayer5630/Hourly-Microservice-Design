@@ -5,23 +5,23 @@ namespace Hourly.GitService.Contracts.Responses.GitRepositoryResponses
     public class GitRepositorySummaryResponse
     {
         [Key]
-        public Guid Id { get; set; }
+        public Guid Id { get; init; }
 
         [Required]
-        public string ExtRepositoryId { get; set; }
+        public string ExtRepositoryId { get; init; } = string.Empty;
 
         [Required]
-        public string Name { get; set; }
+        public string Name { get; init; } = string.Empty;
 
         [Required]
-        public string Namespace { get; set; }
+        public string Namespace { get; init; } = string.Empty;
 
         [Required]
-        public string WebUrl { get; set; }
+        public string WebUrl { get; init; } = string.Empty;
 
         [Required]
-        public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; init; }
 
-        public DateTime? UpdatedAt { get; set; }
+        public DateTime? UpdatedAt { get; init; }
     }
 }

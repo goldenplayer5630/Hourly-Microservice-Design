@@ -8,7 +8,7 @@ namespace Hourly.UserService.Domain.Entities
         public Guid Id { get; set; }
 
         [Required]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         public ICollection<User> Users { get; init; } = new List<User>();
 

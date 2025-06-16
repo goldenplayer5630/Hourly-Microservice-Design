@@ -4,6 +4,6 @@ namespace Hourly.UserService.Contracts.Responses.DepartmentResponses
 {
     public class DepartmentResponse : DepartmentSummaryResponse
     {
-        public ICollection<UserSummaryResponse> Users { get; set; } = new List<UserSummaryResponse>();
+        public ICollection<UserSummaryResponse> Users { get; init; } = new List<UserSummaryResponse>();
     }
 }

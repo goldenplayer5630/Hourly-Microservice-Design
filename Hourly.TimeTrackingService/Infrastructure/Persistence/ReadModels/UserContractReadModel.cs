@@ -8,13 +8,11 @@ namespace Hourly.TimeTrackingService.Infrastructure.Persistence.ReadModels
     {
         [Key]
         public Guid Id { get; set; }
-        [Required]
         public Guid UserId { get; set; }
-        [Required]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         [ForeignKey("UserId")]
-        public UserReadModel User { get; set; } = null!;
+        public UserReadModel? User { get; set; }
         public ICollection<WorkSession> WorkSessions { get; set; } = new List<WorkSession>();
     }
 }

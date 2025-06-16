@@ -51,10 +51,17 @@ namespace Hourly.TimeTrackingService.Application.Services
 
 
             var commits = await _gitCommitQuery.GetByIds(gitCommitIds);
-            if (commits.Count != gitCommitIds.Count())
+            if (commits.Count() != gitCommitIds.Count())
             {
                 var missing = gitCommitIds.Except(commits.Select(c => c.Id));
                 throw new EntityNotFoundException($"Missing GitCommits: {string.Join(", ", missing)}");
+            }
+            else
+            {
+                foreach (var commit in commits)
+                {
+                    workSession.AddGitCommit(commit);
+                }
             }
 
             workSession.AssignToUserContract(userContract);
@@ -85,10 +92,16 @@ namespace Hourly.TimeTrackingService.Application.Services
             existing.GitCommits.Clear();
 
             var commits = await _gitCommitQuery.GetByIds(gitCommitIds);
-            if (commits.Count != gitCommitIds.Count())
+            if (commits.Count() != gitCommitIds.Count())
             {
                 var missing = gitCommitIds.Except(commits.Select(c => c.Id));
                 throw new EntityNotFoundException($"Missing GitCommits: {string.Join(", ", missing)}");
+            } else
+            {
+                foreach (var commit in commits)
+                {
+                    existing.AddGitCommit(commit);
+                }
             }
 
             var result = await _repository.Update(existing);
