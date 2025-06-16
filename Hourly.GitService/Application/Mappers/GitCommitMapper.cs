@@ -11,8 +11,8 @@ namespace Hourly.GitService.Application.Mappers
             return new GitCommitResponse
             {
                 Id = entity.Id,
-                RepositoryId = entity.GitRepositoryId,
-                Repository = entity.GitRepository.ToSummaryResponse(),
+                GitRepositoryId = entity.GitRepositoryId,
+                GitRepository = entity.GitRepository.ToSummaryResponse(),
                 ExtCommitId = entity.ExtCommitId,
                 ExtCommitShortId = entity.ExtCommitShortId,
                 Title = entity.Title,
@@ -30,7 +30,7 @@ namespace Hourly.GitService.Application.Mappers
             return new GitCommitSummaryResponse
             {
                 Id = entity.Id,
-                RepositoryId = entity.GitRepositoryId,
+                GitRepositoryId = entity.GitRepositoryId,
                 ExtCommitId = entity.ExtCommitId,
                 ExtCommitShortId = entity.ExtCommitShortId,
                 Title = entity.Title,
@@ -45,7 +45,7 @@ namespace Hourly.GitService.Application.Mappers
         {
             return new GitCommit
             {
-                GitRepositoryId = response.RepositoryId,
+                GitRepositoryId = response.GitRepositoryId,
                 ExtCommitId = response.ExtCommitId,
                 ExtCommitShortId = response.ExtCommitShortId,
                 Title = response.Title,

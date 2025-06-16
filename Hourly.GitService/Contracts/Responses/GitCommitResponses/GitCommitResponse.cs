@@ -8,7 +8,7 @@ namespace Hourly.GitService.Contracts.Responses.GitCommitResponses
     {
 
         [Required]
-        [ForeignKey("RepositoryId")]
-        public GitRepositorySummaryResponse? Repository { get; init; }
+        [ForeignKey("GitRepositoryId")]
+        public GitRepositorySummaryResponse? GitRepository { get; init; }
     }
 }

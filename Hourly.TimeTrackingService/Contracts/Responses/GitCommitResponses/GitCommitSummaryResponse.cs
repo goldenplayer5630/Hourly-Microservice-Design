@@ -8,7 +8,7 @@ namespace Hourly.TimeTrackingService.Contracts.Responses.GitCommitResponses
         public Guid Id { get; init; }
 
         [Required]
-        public Guid? RepositoryId { get; init; }
+        public Guid? GitRepositoryId { get; init; }
 
         [Required]
         public string ExtCommitId { get; init; } = string.Empty;

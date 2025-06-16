@@ -5,7 +5,7 @@ namespace Hourly.GitService.Contracts.Requests.GitCommitRequests
     public class CreateGitCommitRequest
     {
         [Required]
-        public Guid RepositoryId { get; init; }
+        public Guid GitRepositoryId { get; init; }
 
         [Required]
         public string ExtCommitId { get; init; } = string.Empty;

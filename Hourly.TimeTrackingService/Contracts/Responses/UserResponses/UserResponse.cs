@@ -5,8 +5,8 @@ namespace Hourly.TimeTrackingService.Contracts.Responses.UserResponses
 {
     public class UserResponse : UserSummaryResponse
     {
-        public ICollection<GitCommitSummaryResponse> GitCommits { get; set; } = new List<GitCommitSummaryResponse>();
+        public ICollection<GitCommitSummaryResponse> GitCommits { get; init; } = new List<GitCommitSummaryResponse>();
 
-        public ICollection<UserContractSummaryResponse> Contracts { get; set; } = new List<UserContractSummaryResponse>();
+        public ICollection<UserContractSummaryResponse> Contracts { get; init; } = new List<UserContractSummaryResponse>();
     }
 }

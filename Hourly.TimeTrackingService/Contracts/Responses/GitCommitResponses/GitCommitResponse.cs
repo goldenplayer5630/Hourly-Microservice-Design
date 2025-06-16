@@ -9,12 +9,12 @@ namespace Hourly.TimeTrackingService.Contracts.Responses.GitCommitResponses
     public class GitCommitResponse : GitCommitSummaryResponse
     {
         [ForeignKey("AuthorId")]
-        public UserSummaryResponse? Author { get; set; }
+        public UserSummaryResponse? Author { get; init; }
 
         [Required]
-        [ForeignKey("RepositoryId")]
-        public GitRepositorySummaryResponse? Repository { get; internal set; }
+        [ForeignKey("GitRepositoryId")]
+        public GitRepositorySummaryResponse? GitRepository { get; init; }
 
-        public ICollection<WorkSessionSummaryResponse> WorkSessions { get; set; } = new List<WorkSessionSummaryResponse>();
+        public ICollection<WorkSessionSummaryResponse> WorkSessions { get; init; } = new List<WorkSessionSummaryResponse>();
     }
 }

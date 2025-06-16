@@ -18,11 +18,13 @@ namespace Hourly.TimeTrackingService.Infrastructure.Queries
             return await _context.GitCommits.AnyAsync(c => c.Id == commitId);
         }
 
-        public async Task<List<GitCommitReadModel>> GetByIds(IEnumerable<Guid> commitIds)
+        public async Task<List<GitCommitReadModel>> GetByIds(IEnumerable<Guid> gitCommitIds)
         {
-            var ids = commitIds.Distinct().ToList();
+            var ids = gitCommitIds.Distinct().ToList();
             return await _context.GitCommits
                 .Where(c => ids.Contains(c.Id))
+                .Include(c => c.GitRepository)
+                .Include(c => c.Author)
                 .ToListAsync();
         }
 

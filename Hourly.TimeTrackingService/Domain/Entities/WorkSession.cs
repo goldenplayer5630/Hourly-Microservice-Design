@@ -10,7 +10,7 @@ namespace Hourly.TimeTrackingService.Domain.Entities
         [Key]
         public Guid Id { get; set; }
 
-        public Guid UserContractId { get; init; }
+        public Guid UserContractId { get; set; }
         [ForeignKey("UserContractId")]
         public UserContractReadModel? UserContract { get; set; }
         public string TaskDescription { get; set; } = string.Empty;
@@ -26,7 +26,7 @@ namespace Hourly.TimeTrackingService.Domain.Entities
         public DateTime CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
 
-        public ICollection<GitCommitReadModel> GitCommits { get; set; } = new List<GitCommitReadModel>();
+        public ICollection<GitCommitReadModel> GitCommits { get; init; } = new List<GitCommitReadModel>();
 
         public float RawEffectiveHours
         {

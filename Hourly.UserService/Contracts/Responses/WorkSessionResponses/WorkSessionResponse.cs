@@ -7,6 +7,6 @@ namespace Hourly.UserService.Contracts.Responses.WorkSessionResponses
     {
 
         [ForeignKey("UserContractId")]
-        public UserContractSummaryResponse? UserContract { get; set; }
+        public UserContractSummaryResponse? UserContract { get; init; }
     }
 }

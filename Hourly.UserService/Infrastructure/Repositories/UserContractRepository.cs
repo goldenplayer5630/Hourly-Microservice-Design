@@ -47,7 +47,6 @@ namespace Hourly.Data.Repositories
         {
             return await _context.UserContracts
                 .Include(u => u.User)
-                .ThenInclude(u => u.Role)
                 .ToListAsync();
         }
 

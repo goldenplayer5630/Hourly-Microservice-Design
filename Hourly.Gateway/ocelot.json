@@ -2,7 +2,7 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/api/user/{everything}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -14,7 +14,7 @@
     },
     {
       "DownstreamPathTemplate": "/api/usercontract/{everything}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -26,7 +26,7 @@
     },
     {
       "DownstreamPathTemplate": "/api/department/{everything}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -38,7 +38,7 @@
     },
     {
       "DownstreamPathTemplate": "/api/worksession/{everything}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -50,7 +50,7 @@
     },
     {
       "DownstreamPathTemplate": "/api/gitcommit/{everything}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -62,7 +62,7 @@
     },
     {
       "DownstreamPathTemplate": "/api/gitrepository/{everything}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -74,7 +74,7 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:9000",
+    "BaseUrl": "https://localhost:9000",
     "RouteIsCaseSensitive": false
   }
 }

@@ -32,8 +32,6 @@ namespace Hourly.GitService.Application.Services
             gitRepository.Id = Guid.NewGuid();
             gitRepository.CreatedAt = DateTime.UtcNow;
 
-
-
             var result = await _repository.Create(gitRepository);
 
             await _gitRepositoryEventPublisher.PublishGitRepositoryCreated(result);
