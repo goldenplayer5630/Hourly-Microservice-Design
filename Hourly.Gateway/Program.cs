@@ -140,52 +140,5 @@ app.UseRouting();
 
 app.UseCors("CORS");
 
-app.Use(async (context, next) =>
-{
-    var origin = context.Request.Headers["Origin"].ToString();
-    Console.WriteLine($"[CORS DEBUG] Incoming request: {context.Request.Method} {context.Request.Path}");
-    Console.WriteLine($"[CORS DEBUG] Request Origin: {origin}");
-
-    context.Response.Headers.Append("Access-Control-Allow-Origin", origin);
-    context.Response.Headers.Append("Vary", "Origin"); // prevent cache issues
-    Console.WriteLine($"[CORS DEBUG] Set Access-Control-Allow-Origin: {origin}");
-    Console.WriteLine("[CORS DEBUG] Set Vary: Origin");
-
-    var allowMethods = string.Join(", ", corsOptions.AllowedMethods);
-    var allowHeaders = string.Join(", ", corsOptions.AllowedHeaders);
-    var exposeHeaders = string.Join(", ", corsOptions.ExposedHeaders);
-    var maxAge = corsOptions.MaxAge.ToString();
-
-    context.Response.Headers.Append("Access-Control-Allow-Methods", allowMethods);
-    context.Response.Headers.Append("Access-Control-Allow-Headers", allowHeaders);
-    context.Response.Headers.Append("Access-Control-Expose-Headers", exposeHeaders);
-    context.Response.Headers.Append("Access-Control-Max-Age", maxAge);
-
-    Console.WriteLine($"[CORS DEBUG] Set Access-Control-Allow-Methods: {allowMethods}");
-    Console.WriteLine($"[CORS DEBUG] Set Access-Control-Allow-Headers: {allowHeaders}");
-    Console.WriteLine($"[CORS DEBUG] Set Access-Control-Expose-Headers: {exposeHeaders}");
-    Console.WriteLine($"[CORS DEBUG] Set Access-Control-Max-Age: {maxAge}");
-
-    if (corsOptions.AllowCredentials)
-    {
-        context.Response.Headers.Append("Access-Control-Allow-Credentials", "true");
-        Console.WriteLine("[CORS DEBUG] Set Access-Control-Allow-Credentials: true");
-    }
-    else
-    {
-        Console.WriteLine("[CORS DEBUG] Credentials not allowed");
-    }
-
-    Console.WriteLine("[CORS DEBUG] Response headers after CORS setup:");
-    foreach (var header in context.Response.Headers)
-    {
-        Console.WriteLine($"[CORS DEBUG]   {header.Key}: {header.Value}");
-    }
-
-    Console.WriteLine("[CORS DEBUG] Passing request to next middleware.");
-    await next();
-    Console.WriteLine("[CORS DEBUG] Returned from next middleware.");
-});
-
 await app.UseOcelot();
 app.Run();
