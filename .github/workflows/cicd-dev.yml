@@ -38,10 +38,10 @@ jobs:
 
       - name: 🛠️ Build and tag Docker images
         run: |
-          docker build -t ghcr.io/${{ env.IMAGE_NAMESPACE }}/hourly-gateway:pre-release ./Hourly.Gateway
-          docker build -t ghcr.io/${{ env.IMAGE_NAMESPACE }}/hourly-userservice:pre-release ./Hourly.UserService
-          docker build -t ghcr.io/${{ env.IMAGE_NAMESPACE }}/hourly-gitservice:pre-release ./Hourly.GitService
-          docker build -t ghcr.io/${{ env.IMAGE_NAMESPACE }}/hourly-timetracking:pre-release ./Hourly.TimeTrackingService
+          docker build -t ghcr.io/${{ env.IMAGE_NAMESPACE }}/hourly-gateway:pre-release -f Hourly.Gateway/Dockerfile .
+          docker build -t ghcr.io/${{ env.IMAGE_NAMESPACE }}/hourly-userservice:pre-release -f Hourly.UserService/Dockerfile .
+          docker build -t ghcr.io/${{ env.IMAGE_NAMESPACE }}/hourly-gitservice:pre-release -f Hourly.GitService/Dockerfile .
+          docker build -t ghcr.io/${{ env.IMAGE_NAMESPACE }}/hourly-timetracking:pre-release -f Hourly.TimeTrackingService/Dockerfile .
 
       - name: Push Docker images to GHCR
         run: |
