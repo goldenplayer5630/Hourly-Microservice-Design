@@ -14,36 +14,12 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(connectionString));
 
-var corsOptions = builder.Configuration
-    .GetSection("CORS")
-    .Get<CorsSettings>();
-
 var massTransitOptions = builder.Configuration
     .GetSection("RabbitMQ")
     .Get<RabbitMQSettings>();
 
-if (corsOptions == null)
-    throw new InvalidOperationException("CORS settings are not configured in appsettings.json");
-
 if (massTransitOptions == null)
     throw new InvalidOperationException("RabbitMQ settings are not configured in appsettings.json");
-
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("CORS", policy =>
-    {
-        policy.WithOrigins(corsOptions.AllowedOrigins)
-        .WithMethods(corsOptions.AllowedMethods)
-        .WithHeaders(corsOptions.AllowedHeaders)
-              .WithExposedHeaders(corsOptions.ExposedHeaders)
-              .SetPreflightMaxAge(TimeSpan.FromSeconds(corsOptions.MaxAge));
-
-        if (corsOptions.AllowCredentials)
-            policy.AllowCredentials();
-        else
-            policy.DisallowCredentials();
-    });
-});
 
 // Add Mass Transit config
 builder.Services.AddMassTransit(x =>
@@ -104,8 +80,6 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseRouting();
-
-app.UseCors("CORS");
 
 app.UseAuthorization();
 

@@ -140,39 +140,5 @@ app.UseRouting();
 
 app.UseCors("CORS");
 
-app.Use(async (context, next) =>
-{
-    var origin = context.Request.Headers["Origin"].ToString();
-
-    if (!string.IsNullOrEmpty(origin) &&
-        corsOptions.AllowedOrigins.Contains(origin, StringComparer.OrdinalIgnoreCase))
-    {
-        context.Response.Headers["Access-Control-Allow-Origin"] = origin;
-        context.Response.Headers["Vary"] = "Origin"; // Ensure caches handle varying origins properly
-    }
-
-    context.Response.Headers["Access-Control-Allow-Methods"] = string.Join(", ", corsOptions.AllowedMethods);
-    context.Response.Headers["Access-Control-Allow-Headers"] = string.Join(", ", corsOptions.AllowedHeaders);
-    context.Response.Headers["Access-Control-Expose-Headers"] = string.Join(", ", corsOptions.ExposedHeaders);
-    context.Response.Headers["Access-Control-Max-Age"] = corsOptions.MaxAge.ToString();
-
-    if (corsOptions.AllowCredentials)
-    {
-        context.Response.Headers["Access-Control-Allow-Credentials"] = "true";
-    }
-
-    Console.WriteLine($"CORS Origin: {origin}");
-    Console.WriteLine($"CORS Headers: {string.Join(", ", context.Response.Headers.Select(h => $"{h.Key}: {h.Value}"))}");
-
-    if (context.Request.Method == HttpMethod.Options.Method)
-    {
-        context.Response.StatusCode = StatusCodes.Status204NoContent;
-        await context.Response.CompleteAsync();
-        return;
-    }
-
-    await next();
-});
-
 await app.UseOcelot();
 app.Run();
