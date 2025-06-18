@@ -140,73 +140,68 @@ app.UseRouting();
 
 app.UseCors("CORS");
 
-var allowedOrigins = corsOptions.AllowedOrigins;
-var allowedMethods = string.Join(", ", corsOptions.AllowedMethods);
-var allowedHeaders = string.Join(", ", corsOptions.AllowedHeaders);
-var exposedHeaders = string.Join(", ", corsOptions.ExposedHeaders);
-
 app.Use(async (context, next) =>
 {
-    var logger = app.Services.GetRequiredService<ILoggerFactory>().CreateLogger("CorsDebugMiddleware");
     var origin = context.Request.Headers["Origin"].ToString();
+    Console.WriteLine($"[CORS DEBUG] Incoming request: {context.Request.Method} {context.Request.Path}");
+    Console.WriteLine($"[CORS DEBUG] Request Origin: {origin}");
 
-    logger.LogDebug("Incoming request: {Method} {Path}", context.Request.Method, context.Request.Path);
-    logger.LogDebug("Request Origin header: {Origin}", origin);
+    bool isAllowedOrigin = !string.IsNullOrEmpty(origin) &&
+        corsOptions.AllowedOrigins.Contains(origin, StringComparer.OrdinalIgnoreCase);
 
-    if (!string.IsNullOrEmpty(origin) && corsOptions.AllowedOrigins.Contains(origin))
+    Console.WriteLine($"[CORS DEBUG] Is allowed origin: {isAllowedOrigin}");
+
+    if (isAllowedOrigin)
     {
-        context.Response.Headers["Access-Control-Allow-Origin"] = origin;
-        logger.LogDebug("Allowed origin. Set Access-Control-Allow-Origin: {Origin}", origin);
-    }
-    else
-    {
-        logger.LogWarning("Blocked origin: {Origin}", origin);
+        context.Response.Headers.Append("Access-Control-Allow-Origin", origin);
+        context.Response.Headers.Append("Vary", "Origin"); // prevent cache issues
+        Console.WriteLine($"[CORS DEBUG] Set Access-Control-Allow-Origin: {origin}");
+        Console.WriteLine("[CORS DEBUG] Set Vary: Origin");
     }
 
-    context.Response.Headers["Access-Control-Allow-Methods"] = allowedMethods;
-    context.Response.Headers["Access-Control-Allow-Headers"] = allowedHeaders;
-    context.Response.Headers["Access-Control-Expose-Headers"] = exposedHeaders;
+    var allowMethods = string.Join(", ", corsOptions.AllowedMethods);
+    var allowHeaders = string.Join(", ", corsOptions.AllowedHeaders);
+    var exposeHeaders = string.Join(", ", corsOptions.ExposedHeaders);
+    var maxAge = corsOptions.MaxAge.ToString();
 
-    logger.LogDebug("Set Access-Control-Allow-Methods: {Methods}", allowedMethods);
-    logger.LogDebug("Set Access-Control-Allow-Headers: {Headers}", allowedHeaders);
-    logger.LogDebug("Set Access-Control-Expose-Headers: {Headers}", exposedHeaders);
+    context.Response.Headers.Append("Access-Control-Allow-Methods", allowMethods);
+    context.Response.Headers.Append("Access-Control-Allow-Headers", allowHeaders);
+    context.Response.Headers.Append("Access-Control-Expose-Headers", exposeHeaders);
+    context.Response.Headers.Append("Access-Control-Max-Age", maxAge);
+
+    Console.WriteLine($"[CORS DEBUG] Set Access-Control-Allow-Methods: {allowMethods}");
+    Console.WriteLine($"[CORS DEBUG] Set Access-Control-Allow-Headers: {allowHeaders}");
+    Console.WriteLine($"[CORS DEBUG] Set Access-Control-Expose-Headers: {exposeHeaders}");
+    Console.WriteLine($"[CORS DEBUG] Set Access-Control-Max-Age: {maxAge}");
 
     if (corsOptions.AllowCredentials)
     {
-        context.Response.Headers["Access-Control-Allow-Credentials"] = "true";
-        logger.LogDebug("AllowCredentials is enabled. Set Access-Control-Allow-Credentials: true");
+        context.Response.Headers.Append("Access-Control-Allow-Credentials", "true");
+        Console.WriteLine("[CORS DEBUG] Set Access-Control-Allow-Credentials: true");
     }
     else
     {
-        logger.LogDebug("AllowCredentials is disabled. Not setting Access-Control-Allow-Credentials.");
+        Console.WriteLine("[CORS DEBUG] Credentials not allowed");
+    }
+
+    Console.WriteLine("[CORS DEBUG] Response headers after CORS setup:");
+    foreach (var header in context.Response.Headers)
+    {
+        Console.WriteLine($"[CORS DEBUG]   {header.Key}: {header.Value}");
     }
 
     if (context.Request.Method == HttpMethod.Options.Method)
     {
-        logger.LogDebug("OPTIONS preflight request detected. Returning 204 No Content.");
-        context.Response.StatusCode = 204;
+        Console.WriteLine("[CORS DEBUG] Preflight OPTIONS request detected. Returning 204 No Content.");
+        context.Response.StatusCode = StatusCodes.Status204NoContent;
         await context.Response.CompleteAsync();
         return;
     }
 
-    logger.LogDebug("Proceeding to next middleware.");
+    Console.WriteLine("[CORS DEBUG] Passing request to next middleware.");
     await next();
+    Console.WriteLine("[CORS DEBUG] Returned from next middleware.");
 });
 
 await app.UseOcelot();
-
-// Handle preflight requests manually if needed
-app.Use(async (context, next) =>
-{
-    if (context.Request.Method == "OPTIONS")
-    {
-        context.Response.StatusCode = 204;
-        await context.Response.CompleteAsync();
-        return;
-    }
-
-    await next();
-});
-
 app.Run();
-
