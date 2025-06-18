@@ -142,34 +142,21 @@ app.UseCors("CORS");
 
 app.Use(async (context, next) =>
 {
-    var origin = context.Request.Headers["Origin"].ToString();
-
-    if (corsOptions.AllowedOrigins.Contains(origin, StringComparer.OrdinalIgnoreCase))
-    {
-        context.Response.Headers.Append("Access-Control-Allow-Origin", origin);
-        context.Response.Headers.Append("Vary", "Origin"); // avoid caching issues
-
-        context.Response.Headers.Append("Access-Control-Allow-Methods", string.Join(", ", corsOptions.AllowedMethods));
-        context.Response.Headers.Append("Access-Control-Allow-Headers", string.Join(", ", corsOptions.AllowedHeaders));
-        context.Response.Headers.Append("Access-Control-Expose-Headers", string.Join(", ", corsOptions.ExposedHeaders));
-        context.Response.Headers.Append("Access-Control-Max-Age", corsOptions.MaxAge.ToString());
-
-        if (corsOptions.AllowCredentials)
-        {
-            context.Response.Headers.Append("Access-Control-Allow-Credentials", corsOptions.AllowCredentials.ToString());
-        }
-    }
+    context.Response.Headers.Append("Access-Control-Allow-Origin", string.Join(", ", corsOptions.AllowedOrigins));
+    context.Response.Headers.Append("Access-Control-Allow-Methods", string.Join(", ", corsOptions.AllowedMethods));
+    context.Response.Headers.Append("Access-Control-Allow-Headers", string.Join(", ", corsOptions.AllowedHeaders));
+    context.Response.Headers.Append("Access-Control-Expose-Headers", string.Join(", ", corsOptions.ExposedHeaders));
+    context.Response.Headers.Append("Access-Control-Allow-Credentials", corsOptions.AllowCredentials.ToString());
 
     if (context.Request.Method == HttpMethod.Options.Method)
     {
-        context.Response.StatusCode = StatusCodes.Status204NoContent;
+        context.Response.StatusCode = 204;
         await context.Response.CompleteAsync();
         return;
     }
 
     await next();
 });
-
 
 
 
