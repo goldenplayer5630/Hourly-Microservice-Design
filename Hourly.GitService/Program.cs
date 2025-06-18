@@ -103,10 +103,14 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
 
+app.UseRouting();
+
 app.UseCors("CORS");
 
-app.UseHttpsRedirection();
 app.UseAuthorization();
+
 app.MapControllers();
 
+
 app.Run();
+

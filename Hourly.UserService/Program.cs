@@ -47,6 +47,8 @@ builder.Services.AddCors(options =>
     });
 });
 
+Console.WriteLine(corsOptions.AllowedOrigins);
+
 // Add Mass Transit config
 builder.Services.AddMassTransit(x =>
 {

@@ -2,8 +2,8 @@ version: "3.8"
 
 services:
   postgres:
-    image: postgres:latest
-    container_name: postgres_db
+    image: postgres:16
+    container_name: postgres
     restart: always
     environment:
       POSTGRES_USER: admin
@@ -40,6 +40,17 @@ services:
       RABBITMQ_DEFAULT_PASS: devpassword
     networks:
       - devnet
+      
+  hourly-react-app:
+    image: ghcr.io/goldenplayer5630/hourly-microservice-app:pre-release
+    container_name: react-app
+    ports:
+      - "3000:80"
+
+    networks:
+      - devnet
+    depends_on:
+      - gateway
 
   gateway:
     image: ghcr.io/goldenplayer5630/hourly-gateway:pre-release
@@ -47,6 +58,12 @@ services:
     ports:
       - "5000:8080"
     environment:
+      CORS__AllowedOrigins: [ "http://10.14.1.54:3000", "https://hourly-micro.vincentbok.nl" ]
+      CORS__AllowedMethods: [ "GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS" ]
+      CORS__AllowedHeaders: [ "Content-Type", "Authorization" ]
+      CORS__ExposedHeaders: [ "X-Total-Count" ]
+      CORS__AllowCredentials: true
+      CORS__MaxAge: 3600
       OCELOT__USER_SERVICE_HOST: userservice
       OCELOT__USER_SERVICE_PORT: 8080
       OCELOT__TIMETRACKING_SERVICE_HOST: timetracking
@@ -69,6 +86,12 @@ services:
       - "5001:8080"
     environment:
       ConnectionStrings__DefaultConnection: "Host=postgres;Port=5432;Database=hourly-userservice;Username=admin;Password=admin123"
+      CORS__AllowedOrigins: [ "http://10.14.1.54:3000", "https://hourly-micro.vincentbok.nl" ]
+      CORS__AllowedMethods: [ "GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS" ]
+      CORS__AllowedHeaders: [ "Content-Type", "Authorization" ]
+      CORS__ExposedHeaders: [ "X-Total-Count" ]
+      CORS__AllowCredentials: true
+      CORS__MaxAge: 3600
       RabbitMQ__Host: rabbitmq
       RabbitMQ__Port: 5672
       RabbitMQ__UserName: devuser
@@ -86,6 +109,12 @@ services:
       - "5003:8080"
     environment:
       ConnectionStrings__DefaultConnection: "Host=postgres;Port=5432;Database=hourly-gitservice;Username=admin;Password=admin123"
+      CORS__AllowedOrigins: [ "http://10.14.1.54:3000", "https://hourly-micro.vincentbok.nl" ]
+      CORS__AllowedMethods: [ "GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS" ]
+      CORS__AllowedHeaders: [ "Content-Type", "Authorization" ]
+      CORS__ExposedHeaders: [ "X-Total-Count" ]
+      CORS__AllowCredentials: true
+      CORS__MaxAge: 3600
       RabbitMQ__Host: rabbitmq
       RabbitMQ__Port: 5672
       RabbitMQ__UserName: devuser
@@ -103,6 +132,12 @@ services:
       - "5002:8080"
     environment:
       ConnectionStrings__DefaultConnection: "Host=postgres;Port=5432;Database=hourly-timetrackingservice;Username=admin;Password=admin123"
+      CORS__AllowedOrigins: [ "http://10.14.1.54:3000", "https://hourly-micro.vincentbok.nl" ]
+      CORS__AllowedMethods: [ "GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS" ]
+      CORS__AllowedHeaders: [ "Content-Type", "Authorization" ]
+      CORS__ExposedHeaders: [ "X-Total-Count" ]
+      CORS__AllowCredentials: true
+      CORS__MaxAge: 3600
       RabbitMQ__Host: rabbitmq
       RabbitMQ__Port: 5672
       RabbitMQ__UserName: devuser

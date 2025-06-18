@@ -136,6 +136,9 @@ builder.Services.AddOcelot();
 
 var app = builder.Build();
 
+app.UseRouting();
+
 app.UseCors("CORS");
+
 await app.UseOcelot();
 app.Run();
