@@ -163,10 +163,6 @@ app.Use(async (context, next) =>
         logger.LogWarning("Blocked origin: {Origin}", origin);
     }
 
-    logger.LogDebug("Incoming request: {Method} {Path}", context.Request.Method, context.Request.Path);
-    logger.LogDebug("Request Origin header: {Origin}", origin);
-    logger.LogDebug("Setting Access-Control-Allow-Origin header to: {Origin}", origin);
-
     context.Response.Headers["Access-Control-Allow-Methods"] = allowedMethods;
     context.Response.Headers["Access-Control-Allow-Headers"] = allowedHeaders;
     context.Response.Headers["Access-Control-Expose-Headers"] = exposedHeaders;
