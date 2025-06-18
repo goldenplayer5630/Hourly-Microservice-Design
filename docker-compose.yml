@@ -1,9 +1,9 @@
 version: "3.8"
 
 services:
-  postgres:
+  postgres-microservice:
     image: postgres:16
-    container_name: postgres
+    container_name: postgres-microservice
     restart: always
     environment:
       POSTGRES_USER: admin
@@ -11,21 +11,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
-    networks:
-      - devnet
-
-  pgadmin:
-    image: dpage/pgadmin4
-    container_name: pgadmin
-    restart: always
-    environment:
-      PGADMIN_DEFAULT_EMAIL: admin@example.com
-      PGADMIN_DEFAULT_PASSWORD: admin123
-    ports:
-      - "5050:80"
-    depends_on:
-      - postgres
+      - postgres_data_microservice:/var/lib/postgresql/data
     networks:
       - devnet
 
@@ -41,9 +27,9 @@ services:
     networks:
       - devnet
       
-  hourly-react-app:
+  hourly-microservice-app:
     image: ghcr.io/goldenplayer5630/hourly-microservice-app:pre-release
-    container_name: react-app
+    container_name: hourly-microservice-app
     ports:
       - "3000:80"
     networks:
@@ -86,13 +72,13 @@ services:
     ports:
       - "5001:8080"
     environment:
-      ConnectionStrings__DefaultConnection: "Host=postgres;Port=5432;Database=hourly-userservice;Username=admin;Password=admin123"
+      ConnectionStrings__DefaultConnection: "Host=postgres-microservice;Port=5432;Database=hourly-userservice;Username=admin;Password=admin123"
       RabbitMQ__Host: rabbitmq
       RabbitMQ__Port: 5672
       RabbitMQ__UserName: devuser
       RabbitMQ__Password: devpassword
     depends_on:
-      - postgres
+      - postgres-microservice
       - rabbitmq
     networks:
       - devnet
@@ -103,13 +89,13 @@ services:
     ports:
       - "5003:8080"
     environment:
-      ConnectionStrings__DefaultConnection: "Host=postgres;Port=5432;Database=hourly-gitservice;Username=admin;Password=admin123"
+      ConnectionStrings__DefaultConnection: "Host=postgres-microservice;Port=5432;Database=hourly-gitservice;Username=admin;Password=admin123"
       RabbitMQ__Host: rabbitmq
       RabbitMQ__Port: 5672
       RabbitMQ__UserName: devuser
       RabbitMQ__Password: devpassword
     depends_on:
-      - postgres
+      - postgres-microservice
       - rabbitmq
     networks:
       - devnet
@@ -120,19 +106,19 @@ services:
     ports:
       - "5002:8080"
     environment:
-      ConnectionStrings__DefaultConnection: "Host=postgres;Port=5432;Database=hourly-timetrackingservice;Username=admin;Password=admin123"
+      ConnectionStrings__DefaultConnection: "Host=postgres-microservice;Port=5432;Database=hourly-timetrackingservice;Username=admin;Password=admin123"
       RabbitMQ__Host: rabbitmq
       RabbitMQ__Port: 5672
       RabbitMQ__UserName: devuser
       RabbitMQ__Password: devpassword
     depends_on:
-      - postgres
+      - postgres-microservice
       - rabbitmq
     networks:
       - devnet
 
 volumes:
-  postgres_data:
+  postgres_data_microservice:
 
 networks:
   devnet:
