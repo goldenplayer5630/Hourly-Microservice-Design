@@ -140,36 +140,31 @@ app.UseRouting();
 
 app.UseCors("CORS");
 
+var allowedOrigins = corsOptions.AllowedOrigins;
+var allowedMethods = string.Join(", ", corsOptions.AllowedMethods);
+var allowedHeaders = string.Join(", ", corsOptions.AllowedHeaders);
+var exposedHeaders = string.Join(", ", corsOptions.ExposedHeaders);
+
 app.Use(async (context, next) =>
 {
-    await next();
+    var origin = context.Request.Headers["Origin"].ToString();
 
-    var corsOptions = app.Services.GetRequiredService<IConfiguration>()
-        .GetSection("CORS")
-        .Get<CorsSettings>();
-
-    var allowedOriginList = corsOptions?.AllowedOrigins.ToList();
-    if (allowedOriginList == null || !allowedOriginList.Any())
-    {
-        context.Response.Headers.Remove("Access-Control-Allow-Origin");
-        return;
-    }
-
-    if (context.Request.Headers.TryGetValue("Origin", out var origin)
-        && allowedOriginList.Contains(origin))
+    if (!string.IsNullOrEmpty(origin) && allowedOrigins.Contains(origin))
     {
         context.Response.Headers["Access-Control-Allow-Origin"] = origin;
+        context.Response.Headers["Vary"] = "Origin";
     }
 
-    context.Response.Headers["Access-Control-Allow-Methods"] = string.Join(", ", corsOptions.AllowedMethods);
-    context.Response.Headers["Access-Control-Allow-Headers"] = string.Join(", ", corsOptions.AllowedHeaders);
-    context.Response.Headers["Access-Control-Expose-Headers"] = string.Join(", ", corsOptions.ExposedHeaders);
-    context.Response.Headers["Access-Control-Allow-Credentials"] = corsOptions.AllowCredentials.ToString().ToLower();
-});
+    context.Response.Headers["Access-Control-Allow-Methods"] = allowedMethods;
+    context.Response.Headers["Access-Control-Allow-Headers"] = allowedHeaders;
+    context.Response.Headers["Access-Control-Expose-Headers"] = exposedHeaders;
 
-app.Use(async (context, next) =>
-{
-    if (context.Request.Method == "OPTIONS")
+    if (corsOptions.AllowCredentials)
+    {
+        context.Response.Headers["Access-Control-Allow-Credentials"] = "true";
+    }
+
+    if (context.Request.Method == HttpMethod.Options.Method)
     {
         context.Response.StatusCode = 204;
         await context.Response.CompleteAsync();
@@ -178,6 +173,7 @@ app.Use(async (context, next) =>
 
     await next();
 });
+
 
 await app.UseOcelot();
 app.Run();
