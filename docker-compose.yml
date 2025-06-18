@@ -46,7 +46,6 @@ services:
     container_name: react-app
     ports:
       - "3000:80"
-
     networks:
       - devnet
     depends_on:
@@ -58,7 +57,9 @@ services:
     ports:
       - "5000:8080"
     environment:
-      CORS__AllowedOrigins: '["https://hourly-micro.vincentbok.nl", "http://localhost:3000"]'
+      Logging__LogLevel__Default: Information
+      Logging__LogLevel__Microsoft.AspNetCore: Warning
+      CORS__AllowedOrigins: '["https://hourly-micro.vincentbok.nl"]'
       CORS__AllowedMethods: '["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]'
       CORS__AllowedHeaders: '["Content-Type", "Authorization"]'
       CORS__ExposedHeaders: '["X-Total-Count"]'
@@ -135,3 +136,4 @@ volumes:
 
 networks:
   devnet:
+
