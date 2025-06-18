@@ -1,0 +1,51 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ dev ]
+  pull_request:
+    branches: [ dev ]
+
+env:
+  DOTNET_VERSION: '8.0.x'
+  IMAGE_REGISTRY: ghcr.io
+  IMAGE_NAMESPACE: ${{ github.repository_owner }}
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-pre-release
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Run unit tests
+        run: |
+          dotnet test Hourly.UserService.Tests/Hourly.UserService.Tests.csproj --no-restore --verbosity normal
+          dotnet test Hourly.GitService.Tests/Hourly.GitService.Tests.csproj --no-restore --verbosity normal
+          dotnet test Hourly.TimeTrackingService.Tests/Hourly.TimeTrackingService.Tests.csproj --no-restore --verbosity normal
+
+      - name: Log in to GitHub Container Registry
+        run: echo "${{ secrets.CR_PAT }}" | docker login ghcr.io -u ${{ secrets.GH_USERNAME }} --password-stdin
+
+      - name: 🛠️ Build and tag Docker images
+        run: |
+          docker build -t ghcr.io/${{ env.IMAGE_NAMESPACE }}/hourly-gateway:pre-release ./Hourly.Gateway
+          docker build -t ghcr.io/${{ env.IMAGE_NAMESPACE }}/hourly-userservice:pre-release ./Hourly.UserService
+          docker build -t ghcr.io/${{ env.IMAGE_NAMESPACE }}/hourly-gitservice:pre-release ./Hourly.GitService
+          docker build -t ghcr.io/${{ env.IMAGE_NAMESPACE }}/hourly-timetracking:pre-release ./Hourly.TimeTrackingService
+
+      - name: Push Docker images to GHCR
+        run: |
+          docker push ghcr.io/${{ env.IMAGE_NAMESPACE }}/hourly-gateway:pre-release
+          docker push ghcr.io/${{ env.IMAGE_NAMESPACE }}/hourly-userservice:pre-release
+          docker push ghcr.io/${{ env.IMAGE_NAMESPACE }}/hourly-gitservice:pre-release
+          docker push ghcr.io/${{ env.IMAGE_NAMESPACE }}/hourly-timetracking:pre-release
