@@ -140,5 +140,45 @@ app.UseRouting();
 
 app.UseCors("CORS");
 
+app.Use(async (context, next) =>
+{
+    await next();
+
+    var corsOptions = app.Services.GetRequiredService<IConfiguration>()
+        .GetSection("CORS")
+        .Get<CorsSettings>();
+
+    var allowedOriginList = corsOptions?.AllowedOrigins.ToList();
+    if (allowedOriginList == null || !allowedOriginList.Any())
+    {
+        context.Response.Headers.Remove("Access-Control-Allow-Origin");
+        return;
+    }
+
+    if (context.Request.Headers.TryGetValue("Origin", out var origin)
+        && allowedOriginList.Contains(origin))
+    {
+        context.Response.Headers["Access-Control-Allow-Origin"] = origin;
+    }
+
+    context.Response.Headers["Access-Control-Allow-Methods"] = string.Join(", ", corsOptions.AllowedMethods);
+    context.Response.Headers["Access-Control-Allow-Headers"] = string.Join(", ", corsOptions.AllowedHeaders);
+    context.Response.Headers["Access-Control-Expose-Headers"] = string.Join(", ", corsOptions.ExposedHeaders);
+    context.Response.Headers["Access-Control-Allow-Credentials"] = corsOptions.AllowCredentials.ToString().ToLower();
+});
+
+app.Use(async (context, next) =>
+{
+    if (context.Request.Method == "OPTIONS")
+    {
+        context.Response.StatusCode = 204;
+        await context.Response.CompleteAsync();
+        return;
+    }
+
+    await next();
+});
+
 await app.UseOcelot();
 app.Run();
+
