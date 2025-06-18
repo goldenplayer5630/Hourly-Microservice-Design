@@ -146,18 +146,10 @@ app.Use(async (context, next) =>
     Console.WriteLine($"[CORS DEBUG] Incoming request: {context.Request.Method} {context.Request.Path}");
     Console.WriteLine($"[CORS DEBUG] Request Origin: {origin}");
 
-    bool isAllowedOrigin = !string.IsNullOrEmpty(origin) &&
-        corsOptions.AllowedOrigins.Contains(origin, StringComparer.OrdinalIgnoreCase);
-
-    Console.WriteLine($"[CORS DEBUG] Is allowed origin: {isAllowedOrigin}");
-
-    if (isAllowedOrigin)
-    {
-        context.Response.Headers.Append("Access-Control-Allow-Origin", origin);
-        context.Response.Headers.Append("Vary", "Origin"); // prevent cache issues
-        Console.WriteLine($"[CORS DEBUG] Set Access-Control-Allow-Origin: {origin}");
-        Console.WriteLine("[CORS DEBUG] Set Vary: Origin");
-    }
+    context.Response.Headers.Append("Access-Control-Allow-Origin", origin);
+    context.Response.Headers.Append("Vary", "Origin"); // prevent cache issues
+    Console.WriteLine($"[CORS DEBUG] Set Access-Control-Allow-Origin: {origin}");
+    Console.WriteLine("[CORS DEBUG] Set Vary: Origin");
 
     var allowMethods = string.Join(", ", corsOptions.AllowedMethods);
     var allowHeaders = string.Join(", ", corsOptions.AllowedHeaders);
