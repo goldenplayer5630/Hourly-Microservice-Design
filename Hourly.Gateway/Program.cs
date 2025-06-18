@@ -58,7 +58,7 @@ var fileConfig = new FileConfiguration
                     new() { Host = config["USER_SERVICE_HOST"], Port = int.Parse(config["USER_SERVICE_PORT"]!) }
                 },
                 UpstreamPathTemplate = "/api/user/{everything}",
-                UpstreamHttpMethod = new() { "GET", "POST", "PATCH", "PUT", "DELETE" }
+                UpstreamHttpMethod = new() { "GET", "POST", "PATCH", "PUT", "DELETE", "OPTIONS" }
             },
             new()
             {
@@ -69,7 +69,7 @@ var fileConfig = new FileConfiguration
                     new() { Host = config["USER_SERVICE_HOST"], Port = int.Parse(config["USER_SERVICE_PORT"]!) }
                 },
                 UpstreamPathTemplate = "/api/usercontract/{everything}",
-                UpstreamHttpMethod = new() { "GET", "POST", "PATCH", "PUT", "DELETE" }
+                UpstreamHttpMethod = new() { "GET", "POST", "PATCH", "PUT", "DELETE", "OPTIONS" }
             },
             new()
             {
@@ -80,7 +80,7 @@ var fileConfig = new FileConfiguration
                     new() { Host = config["USER_SERVICE_HOST"], Port = int.Parse(config["USER_SERVICE_PORT"]!) }
                 },
                 UpstreamPathTemplate = "/api/department/{everything}",
-                UpstreamHttpMethod = new() { "GET", "POST", "PATCH", "PUT", "DELETE" }
+                UpstreamHttpMethod = new() { "GET", "POST", "PATCH", "PUT", "DELETE", "OPTIONS" }
             },
             new()
             {
@@ -91,7 +91,7 @@ var fileConfig = new FileConfiguration
                     new() { Host = config["TIMETRACKING_SERVICE_HOST"], Port = int.Parse(config["TIMETRACKING_SERVICE_PORT"]!) }
                 },
                 UpstreamPathTemplate = "/api/worksession/{everything}",
-                UpstreamHttpMethod = new() { "GET", "POST", "PATCH", "PUT", "DELETE" }
+                UpstreamHttpMethod = new() { "GET", "POST", "PATCH", "PUT", "DELETE", "OPTIONS" }
             },
             new()
             {
@@ -102,7 +102,7 @@ var fileConfig = new FileConfiguration
                     new() { Host = config["GIT_SERVICE_HOST"], Port = int.Parse(config["GIT_SERVICE_PORT"]!) }
                 },
                 UpstreamPathTemplate = "/api/gitcommit/{everything}",
-                UpstreamHttpMethod = new() { "GET", "POST", "PATCH", "PUT", "DELETE" }
+                UpstreamHttpMethod = new() { "GET", "POST", "PATCH", "PUT", "DELETE", "OPTIONS" }
             },
             new()
             {
@@ -113,7 +113,7 @@ var fileConfig = new FileConfiguration
                     new() { Host = config["GIT_SERVICE_HOST"], Port = int.Parse(config["GIT_SERVICE_PORT"]!) }
                 },
                 UpstreamPathTemplate = "/api/gitrepository/{everything}",
-                UpstreamHttpMethod = new() { "GET", "POST", "PATCH", "PUT", "DELETE" }
+                UpstreamHttpMethod = new() { "GET", "POST", "PATCH", "PUT", "DELETE", "OPTIONS" }
             }
         },
     GlobalConfiguration = new FileGlobalConfiguration
@@ -139,6 +139,19 @@ var app = builder.Build();
 app.UseRouting();
 
 app.UseCors("CORS");
+
+app.Use(async (context, next) =>
+{
+    if (context.Request.Method == HttpMethod.Options.Method)
+    {
+        context.Response.StatusCode = 204;
+        await context.Response.CompleteAsync();
+        return;
+    }
+
+    await next.Invoke();
+});
+
 
 await app.UseOcelot();
 app.Run();
