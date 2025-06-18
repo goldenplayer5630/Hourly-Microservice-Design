@@ -187,5 +187,19 @@ app.Use(async (context, next) =>
 });
 
 await app.UseOcelot();
+
+// Handle preflight requests manually if needed
+app.Use(async (context, next) =>
+{
+    if (context.Request.Method == "OPTIONS")
+    {
+        context.Response.StatusCode = 204;
+        await context.Response.CompleteAsync();
+        return;
+    }
+
+    await next();
+});
+
 app.Run();
 
