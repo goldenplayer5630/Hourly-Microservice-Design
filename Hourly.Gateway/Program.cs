@@ -142,10 +142,10 @@ app.UseCors("CORS");
 
 app.Use(async (context, next) =>
 {
-    context.Response.Headers.Add("Access-Control-Allow-Origin", "https://hourly-micro.vincentbok.nl");
-    context.Response.Headers.Add("Access-Control-Allow-Methods", "GET, POST, PUT, PATCH, DELETE, OPTIONS");
-    context.Response.Headers.Add("Access-Control-Allow-Headers", "Content-Type, Authorization");
-    context.Response.Headers.Add("Access-Control-Allow-Credentials", "true");
+    context.Response.Headers.Append("Access-Control-Allow-Origin", "https://hourly-micro.vincentbok.nl");
+    context.Response.Headers.Append("Access-Control-Allow-Methods", "GET, POST, PUT, PATCH, DELETE, OPTIONS");
+    context.Response.Headers.Append("Access-Control-Allow-Headers", "Content-Type, Authorization");
+    context.Response.Headers.Append("Access-Control-Allow-Credentials", "true");
 
     if (context.Request.Method == HttpMethod.Options.Method)
     {
