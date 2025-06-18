@@ -42,8 +42,11 @@ services:
       - devnet
 
   gateway:
-    image: ghcr.io/goldenplayer5630/hourly-gateway:pre-release
+    image: hourly-gateway:latest
     container_name: gateway
+    build:
+      context: .
+      dockerfile: Hourly.Gateway/Dockerfile
     ports:
       - "5000:8080"
     environment:
@@ -63,8 +66,11 @@ services:
       - devnet
 
   userservice:
-    image: ghcr.io/goldenplayer5630/hourly-userservice:pre-release
+    image: hourly-userservice:latest
     container_name: userservice
+    build:
+      context: .
+      dockerfile: Hourly.UserService/Dockerfile
     ports:
       - "5001:8080"
     environment:
@@ -80,8 +86,11 @@ services:
       - devnet
 
   gitservice:
-    image: ghcr.io/goldenplayer5630/hourly-gitservice:pre-release
+    image: hourly-gitservice:latest
     container_name: gitservice
+    build:
+      context: .
+      dockerfile: Hourly.GitService/Dockerfile
     ports:
       - "5003:8080"
     environment:
@@ -97,8 +106,11 @@ services:
       - devnet
 
   timetracking:
-    image: ghcr.io/goldenplayer5630/hourly-timetracking:pre-release
+    image: hourly-timetracking:latest
     container_name: timetracking
+    build:
+      context: .
+      dockerfile: Hourly.TimeTrackingService/Dockerfile
     ports:
       - "5002:8080"
     environment:
