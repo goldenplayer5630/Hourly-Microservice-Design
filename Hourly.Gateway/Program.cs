@@ -142,23 +142,26 @@ app.UseCors("CORS");
 
 app.Use(async (context, next) =>
 {
-    Console.WriteLine($"CORS Origin: {origin}");
+    var origin = context.Request.Headers["Origin"].ToString();
+
     if (!string.IsNullOrEmpty(origin) &&
         corsOptions.AllowedOrigins.Contains(origin, StringComparer.OrdinalIgnoreCase))
     {
-        context.Response.Headers.Append("Access-Control-Allow-Origin", origin);
-        context.Response.Headers.Append("Vary", "Origin"); // prevent cache issues
+        context.Response.Headers["Access-Control-Allow-Origin"] = origin;
+        context.Response.Headers["Vary"] = "Origin"; // Ensure caches handle varying origins properly
     }
 
-    context.Response.Headers.Append("Access-Control-Allow-Methods", string.Join(", ", corsOptions.AllowedMethods));
-    context.Response.Headers.Append("Access-Control-Allow-Headers", string.Join(", ", corsOptions.AllowedHeaders));
-    context.Response.Headers.Append("Access-Control-Expose-Headers", string.Join(", ", corsOptions.ExposedHeaders));
-    context.Response.Headers.Append("Access-Control-Max-Age", corsOptions.MaxAge.ToString());
+    context.Response.Headers["Access-Control-Allow-Methods"] = string.Join(", ", corsOptions.AllowedMethods);
+    context.Response.Headers["Access-Control-Allow-Headers"] = string.Join(", ", corsOptions.AllowedHeaders);
+    context.Response.Headers["Access-Control-Expose-Headers"] = string.Join(", ", corsOptions.ExposedHeaders);
+    context.Response.Headers["Access-Control-Max-Age"] = corsOptions.MaxAge.ToString();
 
     if (corsOptions.AllowCredentials)
-        context.Response.Headers.Append("Access-Control-Allow-Credentials", "true");
+    {
+        context.Response.Headers["Access-Control-Allow-Credentials"] = "true";
+    }
 
-    var origin = context.Request.Headers["Origin"].ToString();
+    Console.WriteLine($"CORS Origin: {origin}");
     Console.WriteLine($"CORS Headers: {string.Join(", ", context.Response.Headers.Select(h => $"{h.Key}: {h.Value}"))}");
 
     if (context.Request.Method == HttpMethod.Options.Method)
