@@ -147,33 +147,52 @@ var exposedHeaders = string.Join(", ", corsOptions.ExposedHeaders);
 
 app.Use(async (context, next) =>
 {
+    var logger = app.Services.GetRequiredService<ILoggerFactory>().CreateLogger("CorsDebugMiddleware");
     var origin = context.Request.Headers["Origin"].ToString();
+
+    logger.LogDebug("Incoming request: {Method} {Path}", context.Request.Method, context.Request.Path);
+    logger.LogDebug("Request Origin header: {Origin}", origin);
 
     if (!string.IsNullOrEmpty(origin) && allowedOrigins.Contains(origin))
     {
         context.Response.Headers["Access-Control-Allow-Origin"] = origin;
         context.Response.Headers["Vary"] = "Origin";
+        logger.LogDebug("Origin '{Origin}' is allowed. Setting Access-Control-Allow-Origin and Vary headers.", origin);
+    }
+    else
+    {
+        logger.LogDebug("Origin '{Origin}' is not allowed or not present. Skipping Access-Control-Allow-Origin.", origin);
     }
 
     context.Response.Headers["Access-Control-Allow-Methods"] = allowedMethods;
     context.Response.Headers["Access-Control-Allow-Headers"] = allowedHeaders;
     context.Response.Headers["Access-Control-Expose-Headers"] = exposedHeaders;
 
+    logger.LogDebug("Set Access-Control-Allow-Methods: {Methods}", allowedMethods);
+    logger.LogDebug("Set Access-Control-Allow-Headers: {Headers}", allowedHeaders);
+    logger.LogDebug("Set Access-Control-Expose-Headers: {Headers}", exposedHeaders);
+
     if (corsOptions.AllowCredentials)
     {
         context.Response.Headers["Access-Control-Allow-Credentials"] = "true";
+        logger.LogDebug("AllowCredentials is enabled. Set Access-Control-Allow-Credentials: true");
+    }
+    else
+    {
+        logger.LogDebug("AllowCredentials is disabled. Not setting Access-Control-Allow-Credentials.");
     }
 
     if (context.Request.Method == HttpMethod.Options.Method)
     {
+        logger.LogDebug("OPTIONS preflight request detected. Returning 204 No Content.");
         context.Response.StatusCode = 204;
         await context.Response.CompleteAsync();
         return;
     }
 
+    logger.LogDebug("Proceeding to next middleware.");
     await next();
 });
-
 
 await app.UseOcelot();
 app.Run();
