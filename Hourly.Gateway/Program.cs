@@ -153,16 +153,18 @@ app.Use(async (context, next) =>
     logger.LogDebug("Incoming request: {Method} {Path}", context.Request.Method, context.Request.Path);
     logger.LogDebug("Request Origin header: {Origin}", origin);
 
-    if (!string.IsNullOrEmpty(origin) && allowedOrigins.Contains(origin))
-    {
-        context.Response.Headers["Access-Control-Allow-Origin"] = origin;
-        context.Response.Headers["Vary"] = "Origin";
-        logger.LogDebug("Origin '{Origin}' is allowed. Setting Access-Control-Allow-Origin and Vary headers.", origin);
-    }
-    else
-    {
-        logger.LogDebug("Origin '{Origin}' is not allowed or not present. Skipping Access-Control-Allow-Origin.", origin);
-    }
+    context.Response.Headers["Access-Control-Allow-Origin"] = origin;
+    logger.LogDebug("Setting Access-Control-Allow-Origin header to: {Origin}", origin);
+    //if (!string.IsNullOrEmpty(origin) && allowedOrigins.Contains(origin))
+    //{
+    //    context.Response.Headers["Access-Control-Allow-Origin"] = origin;
+    //    context.Response.Headers["Vary"] = "Origin";
+    //    logger.LogDebug("Origin '{Origin}' is allowed. Setting Access-Control-Allow-Origin and Vary headers.", origin);
+    //}
+    //else
+    //{
+    //    logger.LogDebug("Origin '{Origin}' is not allowed or not present. Skipping Access-Control-Allow-Origin.", origin);
+    //}
 
     context.Response.Headers["Access-Control-Allow-Methods"] = allowedMethods;
     context.Response.Headers["Access-Control-Allow-Headers"] = allowedHeaders;
