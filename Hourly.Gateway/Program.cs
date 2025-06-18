@@ -182,14 +182,6 @@ app.Use(async (context, next) =>
         Console.WriteLine($"[CORS DEBUG]   {header.Key}: {header.Value}");
     }
 
-    if (context.Request.Method == HttpMethod.Options.Method)
-    {
-        Console.WriteLine("[CORS DEBUG] Preflight OPTIONS request detected. Returning 204 No Content.");
-        context.Response.StatusCode = StatusCodes.Status204NoContent;
-        await context.Response.CompleteAsync();
-        return;
-    }
-
     Console.WriteLine("[CORS DEBUG] Passing request to next middleware.");
     await next();
     Console.WriteLine("[CORS DEBUG] Returned from next middleware.");
