@@ -150,10 +150,18 @@ app.Use(async (context, next) =>
     var logger = app.Services.GetRequiredService<ILoggerFactory>().CreateLogger("CorsDebugMiddleware");
     var origin = context.Request.Headers["Origin"].ToString();
 
+    if (!string.IsNullOrEmpty(origin) && corsOptions.AllowedOrigins.Contains(origin))
+    {
+        context.Response.Headers["Access-Control-Allow-Origin"] = origin;
+    }
+    else
+    {
+        context.Response.Headers["Access-Control-Allow-Origin"] = "*"; // Fallback to wildcard if origin is not allowed
+        logger.LogWarning("Origin {Origin} is not allowed. Using wildcard '*' instead.", origin);
+    }
+
     logger.LogDebug("Incoming request: {Method} {Path}", context.Request.Method, context.Request.Path);
     logger.LogDebug("Request Origin header: {Origin}", origin);
-
-    context.Response.Headers["Access-Control-Allow-Origin"] = origin;
     logger.LogDebug("Setting Access-Control-Allow-Origin header to: {Origin}", origin);
 
     context.Response.Headers["Access-Control-Allow-Methods"] = allowedMethods;
