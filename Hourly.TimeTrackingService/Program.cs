@@ -23,6 +23,18 @@ var massTransitOptions = builder.Configuration
 if (massTransitOptions == null)
     throw new InvalidOperationException("RabbitMQ settings are not configured in appsettings.json");
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CORS", policy =>
+    {
+        policy
+            .SetIsOriginAllowed(_ => true) // Allow any origin
+            .AllowAnyMethod()              // Allow all HTTP methods
+            .AllowAnyHeader()              // Allow all headers
+            .AllowCredentials();           // Allow credentials (cookies, auth headers)
+    });
+});
+
 // Add Mass Transit config
 builder.Services.AddMassTransit(x =>
 {
@@ -87,6 +99,7 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseRouting();
+app.UseCors("CORS");
 
 app.UseAuthorization();
 

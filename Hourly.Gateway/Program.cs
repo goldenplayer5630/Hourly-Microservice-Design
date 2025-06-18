@@ -23,16 +23,11 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("CORS", policy =>
     {
-        policy.WithOrigins(corsOptions.AllowedOrigins)
-              .WithMethods(corsOptions.AllowedMethods)
-              .WithHeaders(corsOptions.AllowedHeaders)
-              .WithExposedHeaders(corsOptions.ExposedHeaders)
-              .SetPreflightMaxAge(TimeSpan.FromSeconds(corsOptions.MaxAge));
-
-        if (corsOptions.AllowCredentials)
-            policy.AllowCredentials();
-        else
-            policy.DisallowCredentials();
+        policy
+            .SetIsOriginAllowed(_ => true) // Allow any origin
+            .AllowAnyMethod()              // Allow all HTTP methods
+            .AllowAnyHeader()              // Allow all headers
+            .AllowCredentials();           // Allow credentials (cookies, auth headers)
     });
 });
 
