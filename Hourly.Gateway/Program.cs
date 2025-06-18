@@ -142,6 +142,11 @@ app.UseCors("CORS");
 
 app.Use(async (context, next) =>
 {
+    context.Response.Headers.Add("Access-Control-Allow-Origin", "https://hourly-micro.vincentbok.nl");
+    context.Response.Headers.Add("Access-Control-Allow-Methods", "GET, POST, PUT, PATCH, DELETE, OPTIONS");
+    context.Response.Headers.Add("Access-Control-Allow-Headers", "Content-Type, Authorization");
+    context.Response.Headers.Add("Access-Control-Allow-Credentials", "true");
+
     if (context.Request.Method == HttpMethod.Options.Method)
     {
         context.Response.StatusCode = 204;
@@ -149,8 +154,9 @@ app.Use(async (context, next) =>
         return;
     }
 
-    await next.Invoke();
+    await next();
 });
+
 
 
 await app.UseOcelot();
